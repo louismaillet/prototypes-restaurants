@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Le Commerce — Brasserie place du 18 Octobre à Châteaudun</title>
+<meta name="description" content="Le Commerce, brasserie en plein centre de Châteaudun, place du 18 Octobre : cuisine traditionnelle simple et rapide, tartines maison, pommes de terre farcies, terrasse l'été.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Oswald:wght@500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f5f0e3; --paper-2:#ebe4d2; --ink:#1b1b1b; --grey:#555049; --green:#1f4d3a; --green-2:#2a6550; --brass:#b08d3e; --rule:#1b1b1b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Libre Baskerville",Georgia,serif;font-size:1rem;background:var(--paper);color:var(--ink);line-height:1.65}
+  .os{font-family:"Oswald","Arial Narrow",sans-serif;text-transform:uppercase;letter-spacing:.06em}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--paper-2);filter:saturate(.85) contrast(1.02)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  .demo{background:var(--ink);color:#cfc9bb;font-family:system-ui,sans-serif;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#e6cf93;font-weight:600}
+
+  /* MANCHETTE */
+  .mast{text-align:center;padding:26px 0 0}
+  .dateline{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.72rem;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:6px 0;color:var(--grey)}
+  .mast h1{font-family:"UnifrakturCook","Old English Text MT",Georgia,serif;font-weight:700;font-size:clamp(3rem,13vw,7.5rem);line-height:1;padding:14px 0 6px}
+  .mast .sub{font-style:italic;color:var(--grey);margin-bottom:12px}
+  .navbar{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 22px;border-top:3px double var(--rule);border-bottom:3px double var(--rule);padding:9px 0;font-size:.85rem}
+  .navbar a{text-decoration:none}
+  .navbar a:hover{color:var(--green)}
+  .navbar .tel{color:var(--green);font-weight:600}
+
+  /* À LA UNE */
+  .une{display:grid;gap:30px;padding:34px 0 40px;border-bottom:1px solid var(--rule)}
+  @media (min-width:900px){.une{grid-template-columns:2fr 1fr}}
+  .kicker{display:inline-block;background:var(--green);color:var(--paper);font-size:.72rem;padding:3px 10px;margin-bottom:12px}
+  .une h2{font-family:"Libre Baskerville",serif;font-weight:700;font-size:clamp(1.9rem,4.6vw,3.1rem);line-height:1.12;margin-bottom:14px}
+  .une .chapo{font-style:italic;font-size:1.12rem;color:var(--grey);margin-bottom:18px}
+  .une figure{margin-bottom:10px}
+  .une figure .ph{aspect-ratio:16/9;border:1px solid var(--rule)}
+  figcaption{font-size:.75rem;color:var(--grey);font-style:italic;margin-top:5px}
+  .cols{column-gap:28px}
+  @media (min-width:700px){.cols{column-count:2;column-rule:1px solid #c9bfa6}}
+  .cols p{margin-bottom:12px;text-align:justify;hyphens:auto}
+  .cols p:first-child::first-letter{font-family:"UnifrakturCook",serif;float:left;font-size:3.6rem;line-height:.9;padding:4px 8px 0 0;color:var(--green)}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .btn{display:inline-block;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;text-decoration:none;padding:12px 20px;background:var(--green);color:var(--paper);border:2px solid var(--green)}
+  .btn:hover{background:var(--green-2)}
+  .btn.out{background:transparent;color:var(--green)}
+  .btn.out:hover{background:var(--green);color:var(--paper)}
+
+  /* colonne latérale */
+  .side{display:flex;flex-direction:column;gap:22px}
+  @media (min-width:900px){.side{border-left:1px solid var(--rule);padding-left:28px}}
+  .encart{border:2px solid var(--ink);padding:18px;background:#fbf8ef;position:relative}
+  .encart .os{font-size:.85rem;border-bottom:1px solid var(--ink);padding-bottom:6px;margin-bottom:10px;display:block}
+  .encart h3{font-size:1.35rem;line-height:1.2;margin-bottom:6px}
+  .encart p{font-size:.92rem;color:var(--grey)}
+  .encart .ph{aspect-ratio:4/3;margin-bottom:10px;border:1px solid var(--rule)}
+  .stamp{position:absolute;top:-14px;right:-10px;background:var(--brass);color:#fff;font-family:"Oswald",sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;transform:rotate(6deg)}
+  .quick{list-style:none;font-size:.92rem}
+  .quick li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dotted var(--grey);padding:6px 0}
+  .quick li:last-child{border:0}
+
+  /* RUBRIQUES */
+  .rub{padding:40px 0;border-bottom:1px solid var(--rule)}
+  .rub-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px;border-bottom:3px solid var(--ink);padding-bottom:6px;margin-bottom:24px}
+  .rub-head h2{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;font-size:clamp(1.5rem,4vw,2.2rem);letter-spacing:.04em}
+  .rub-head span{font-style:italic;color:var(--grey);font-size:.95rem}
+
+  /* carte façon colonnes de journal */
+  .menu{display:grid;gap:0}
+  @media (min-width:760px){.menu{grid-template-columns:repeat(3,1fr)}}
+  .mcol{padding:0 0 20px}
+  @media (min-width:760px){.mcol{padding:0 22px;border-right:1px solid #c9bfa6}.mcol:first-child{padding-left:0}.mcol:last-child{border-right:0;padding-right:0}}
+  .mcol h3{font-family:"Oswald",sans-serif;font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:1rem;color:var(--green);margin-bottom:6px}
+  .item{padding:9px 0;border-bottom:1px dotted #b5ab92}
+  .item:last-child{border:0}
+  .item .t{display:flex;justify-content:space-between;gap:10px;font-weight:700}
+  .item .t span:last-child{font-family:"Oswald",sans-serif;color:var(--brass)}
+  .item p{font-size:.86rem;color:var(--grey);font-style:italic}
+  .nb{font-size:.82rem;font-style:italic;color:var(--grey);margin-top:18px;text-align:center}
+
+  /* reportage terrasse */
+  .rep{display:grid;gap:26px;align-items:center}
+  @media (min-width:860px){.rep{grid-template-columns:1.3fr 1fr}}
+  .rep .ph{aspect-ratio:3/2;border:1px solid var(--rule)}
+  .rep blockquote{font-size:clamp(1.3rem,3vw,1.8rem);font-style:italic;line-height:1.35;border-left:4px solid var(--brass);padding-left:18px;margin-bottom:14px}
+  .rep p{color:var(--grey)}
+
+  /* photos en bandeau */
+  .trio{display:grid;gap:14px;grid-template-columns:1fr}
+  @media (min-width:700px){.trio{grid-template-columns:repeat(3,1fr)}}
+  .trio .ph{aspect-ratio:4/3;border:1px solid var(--rule)}
+
+  /* infos pratiques */
+  .prat{display:grid;gap:22px}
+  @media (min-width:860px){.prat{grid-template-columns:1fr 1fr}}
+  .notice{border:3px double var(--ink);padding:22px;background:#fbf8ef}
+  .notice h3{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;margin-bottom:10px}
+  .hours{list-style:none}
+  .hours li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dotted var(--grey)}
+  .hours li:last-child{border:0}
+  .hours span:last-child{text-align:right;color:var(--grey)}
+  .small{font-size:.8rem;font-style:italic;color:var(--grey);margin-top:10px}
+  .notice address{font-style:normal;font-size:1.1rem;margin-bottom:12px}
+  .map{aspect-ratio:16/10;border:1px solid var(--rule);margin-top:14px;background:var(--paper-2)}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.6) sepia(.15)}
+
+  /* petite annonce contact */
+  .annonce{text-align:center;padding:48px 0}
+  .annonce .box{display:inline-block;border:2px dashed var(--ink);padding:26px 30px;max-width:620px;background:#fbf8ef}
+  .annonce .os{font-size:.85rem;color:var(--green)}
+  .annonce h2{font-size:clamp(1.6rem,4vw,2.3rem);margin:6px 0}
+  .annonce .tel{display:block;font-family:"Oswald",sans-serif;font-size:clamp(1.8rem,6vw,2.8rem);text-decoration:none;color:var(--green);margin:8px 0 14px}
+  .annonce .btns{justify-content:center}
+
+  footer{border-top:3px double var(--rule);font-family:system-ui,sans-serif;font-size:.8rem;color:var(--grey);padding:20px 0 30px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<div class="wrap">
+  <!-- MANCHETTE -->
+  <header class="mast">
+    <div class="dateline os"><span>Châteaudun · Eure-et-Loir</span><span>Édition de la place du 18 Octobre</span><span>Ouvert tous les jours</span></div>
+    <h1>Le Commerce</h1>
+    <p class="sub">Brasserie · Bar · Terrasse — au cœur de Châteaudun</p>
+    <nav class="navbar os">
+      <a href="#une">À la une</a>
+      <a href="#carte">La carte</a>
+      <a href="#terrasse">La terrasse</a>
+      <a href="#pratique">Infos pratiques</a>
+      <a class="tel" href="tel:+33237661002">☎ 02 37 66 10 02</a>
+    </nav>
+  </header>
+
+  <!-- À LA UNE -->
+  <section class="une" id="une">
+    <article>
+      <span class="kicker os">À la une</span>
+      <h2>Au Commerce, on déjeune simplement, bien et sans perdre de temps</h2>
+      <p class="chapo">Sur la place du 18 Octobre, à deux pas du château, la brasserie sert chaque midi une cuisine traditionnelle, généreuse et rapide.</p>
+      <figure>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1642946928960-82c8d5899f2c?auto=format&fit=crop&w=1400&q=70" alt="Terrasse de brasserie avec ses tables alignées"></div>
+        <figcaption>La terrasse, rendez-vous des beaux jours. Photo d'illustration.</figcaption>
+      </figure>
+      <div class="cols">
+        <p>En plein centre-ville, Le Commerce est l'adresse des déjeuners sans chichis : un plat du jour, une tartine maison, une belle salade ou une pièce de viande, servis vite pour ceux qui travaillent, sans presser ceux qui flânent.</p>
+        <p>La salle au charme rétro accueille habitués et visiteurs toute l'année. Aux beaux jours, la terrasse s'installe face à la place, à l'ombre, pour un café ou un verre après la visite du château.</p>
+      </div>
+      <div class="btns">
+        <a class="btn" href="tel:+33237661002">Réserver une table</a>
+        <a class="btn out" href="#carte">Lire la carte</a>
+      </div>
+    </article>
+
+    <aside class="side">
+      <div class="encart">
+        <span class="stamp">Maison</span>
+        <span class="os">La spécialité</span>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1761712826074-5f1bab2b2f32?auto=format&fit=crop&w=700&q=70" alt="Pomme de terre au four gratinée" loading="lazy"></div>
+        <h3>Les pommes de terre farcies au four</h3>
+        <p>Gratinées, fondantes, généreuses : la spécialité qui fait revenir les habitués.</p>
+      </div>
+      <div class="encart">
+        <span class="os">En bref</span>
+        <ul class="quick">
+          <li><span>Service</span><span>tous les midis</span></li>
+          <li><span>Bar</span><span>l'après-midi</span></li>
+          <li><span>Terrasse</span><span>l'été</span></li>
+          <li><span>Langue</span><span>English spoken</span></li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <!-- CARTE -->
+  <section class="rub" id="carte">
+    <div class="rub-head"><h2>Rubrique cuisine</h2><span>La carte du Commerce</span></div>
+    <div class="menu">
+      <div class="mcol">
+        <h3>Les tartines maison</h3>
+        <div class="item"><div class="t"><span>Tartine chèvre-miel</span><span>—</span></div><p>Pain de campagne, chèvre, miel, salade</p></div>
+        <div class="item"><div class="t"><span>Tartine campagnarde</span><span>—</span></div><p>Jambon, fromage fondu, oignons</p></div>
+        <div class="item"><div class="t"><span>Tartine du moment</span><span>—</span></div><p>Selon l'humeur de la cuisine</p></div>
+      </div>
+      <div class="mcol">
+        <h3>Les plats</h3>
+        <div class="item"><div class="t"><span>Onglet de bœuf</span><span>—</span></div><p>Sauce au choix, frites ou salade</p></div>
+        <div class="item"><div class="t"><span>Pommes de terre farcies</span><span>—</span></div><p>Au four, la spécialité maison</p></div>
+        <div class="item"><div class="t"><span>Burger du jour</span><span>—</span></div><p>Change chaque jour</p></div>
+        <div class="item"><div class="t"><span>Plat du jour</span><span>—</span></div><p>Cuisine traditionnelle</p></div>
+      </div>
+      <div class="mcol">
+        <h3>Salades &amp; douceurs</h3>
+        <div class="item"><div class="t"><span>Salade composée</span><span>—</span></div><p>Fraîche et bien garnie</p></div>
+        <div class="item"><div class="t"><span>Dessert du jour</span><span>—</span></div><p>Fait maison</p></div>
+        <div class="item"><div class="t"><span>Café gourmand</span><span>—</span></div><p>Café et petites douceurs</p></div>
+      </div>
+    </div>
+    <p class="nb">Carte donnée à titre d'exemple — vos vrais plats et vos prix seront ajoutés avec vous.</p>
+  </section>
+
+  <!-- TERRASSE -->
+  <section class="rub" id="terrasse">
+    <div class="rub-head"><h2>Reportage</h2><span>La terrasse de la place</span></div>
+    <div class="rep">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1530174883092-c2a7aa3f1cfe?auto=format&fit=crop&w=1200&q=70" alt="Expresso servi sur une table" loading="lazy"></div>
+      <div>
+        <blockquote>Un café en terrasse, la place sous les yeux et le château à deux pas.</blockquote>
+        <p>L'été, les tables s'installent à l'ombre face à la place du 18 Octobre : l'endroit idéal pour regarder la ville vivre, déjeuner au soleil ou faire une pause pendant la visite de Châteaudun.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section class="rub">
+    <div class="rub-head"><h2>En images</h2><span>Photos d'illustration, à remplacer par celles du Commerce</span></div>
+    <div class="trio">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?auto=format&fit=crop&w=800&q=70" alt="Pièce de bœuf tranchée" loading="lazy"></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1737513916865-63c7fd3b67a7?auto=format&fit=crop&w=800&q=70" alt="Tartine au fromage fondu" loading="lazy"></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1761712826074-5f1bab2b2f32?auto=format&fit=crop&w=800&q=70" alt="Pomme de terre au four" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- PRATIQUE -->
+  <section class="rub" id="pratique">
+    <div class="rub-head"><h2>Infos pratiques</h2><span>Horaires &amp; accès</span></div>
+    <div class="prat">
+      <div class="notice">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Tous les jours</span><span>Service le midi, 12h – 14h</span></li>
+          <li><span>L'après-midi</span><span>Bar &amp; terrasse</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer.</p>
+      </div>
+      <div class="notice">
+        <h3>Adresse</h3>
+        <address>7 place du 18 Octobre<br>28200 Châteaudun</address>
+        <a class="btn out" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Commerce+7+place+du+18+Octobre+28200+Ch%C3%A2teaudun" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=7+place+du+18+Octobre+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Le Commerce, Châteaudun" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="annonce">
+    <div class="box">
+      <span class="os">Petite annonce</span>
+      <h2>Cherche convives pour déjeuner sur la place</h2>
+      <a class="tel" href="tel:+33237661002">02 37 66 10 02</a>
+      <div class="btns">
+        <a class="btn" href="tel:+33237661002">Appeler</a>
+        <a class="btn out" href="mailto:termeaus@wanadoo.fr">Écrire</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Le Commerce · 7 place du 18 Octobre, 28200 Châteaudun</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Fabien Maurin, nobleseed, Alisa Anton, Jason Leung, Griffin Wooldridge — via Unsplash.</p>
+  </div>
+</footer>
+
+</body>
+</html>
