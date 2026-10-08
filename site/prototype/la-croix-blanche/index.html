@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>La Croix Blanche — Restaurant traditionnel à Combres (Perche)</title>
+<meta name="description" content="La Croix Blanche, restaurant à Combres dans le Perche : cuisine traditionnelle faite maison, produits frais, menus de 15 à 28 €, salle rénovée et salle privative pour vos repas de famille.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,800;1,500&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#2f5d3a;--green-d:#1f4128;--apple:#c0392b;--white:#ffffff;--cream:#f7f5ef;--ink:#1f2a22;--muted:#5d6a60;--line:#dfe5dc}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Alegreya Sans",system-ui,sans-serif;font-size:1.06rem;background:var(--cream);color:var(--ink);line-height:1.6}
+  .al{font-family:"Alegreya",Georgia,serif}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--line)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--green-d);color:#d3e2d6;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#fff;font-weight:700}
+  /* croix blanche */
+  .cross{display:inline-block;width:46px;height:46px;background:var(--green);position:relative;border-radius:8px;flex:0 0 auto}
+  .cross::before,.cross::after{content:"";position:absolute;background:#fff;border-radius:2px}
+  .cross::before{left:19px;top:8px;width:8px;height:30px}
+  .cross::after{left:8px;top:19px;width:30px;height:8px}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:16px;padding-bottom:16px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand b{font-family:"Alegreya",serif;font-weight:800;font-size:1.4rem;color:var(--green)}
+  .brand small{display:block;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  header nav{display:flex;gap:20px;font-weight:500}
+  header nav a{text-decoration:none}
+  header nav a:hover{color:var(--apple)}
+  @media (max-width:760px){header nav{display:none}}
+  .call{background:var(--apple);color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:8px}
+  /* HERO bandeau photo + encart blanc */
+  .hero{position:relative;min-height:70vh;display:flex;align-items:center}
+  .hero > img{position:absolute;inset:0}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,65,40,.85),rgba(31,65,40,.2));z-index:1}
+  .hero .card{position:relative;z-index:2;background:var(--white);border-radius:6px;padding:36px 32px;max-width:520px;margin:40px 20px;box-shadow:0 20px 50px rgba(0,0,0,.25);border-top:8px solid var(--green)}
+  @media (min-width:1000px){.hero .card{margin-left:calc((100vw - 1060px)/2 + 20px)}}
+  .hero .k{color:var(--apple);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+  .hero h1{font-family:"Alegreya",serif;font-weight:800;font-size:clamp(2.4rem,7vw,3.8rem);line-height:1.02;color:var(--green);margin:10px 0 12px}
+  .hero p{color:var(--muted);margin-bottom:22px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:8px;background:var(--green);color:#fff;border:2px solid var(--green)}
+  .btn.red{background:var(--apple);border-color:var(--apple)}
+  .btn.out{background:transparent;color:var(--green)}
+  .rating{display:flex;align-items:center;gap:10px;margin-top:20px;font-weight:700}
+  .rating .st{color:#e3a008;letter-spacing:2px}
+  section{padding:76px 0}
+  .ttl{text-align:center;margin-bottom:36px}
+  .ttl .cross{transform:scale(.7)}
+  .ttl h2{font-family:"Alegreya",serif;font-weight:800;font-size:clamp(2rem,5vw,3rem);color:var(--green)}
+  .ttl p{color:var(--muted);max-width:560px;margin:6px auto 0}
+  /* trois menus */
+  .menus{display:grid;gap:20px}
+  @media (min-width:860px){.menus{grid-template-columns:repeat(3,1fr)}}
+  .menu{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:28px 24px;text-align:center;position:relative}
+  .menu.star{border:2px solid var(--green);transform:translateY(-8px);box-shadow:0 16px 30px rgba(47,93,58,.15)}
+  .menu .badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--apple);color:#fff;font-size:.75rem;font-weight:700;padding:3px 12px;border-radius:999px}
+  .menu h3{font-family:"Alegreya",serif;font-weight:800;font-size:1.5rem;color:var(--green)}
+  .menu .price{font-family:"Alegreya",serif;font-size:2.4rem;color:var(--apple);margin:6px 0 12px}
+  .menu ul{list-style:none}
+  .menu li{padding:8px 0;border-top:1px dotted var(--line);color:#3a463d}
+  .menu li i{font-family:"Alegreya",serif;color:var(--muted)}
+  .note{text-align:center;font-size:.9rem;color:var(--muted);margin-top:22px;font-style:italic}
+  /* trou normand */
+  .tn{background:var(--green);color:#fff}
+  .tn .wrap{display:grid;gap:26px;align-items:center}
+  @media (min-width:860px){.tn .wrap{grid-template-columns:1fr 1fr}}
+  .tn .ph{aspect-ratio:4/3;border-radius:6px;overflow:hidden;border:6px solid #fff}
+  .tn h2{font-family:"Alegreya",serif;font-weight:800;font-size:clamp(2rem,5vw,2.8rem)}
+  .tn p{color:#d6e5d9;margin-top:10px}
+  /* salles */
+  .rooms{display:grid;gap:18px}
+  @media (min-width:760px){.rooms{grid-template-columns:1fr 1fr}}
+  .room{background:var(--white);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+  .room .ph{aspect-ratio:16/10}
+  .room .b{padding:20px 22px}
+  .room h3{font-family:"Alegreya",serif;font-weight:800;font-size:1.4rem;color:var(--green)}
+  .room p{color:var(--muted)}
+  /* infos */
+  .infos{display:grid;gap:18px}
+  @media (min-width:860px){.infos{grid-template-columns:1fr 1.3fr}}
+  .box{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:26px}
+  .box h3{font-family:"Alegreya",serif;font-weight:800;font-size:1.4rem;color:var(--green);margin-bottom:10px}
+  .box address{font-style:normal;font-size:1.15rem;margin-bottom:14px}
+  .map{aspect-ratio:16/10;border-radius:6px;overflow:hidden;margin-top:14px;background:var(--line)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+  .small{font-size:.88rem;color:var(--muted);margin-top:10px}
+  .final{background:var(--white);text-align:center;border-top:8px solid var(--green)}
+  .final .tel{display:block;font-family:"Alegreya",serif;font-weight:800;font-size:clamp(2.2rem,6vw,3.2rem);color:var(--apple);text-decoration:none;margin:8px 0 18px}
+  .final .btns{justify-content:center}
+  footer{background:var(--green-d);color:#b8cbbd;font-size:.8rem;padding:22px 0 28px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer a{color:#fff}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#"><span class="cross"></span><span><b>La Croix Blanche</b><small>Restaurant · Combres</small></span></a>
+    <nav><a href="#menus">Nos menus</a><a href="#salles">Les salles</a><a href="#infos">Infos</a></nav>
+    <a class="call" href="tel:+33237530065">Réserver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1704212692086-59a7f7662f6c?auto=format&fit=crop&w=1800&q=70" alt="Village et campagne verdoyante">
+  <div class="card">
+    <p class="k">Au cœur du Perche</p>
+    <h1>La bonne table de Combres</h1>
+    <p>Une cuisine traditionnelle faite maison avec des produits frais, un accueil chaleureux et une salle rénovée pour vos repas en famille ou entre amis.</p>
+    <div class="btns"><a class="btn red" href="tel:+33237530065">Réserver une table</a><a class="btn out" href="#menus">Nos menus</a></div>
+    <div class="rating"><span class="st">★★★★★</span><span>4,7 · plus de 400 avis Google</span></div>
+  </div>
+</div>
+
+<section id="menus">
+  <div class="wrap">
+    <div class="ttl"><span class="cross"></span><h2>Nos menus</h2><p>Des menus complets de 15 à 28 €, préparés avec des produits frais.</p></div>
+    <div class="menus">
+      <div class="menu"><h3>Menu du jour</h3><div class="price">≈ 16 €</div><ul><li>Entrée du jour</li><li>Plat du jour</li><li>Dessert maison</li></ul></div>
+      <div class="menu star"><span class="badge">Le plus apprécié</span><h3>Menu terroir</h3><div class="price">≈ 19 €</div><ul><li>Melon &amp; jambon de pays <i>ou</i> chèvre au saumon fumé</li><li>Filet mignon, sauce au camembert</li><li>Fromage normand</li><li>Gâteau au chocolat maison</li></ul></div>
+      <div class="menu"><h3>Menu gourmand</h3><div class="price">≈ 27 €</div><ul><li>Rillettes &amp; entrée du chef</li><li>Saint-Jacques <i>ou</i> veau tendre</li><li>Le trou normand</li><li>Dessert maison</li></ul></div>
+    </div>
+    <p class="note">Menus et prix donnés à titre d'exemple, d'après les avis clients — votre vraie carte sera ajoutée avec vous.</p>
+  </div>
+</section>
+
+<section class="tn">
+  <div class="wrap">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1601055892144-5a86fc4155e2?auto=format&fit=crop&w=1000&q=70" alt="Bouteilles de cidre" loading="lazy"></div>
+    <div>
+      <h2>Le trou normand, une tradition de la maison</h2>
+      <p>Ici, on prend le temps de bien manger. Et pour marquer le coup, le trou normand vient souvent ponctuer le repas, comme dans les grandes tablées d'autrefois.</p>
+      <p>Repas de famille, anniversaires, occasions spéciales : on s'occupe de tout.</p>
+    </div>
+  </div>
+</section>
+
+<section id="salles">
+  <div class="wrap">
+    <div class="ttl"><span class="cross"></span><h2>Nos salles</h2><p>Pour un repas à deux comme pour une grande tablée.</p></div>
+    <div class="rooms">
+      <div class="room"><div class="ph"><img src="https://images.unsplash.com/photo-1756831567129-a7f9e6ecb436?auto=format&fit=crop&w=900&q=70" alt="Salle de restaurant rénovée" loading="lazy"></div><div class="b"><h3>La salle principale</h3><p>Rénovée, au décor soigné et au mobilier confortable.</p></div></div>
+      <div class="room"><div class="ph"><img src="https://images.unsplash.com/photo-1654921834734-c7002b177e35?auto=format&fit=crop&w=900&q=70" alt="Table dressée pour un groupe" loading="lazy"></div><div class="b"><h3>La salle privative</h3><p>À l'arrière du restaurant, idéale pour les repas de famille et les groupes.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="infos" style="padding-top:0">
+  <div class="wrap">
+    <div class="ttl"><span class="cross"></span><h2>Infos pratiques</h2></div>
+    <div class="infos">
+      <div class="box">
+        <h3>Horaires</h3>
+        <p>Service du midi et du soir.</p>
+        <p class="small">Jours et horaires à compléter avec vous. Réservation conseillée, surtout le week-end. Chaises hautes et accès PMR.</p>
+      </div>
+      <div class="box">
+        <h3>Adresse</h3>
+        <address>3 rue Jean Moulin<br>28480 Combres</address>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=La+Croix+Blanche+3+rue+Jean+Moulin+28480+Combres" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=3+rue+Jean+Moulin+28480+Combres&amp;output=embed" title="Carte : La Croix Blanche" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="al" style="font-weight:800;font-size:clamp(2rem,5vw,2.8rem);color:var(--green)">On vous garde une table ?</h2>
+    <a class="tel" href="tel:+33237530065">02 37 53 00 65</a>
+    <div class="btns"><a class="btn red" href="tel:+33237530065">Appeler</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 La Croix Blanche · 3 rue Jean Moulin, 28480 Combres</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Meklay Yotkhamsay, Sidral Mundet, Roshan Lanova, Cody Chan — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
