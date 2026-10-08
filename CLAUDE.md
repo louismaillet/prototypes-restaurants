@@ -9,7 +9,11 @@ Démarcher des restaurants en leur montrant un prototype de site déjà fait à 
 3. **Attendre le "top" de l'utilisateur avant de coder.**
 4. Générer la page dans `site/prototype/<slug-du-restaurant>/index.html` → URL : `<domaine-netlify>/prototype/<slug>/`.
 5. Ne PAS l'ajouter à la vitrine (liens envoyés directement aux prospects).
-6. Mettre à jour ce fichier + renvoyer le zip du dossier `site/` à l'utilisateur.
+6. Mettre à jour ce fichier, commit + push sur GitHub (Netlify redéploie automatiquement une fois relié).
+
+## Dépôt
+- GitHub : https://github.com/louismaillet/prototypes-restaurants (branche `main`, push OK depuis Claude).
+- Netlify : publish directory = `site`.
 
 ## Règles des prototypes
 - Balise `<meta name="robots" content="noindex, nofollow">` sur chaque page.
