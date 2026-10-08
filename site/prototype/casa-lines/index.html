@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>La Casa Line's — Restaurant &amp; pub, place Saint-Pol à Nogent-le-Rotrou</title>
+<meta name="description" content="La Casa Line's, restaurant et pub place Saint-Pol à Nogent-le-Rotrou : cuisine française et italienne maison, pizzas, spécialités, terrasse en plein centre-ville.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fbf6ef; --sand:#f2e4cf; --tomato:#d6452b; --tomato-d:#b33620; --teal:#0f4c4c; --teal-2:#156262;
+    --ink:#1d2424; --muted:#5f6767; --white:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"DM Sans",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  .serif{font-family:"DM Serif Display",Georgia,serif;font-weight:400}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--sand)}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+  .demo{background:var(--teal);color:#cfe3e3;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#fff;font-weight:700}
+
+  /* NAV en pilule flottante */
+  .pill{position:sticky;top:12px;z-index:20;margin:12px auto 0;width:max-content;max-width:calc(100% - 24px);display:flex;align-items:center;gap:4px;background:var(--white);border-radius:999px;padding:6px;box-shadow:0 6px 24px rgba(15,76,76,.14)}
+  .pill .logo{font-family:"DM Serif Display",serif;font-size:1.1rem;padding:6px 14px;color:var(--teal);text-decoration:none;white-space:nowrap}
+  .pill a.lk{font-size:.88rem;font-weight:500;text-decoration:none;padding:8px 12px;border-radius:999px;color:var(--muted)}
+  .pill a.lk:hover{background:var(--sand);color:var(--ink)}
+  .pill .call{background:var(--tomato);color:#fff;font-weight:700;font-size:.88rem;text-decoration:none;padding:9px 16px;border-radius:999px;white-space:nowrap}
+  @media (max-width:720px){.pill a.lk{display:none}}
+
+  /* HERO : texte + arche */
+  .hero .wrap{display:grid;gap:40px;align-items:center;padding-top:50px;padding-bottom:70px}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
+  .chip{display:inline-flex;align-items:center;gap:8px;background:var(--sand);color:var(--teal);font-weight:700;font-size:.8rem;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.8rem,8vw,5.2rem);line-height:1;color:var(--teal)}
+  .hero h1 em{color:var(--tomato);font-style:italic}
+  .hero p.lead{font-size:1.15rem;color:var(--muted);max-width:520px;margin:20px 0 28px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:999px;background:var(--tomato);color:#fff;border:2px solid var(--tomato)}
+  .btn:hover{background:var(--tomato-d);border-color:var(--tomato-d)}
+  .btn.ghost{background:transparent;color:var(--teal);border-color:var(--teal)}
+  .btn.ghost:hover{background:var(--teal);color:#fff}
+  .facts{display:flex;flex-wrap:wrap;gap:22px;margin-top:32px}
+  .facts div b{display:block;font-family:"DM Serif Display",serif;font-size:1.8rem;color:var(--teal);line-height:1}
+  .facts div span{font-size:.85rem;color:var(--muted)}
+  .arch{position:relative;justify-self:center;width:100%;max-width:430px}
+  .arch .frame{aspect-ratio:4/5;border-radius:999px 999px 24px 24px;overflow:hidden;border:8px solid var(--white);box-shadow:0 20px 50px rgba(15,76,76,.2)}
+  .arch .sun{position:absolute;top:-18px;right:-10px;width:110px;height:110px;border-radius:50%;background:var(--tomato);color:#fff;display:grid;place-items:center;text-align:center;font-family:"DM Serif Display",serif;font-size:1.05rem;line-height:1.1;transform:rotate(8deg)}
+  @media (max-width:520px){.arch .sun{right:4px;width:92px;height:92px;font-size:.95rem}}
+
+  /* bande moments */
+  .moments{background:var(--teal);color:#fff}
+  .moments .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0}
+  .moments div{padding:26px 22px;border-right:1px solid rgba(255,255,255,.15)}
+  .moments div:last-child{border-right:0}
+  .moments b{font-family:"DM Serif Display",serif;font-size:1.4rem;font-weight:400;display:block}
+  .moments span{color:#b9d6d6;font-size:.92rem}
+
+  section{padding:84px 0}
+  .head{max-width:620px;margin-bottom:38px}
+  .head .k{color:var(--tomato);font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+  .head h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2.1rem,5vw,3.2rem);line-height:1.05;color:var(--teal);margin:8px 0 10px}
+  .head p{color:var(--muted)}
+
+  /* SPÉCIALITÉS : cartes rondes */
+  .specs{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .spec{background:var(--white);border-radius:24px;padding:14px 14px 22px;box-shadow:0 4px 18px rgba(0,0,0,.05)}
+  .spec .img{aspect-ratio:1/1;border-radius:18px;overflow:hidden;margin-bottom:14px}
+  .spec h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.4rem;padding:0 8px;color:var(--teal)}
+  .spec p{padding:0 8px;color:var(--muted);font-size:.95rem}
+
+  /* CARTE en accordéon (sans JS) */
+  .carte{background:var(--sand)}
+  .acc{max-width:820px}
+  details{background:var(--cream);border-radius:18px;margin-bottom:12px;overflow:hidden}
+  summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:20px 24px;font-family:"DM Serif Display",serif;font-size:1.45rem;color:var(--teal)}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-family:"DM Sans",sans-serif;font-size:1.6rem;color:var(--tomato);transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  .items{padding:0 24px 18px}
+  .it{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #e6d8c2}
+  .it h4{font-weight:700;font-size:1rem}
+  .it p{color:var(--muted);font-size:.9rem}
+  .it .pr{font-weight:700;color:var(--tomato);white-space:nowrap}
+  .house{display:inline-block;background:var(--tomato);color:#fff;font-size:.68rem;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+  .fine{font-size:.88rem;color:var(--muted);margin-top:16px}
+
+  /* TERRASSE : photo pleine largeur + carte */
+  .terrace{position:relative;padding:0;min-height:520px;display:flex;align-items:center}
+  .terrace > img{position:absolute;inset:0}
+  .terrace .box{position:relative;background:var(--white);border-radius:28px;padding:34px 30px;max-width:460px;margin:60px 20px;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+  @media (min-width:900px){.terrace .box{margin-left:max(20px,calc((100vw - 1100px)/2 + 20px))}}
+  .terrace .box h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:2.2rem;color:var(--teal);line-height:1.05;margin:6px 0 12px}
+  .terrace .box p{color:var(--muted);margin-bottom:10px}
+
+  /* AVIS */
+  .rev{display:grid;gap:26px;align-items:center}
+  @media (min-width:900px){.rev{grid-template-columns:.8fr 1.2fr}}
+  .bigscore{background:var(--teal);color:#fff;border-radius:28px;padding:36px;text-align:center}
+  .bigscore .n{font-family:"DM Serif Display",serif;font-size:5rem;line-height:1}
+  .bigscore .st{color:#ffc56b;letter-spacing:3px;font-size:1.2rem}
+  .bigscore p{color:#b9d6d6}
+  .likes{display:grid;gap:14px}
+  .like{display:flex;gap:16px;align-items:flex-start;background:var(--white);border-radius:18px;padding:18px 20px}
+  .like .ic{flex:0 0 44px;height:44px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-size:1.3rem}
+  .like h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.25rem;color:var(--teal)}
+  .like p{color:var(--muted);font-size:.95rem}
+
+  /* INFOS */
+  .infos{background:var(--white)}
+  .grid2{display:grid;gap:22px}
+  @media (min-width:900px){.grid2{grid-template-columns:1fr 1fr}}
+  .panel{background:var(--cream);border-radius:24px;padding:30px}
+  .panel h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.6rem;color:var(--teal);margin-bottom:14px}
+  .hours{list-style:none}
+  .hours li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed #e0d2bb}
+  .hours li:last-child{border:0}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .hours .cl{color:var(--tomato);font-weight:700}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .tags span{background:var(--sand);color:var(--teal);font-size:.8rem;font-weight:500;padding:5px 12px;border-radius:999px}
+  .small{font-size:.85rem;color:var(--muted);margin-top:12px}
+  .panel address{font-style:normal;font-size:1.15rem;margin-bottom:16px}
+  .map{aspect-ratio:16/10;border-radius:18px;overflow:hidden;margin-top:18px;background:var(--sand)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+
+  /* CONTACT */
+  .contact{background:var(--tomato);color:#fff;text-align:center;border-radius:36px 36px 0 0}
+  .contact h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05}
+  .contact p{color:#ffe1da;margin:12px 0 26px}
+  .contact .btns{justify-content:center}
+  .contact .btn{background:#fff;color:var(--tomato);border-color:#fff}
+  .contact .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+
+  footer{background:var(--teal);color:#b9d6d6;font-size:.82rem;padding:28px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between}
+  footer a{color:#fff}
+  footer .credits{width:100%;font-size:.72rem;color:#8fb5b5}
+</style>
+</head>
+<body>
+
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<nav class="pill" aria-label="Navigation">
+  <a class="logo" href="#">Casa Line's</a>
+  <a class="lk" href="#specialites">Spécialités</a>
+  <a class="lk" href="#carte">La carte</a>
+  <a class="lk" href="#terrasse">Terrasse</a>
+  <a class="lk" href="#infos">Infos</a>
+  <a class="call" href="tel:+33237522913">Réserver</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="chip">📍 Place Saint-Pol · Nogent-le-Rotrou</span>
+      <h1 class="serif">Bienvenue à <em>la Casa</em></h1>
+      <p class="lead">Restaurant et pub en plein centre-ville : une cuisine française et italienne faite maison, des pizzas, de belles spécialités et une terrasse au soleil sur la place.</p>
+      <div class="btns">
+        <a class="btn" href="tel:+33237522913">Réserver une table</a>
+        <a class="btn ghost" href="#carte">Voir la carte</a>
+      </div>
+      <div class="facts">
+        <div><b>4,1★</b><span>500+ avis Google</span></div>
+        <div><b>Midi &amp; soir</b><span>du lundi au samedi</span></div>
+        <div><b>Terrasse</b><span>sur la place</span></div>
+      </div>
+    </div>
+    <div class="arch">
+      <div class="frame"><img src="https://images.unsplash.com/photo-1622880833523-7cf1c0bd4296?auto=format&fit=crop&w=1000&q=70" alt="Pizza sur une table en bois"></div>
+      <div class="sun">Fait<br>maison</div>
+    </div>
+  </div>
+</div>
+
+<div class="moments">
+  <div class="wrap">
+    <div><b>Le midi</b><span>Formules, salades &amp; plats du jour</span></div>
+    <div><b>Le soir</b><span>Pizzas, spécialités &amp; dîners entre amis</span></div>
+    <div><b>Côté pub</b><span>Bières, cocktails, vins &amp; cafés</span></div>
+    <div><b>À emporter</b><span>Commandez par téléphone</span></div>
+  </div>
+</div>
+
+<!-- SPÉCIALITÉS -->
+<section id="specialites">
+  <div class="wrap">
+    <div class="head">
+      <span class="k">Nos spécialités</span>
+      <h2>Le meilleur de deux cuisines</h2>
+      <p>Des classiques français généreux et des saveurs italiennes, préparés sur place.</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><div class="img"><img src="https://images.unsplash.com/photo-1617990590988-895fe6cbabda?auto=format&fit=crop&w=700&q=70" alt="Pizza tranchée" loading="lazy"></div><h3>Les pizzas</h3><p>Pâte fine, garnitures généreuses : la valeur sûre de la maison.</p></div>
+      <div class="spec"><div class="img"><img src="https://images.unsplash.com/photo-1724041305855-704dad7d30b4?auto=format&fit=crop&w=700&q=70" alt="Assiette de pâtes" loading="lazy"></div><h3>Les pâtes fraîches</h3><p>Au saumon ou selon l'inspiration du jour.</p></div>
+      <div class="spec"><div class="img"><img src="https://images.unsplash.com/photo-1547146598-0962d0d87c97?auto=format&fit=crop&w=700&q=70" alt="Cocktail au comptoir" loading="lazy"></div><h3>Le coin pub</h3><p>Pour l'apéro, un verre après le travail ou une soirée qui se prolonge.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTE -->
+<section id="carte" class="carte">
+  <div class="wrap">
+    <div class="head">
+      <span class="k">La carte</span>
+      <h2>Qu'est-ce qui vous ferait plaisir ?</h2>
+      <p>Touchez une rubrique pour l'ouvrir.</p>
+    </div>
+    <div class="acc">
+      <details open>
+        <summary>À partager</summary>
+        <div class="items">
+          <div class="it"><div><h4>Camembert rôti <span class="house">Maison</span></h4><p>Au four, servi avec pain grillé et salade</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Bruschetta à l'italienne</h4><p>Tomates, basilic, huile d'olive</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Escargots</h4><p>Beurre persillé à l'ail</p></div><span class="pr">—</span></div>
+        </div>
+      </details>
+      <details>
+        <summary>Spécialités de la maison</summary>
+        <div class="items">
+          <div class="it"><div><h4>Foie gras de canard</h4><p>Préparé maison, chutney et pain de campagne</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Ris de veau aux morilles</h4><p>Sauce crémée aux morilles</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Andouillette</h4><p>Sauce moutarde à l'ancienne</p></div><span class="pr">—</span></div>
+        </div>
+      </details>
+      <details>
+        <summary>Pizzas &amp; pâtes</summary>
+        <div class="items">
+          <div class="it"><div><h4>Margherita</h4><p>Tomate, mozzarella, basilic</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>La Casa</h4><p>La pizza signature de la maison</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Pâtes fraîches au saumon</h4><p>Crème, aneth, citron</p></div><span class="pr">—</span></div>
+        </div>
+      </details>
+      <details>
+        <summary>Burgers &amp; salades</summary>
+        <div class="items">
+          <div class="it"><div><h4>Burger chèvre-miel</h4><p>Chèvre, miel, oignons, frites</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Burger savoyard</h4><p>Reblochon, lardons, frites</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Salade gourmande</h4><p>Fraîche et bien garnie</p></div><span class="pr">—</span></div>
+        </div>
+      </details>
+      <details>
+        <summary>Desserts</summary>
+        <div class="items">
+          <div class="it"><div><h4>Tarte tatin</h4><p>Crème fraîche ou boule de glace</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Tarte au citron meringuée</h4><p>Maison</p></div><span class="pr">—</span></div>
+          <div class="it"><div><h4>Tarte à la noix de coco</h4><p>Maison</p></div><span class="pr">—</span></div>
+        </div>
+      </details>
+      <p class="fine">Carte donnée à titre d'exemple — vos vrais plats et vos prix seront ajoutés avec vous.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TERRASSE -->
+<section id="terrasse" class="terrace">
+  <img src="https://images.unsplash.com/photo-1732459996749-e39500ee6063?auto=format&fit=crop&w=1800&q=70" alt="Terrasse de restaurant avec tables et chaises" loading="lazy">
+  <div class="box">
+    <span class="head"><span class="k">La terrasse</span></span>
+    <h2>Au soleil, sur la place Saint-Pol</h2>
+    <p>Dès les beaux jours, installez-vous en terrasse, en plein cœur de Nogent-le-Rotrou, pour un déjeuner, un apéro ou un dîner en plein air.</p>
+    <p>À l'intérieur, une salle au décor moderne et chaleureux vous accueille toute l'année.</p>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section id="avis">
+  <div class="wrap rev">
+    <div class="bigscore">
+      <div class="n">4,1</div>
+      <div class="st">★★★★☆</div>
+      <p>plus de 500 avis Google</p>
+    </div>
+    <div>
+      <div class="head" style="margin-bottom:22px">
+        <span class="k">Ils en parlent</span>
+        <h2>Ce qu'on aime chez nous</h2>
+      </div>
+      <div class="likes">
+        <div class="like"><span class="ic">🍕</span><div><h3>Fait maison &amp; copieux</h3><p>Des assiettes généreuses et des pizzas qui ont leurs fidèles.</p></div></div>
+        <div class="like"><span class="ic">☀️</span><div><h3>Une terrasse en centre-ville</h3><p>Ensoleillée et très appréciée aux beaux jours.</p></div></div>
+        <div class="like"><span class="ic">💶</span><div><h3>Un bon rapport qualité-prix</h3><p>Pour un repas simple ou une vraie sortie au restaurant.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFOS -->
+<section id="infos" class="infos">
+  <div class="wrap">
+    <div class="head">
+      <span class="k">Infos pratiques</span>
+      <h2>Venir à la Casa</h2>
+    </div>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Lundi – Vendredi</span><span>Midi &amp; soir</span></li>
+          <li><span>Samedi</span><span>Midi &amp; soir</span></li>
+          <li><span>Dimanche</span><span class="cl">Fermé</span></li>
+        </ul>
+        <p class="small">Horaires détaillés à confirmer. Réservation conseillée le soir.</p>
+        <div class="tags"><span>Carte bancaire</span><span>Sans contact</span><span>Titres-restaurant</span><span>À emporter</span><span>Accessible PMR</span><span>Chaises hautes</span><span>Parking gratuit</span></div>
+      </div>
+      <div class="panel">
+        <h3>Adresse</h3>
+        <address>31-33 place Saint-Pol<br>28400 Nogent-le-Rotrou</address>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+Line's+33+place+Saint-Pol+28400+Nogent-le-Rotrou" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=33+place+Saint-Pol+28400+Nogent-le-Rotrou&amp;output=embed" title="Carte : La Casa Line's" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <div class="wrap">
+    <h2>On vous garde une table ?</h2>
+    <p>Réservation et vente à emporter par téléphone.</p>
+    <div class="btns">
+      <a class="btn" href="tel:+33237522913">📞 02 37 52 29 13</a>
+      <a class="btn ghost" href="https://www.instagram.com/la_casa_lines/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn ghost" href="https://www.facebook.com/casalines28/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 La Casa Line's · 31-33 place Saint-Pol, 28400 Nogent-le-Rotrou</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Fabrizio Pullara, Lottie Griffiths, Gina's Auckland, Ralph Darabos, Fabrizio Coco — via Unsplash.</p>
+  </div>
+</footer>
+
+</body>
+</html>
