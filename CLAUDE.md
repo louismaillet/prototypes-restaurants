@@ -40,6 +40,7 @@ prototypes-restaurants/
 - **Hébergement** : Netlify (sites statiques, pas de back-end).
 - **index.html racine** : page vitrine très simple — qui il est, ce qu'il fait (sites pour restaurants), lien vers louismaillet.fr. **Changement (08/10)** : barre « Maquettes : » tout en haut avec un bouton par prototype (demande utilisateur) → ajouter un bouton à chaque nouveau prototype.
 - **Images** : par défaut, placeholder à plat (bloc coloré) avec le texte "Illustration". Version « complète » sur demande : photos libres Unsplash en hotlink (images.unsplash.com, crédits en pied de page, mention « photos d'illustration »). Jamais les photos du restaurant prises sur Google/TripAdvisor.
+- **Identité visuelle** : chaque prototype doit avoir sa PROPRE charte (structure de mise en page, polices, couleurs) — ne pas recycler le même gabarit (demande utilisateur 08/10). Frazé et L'Argoat partagent encore le même gabarit.
 - **Style des prototypes** : SIMPLES et LÉGERS, peu de contenu. Sections limitées : hero, courte présentation, quelques plats/carte, horaires + adresse, contact. Pas de galerie lourde, pas de JS inutile.
 
 ## Restaurants
@@ -61,7 +62,7 @@ prototypes-restaurants/
 - Avis : Google 4,2/5 (325), TripAdvisor 4,0/5 (143). Portions généreuses, prix doux, accueil familial, bonbons d'enfance offerts en fin de repas (roudoudous, violettes). Pas de carte avec prix en ligne.
 
 ### Les Tontons Fines Gueules — slug `les-tontons-fines-gueules` — FAIT (2026-10-08)
-- URL : `/prototype/les-tontons-fines-gueules/`. Version COMPLÈTE : style bistrot rétro (noir/crème/moutarde/rouge), hero « Ici, on cause, on mange & on trinque », journée matin/midi/soir, ardoise 4 blocs (menu du jour, plats bistrot, apéro, desserts/comptoir) sans prix, section maison, avis (FB 4,8 / Google 4,7), galerie Unsplash, horaires « à confirmer », Google Maps, tél + Facebook. Bouton ajouté sur l'accueil.
+- URL : `/prototype/les-tontons-fines-gueules/`. Version COMPLÈTE, charte UNIQUE (demande utilisateur : chaque site doit avoir sa propre identité) : style affiche/néo-brutaliste jaune moutarde + noir + bordeaux, polices Google Anton / Courier Prime / Work Sans, hero affiche typographique + tampon 4,8★, bandeau défilant CSS, journée 01-02-03, carte imprimée à pointillés, ticket de caisse pour horaires, bande photos à glisser, section maison, avis (FB 4,8 / Google 4,7), galerie Unsplash, horaires « à confirmer », Google Maps, tél + Facebook. Bouton ajouté sur l'accueil.
 - Société J.F.B. (SAS), créée le 24/03/2025, NAF 5630Z débit de boissons. Paiement : CB, titres-restaurant, espèces.
 - Horaires contradictoires : kazfeed mar–jeu 7h–16h30, ven–sam 7h–21h30 ; Mappy/PagesJaunes mar–jeu 9h30–19h, ven–sam 9h30–21h30 ; fermé dim + lun.
 - 51 rue Jean Moulin, 28290 Chapelle-Royale (Perche, Eure-et-Loir). Tél 02 18 00 63 44. Facebook : facebook.com/LesTontonsFinesGueules (seule présence en ligne, pas de site).
