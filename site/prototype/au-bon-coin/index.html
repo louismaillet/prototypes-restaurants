@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Au Bon Coin — Bistrot &amp; bar à vin à Authon-du-Perche</title>
+<meta name="description" content="Au Bon Coin, bistrot et bar à vin à Authon-du-Perche : viande française, frites, salades et desserts maison, produits locaux, formule du midi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Karla:wght@400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--kraft:#d9c2a0;--kraft-l:#ecdcc3;--bord:#6e1423;--bord-d:#4b0d18;--ink:#2a1d14;--cream:#fbf5ea;--chalk:#2c302e;--muted:#6e5a47}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Karla",system-ui,sans-serif;background:var(--kraft-l);color:var(--ink);line-height:1.6;background-image:radial-gradient(rgba(110,80,40,.12) 1px,transparent 1.2px);background-size:5px 5px}
+  .hand{font-family:"Caveat",cursive;font-weight:700}
+  .pf{font-family:"Playfair Display",Georgia,serif}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--kraft)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--bord-d);color:#f0d9d0;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#fff;font-weight:700}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
+  header .logo{font-size:2rem;text-decoration:none;color:var(--bord)}
+  header nav{display:flex;gap:20px;font-weight:600}
+  header nav a{text-decoration:none}
+  @media (max-width:700px){header nav{display:none}}
+  .call{background:var(--bord);color:#fff;text-decoration:none;font-weight:800;padding:9px 16px;border-radius:999px}
+  /* HERO étiquette de vin */
+  .hero{padding:20px 0 60px}
+  .label{max-width:620px;margin:0 auto;background:var(--cream);border:2px solid var(--ink);outline:6px solid var(--cream);outline-offset:-14px;padding:46px 32px;text-align:center;position:relative;box-shadow:0 22px 40px rgba(42,29,20,.18)}
+  .label .yr{letter-spacing:.4em;font-size:.8rem;font-weight:800;color:var(--muted)}
+  .label h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(2.8rem,10vw,5rem);line-height:1;color:var(--bord);margin:14px 0 8px}
+  .label .sub{font-family:"Caveat",cursive;font-size:1.7rem;color:var(--ink)}
+  .label .rule{width:120px;height:2px;background:var(--ink);margin:16px auto}
+  .label p{color:var(--muted);max-width:420px;margin:0 auto 22px}
+  .label .seal{position:absolute;top:-28px;right:-14px;width:96px;height:96px;border-radius:50%;background:var(--bord);color:#fff;display:grid;place-items:center;text-align:center;font-weight:800;line-height:1.05;font-size:.82rem;transform:rotate(12deg);box-shadow:0 0 0 4px var(--cream),0 0 0 6px var(--bord)}
+  .label .seal b{font-size:1.5rem;display:block}
+  @media (max-width:520px){.label .seal{right:6px;width:80px;height:80px}}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;padding:13px 22px;border-radius:999px;background:var(--bord);color:#fff;border:2px solid var(--bord)}
+  .btn.out{background:transparent;color:var(--bord)}
+  section{padding:66px 0}
+  h2{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(2rem,5.5vw,3rem);color:var(--bord);line-height:1.05}
+  .hand-note{font-family:"Caveat",cursive;font-size:1.5rem;color:var(--muted)}
+  /* ardoise formule */
+  .slate-wrap{display:grid;gap:26px;align-items:center}
+  @media (min-width:860px){.slate-wrap{grid-template-columns:1fr 1fr}}
+  .slate{background:var(--chalk);color:#f4f1ea;border:12px solid #7a5534;border-radius:8px;padding:28px 24px;box-shadow:inset 0 0 40px rgba(0,0,0,.4)}
+  .slate h3{font-family:"Caveat",cursive;font-size:2.4rem;text-align:center;line-height:1}
+  .slate .pr{text-align:center;font-family:"Caveat",cursive;font-size:2.8rem;color:#ffe08a;margin:4px 0 10px}
+  .slate ul{list-style:none;font-family:"Caveat",cursive;font-size:1.6rem;line-height:1.3}
+  .slate li{padding:4px 0;border-bottom:1px dashed rgba(255,255,255,.2)}
+  .slate li:last-child{border:0}
+  .slate small{display:block;text-align:center;font-family:"Karla",sans-serif;font-size:.8rem;color:#c9cbc6;margin-top:12px}
+  /* carte des vins / plats en liste d'étiquettes */
+  .tags{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:26px}
+  .tag{background:var(--cream);border:2px solid var(--ink);border-radius:6px;padding:18px;position:relative}
+  .tag::before{content:"";position:absolute;top:14px;left:-9px;width:16px;height:16px;border-radius:50%;background:var(--kraft-l);border:2px solid var(--ink)}
+  .tag h3{font-family:"Playfair Display",serif;font-size:1.25rem;color:var(--bord)}
+  .tag p{color:var(--muted);font-size:.95rem}
+  .note{font-size:.85rem;color:var(--muted);margin-top:16px;font-style:italic}
+  .photos{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+  .photos .ph{aspect-ratio:1/1;border:6px solid var(--cream);box-shadow:0 10px 24px rgba(42,29,20,.18)}
+  .photos .ph:nth-child(1){transform:rotate(-2deg)}
+  .photos .ph:nth-child(2){transform:rotate(2deg)}
+  /* infos */
+  .infos{display:grid;gap:18px}
+  @media (min-width:800px){.infos{grid-template-columns:1fr 1.3fr}}
+  .card{background:var(--cream);border:2px solid var(--ink);padding:24px}
+  .card h3{font-family:"Playfair Display",serif;font-size:1.4rem;color:var(--bord);margin-bottom:8px}
+  .card address{font-style:normal;font-size:1.1rem;margin-bottom:14px}
+  .map{aspect-ratio:16/10;border:2px solid var(--ink);margin-top:14px;background:var(--kraft)}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:sepia(.25)}
+  .small{font-size:.85rem;color:var(--muted);margin-top:8px}
+  .final{background:var(--bord);color:#fff;text-align:center}
+  .final h2{color:#fff}
+  .final .tel{display:block;font-family:"Caveat",cursive;font-size:clamp(2.6rem,9vw,4rem);text-decoration:none;margin:6px 0 18px}
+  .final .btns .btn{background:#fff;color:var(--bord);border-color:#fff}
+  .final .btns .btn.out{background:transparent;color:#fff}
+  footer{font-size:.8rem;color:var(--muted);padding:20px 0 28px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo hand" href="#">Au Bon Coin</a>
+    <nav><a href="#formule">La formule</a><a href="#carte">La carte</a><a href="#infos">Infos</a></nav>
+    <a class="call" href="tel:+33237490219">Réserver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="label">
+      <span class="yr">BISTROT · BAR À VIN · AUTHON-DU-PERCHE</span>
+      <h1>Au Bon Coin</h1>
+      <p class="sub">viande française &amp; produits du coin</p>
+      <div class="rule"></div>
+      <p>Une bonne viande, des frites maison, un verre de vin et l'ambiance d'un vrai bistrot de village, au cœur du Perche.</p>
+      <div class="btns"><a class="btn" href="tel:+33237490219">Réserver une table</a><a class="btn out" href="#formule">La formule du jour</a></div>
+      <div class="seal"><span><b>4,5★</b>150 avis<br>Google</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="formule" style="background:rgba(251,245,234,.6)">
+  <div class="wrap slate-wrap">
+    <div>
+      <h2>La formule du midi</h2>
+      <p class="hand-note">simple, généreuse, et toujours un verre de vin pour l'accompagner</p>
+      <p style="margin-top:12px;color:var(--muted)">Le midi, on vient pour une formule complète à petit prix : une entrée, un plat au choix parmi deux, un dessert maison et le vin. Ce qu'il faut pour bien repartir.</p>
+    </div>
+    <div class="slate">
+      <h3>Formule du jour</h3>
+      <div class="pr">≈ 12 €</div>
+      <ul>
+        <li>Entrée du jour</li>
+        <li>Plat au choix (2 propositions)</li>
+        <li>Dessert maison</li>
+        <li>Le vin compris</li>
+      </ul>
+      <small>Composition et prix à confirmer avec vous.</small>
+    </div>
+  </div>
+</section>
+
+<section id="carte">
+  <div class="wrap">
+    <h2>À la carte</h2>
+    <p class="hand-note">viandes françaises, produits locaux, tout fait ici</p>
+    <div class="tags">
+      <div class="tag"><h3>La pièce du boucher</h3><p>Viande française, sauce au choix, frites maison.</p></div>
+      <div class="tag"><h3>Le burger du Bon Coin</h3><p>Bœuf français, fromage du coin, frites.</p></div>
+      <div class="tag"><h3>Les salades</h3><p>Grandes salades composées, fraîches et copieuses.</p></div>
+      <div class="tag"><h3>Les desserts maison</h3><p>Tarte, mousse ou crème : selon l'humeur du chef.</p></div>
+      <div class="tag"><h3>Planche à partager</h3><p>Charcuterie et fromages, pour l'apéro.</p></div>
+      <div class="tag"><h3>Le bar à vin</h3><p>Vins au verre ou en bouteille, bières et apéritifs.</p></div>
+    </div>
+    <p class="note">Carte donnée à titre d'exemple — vos vrais plats et vos prix seront ajoutés avec vous.</p>
+    <div class="photos" style="margin-top:30px">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1572107833705-3f47f5462d1e?auto=format&fit=crop&w=700&q=70" alt="Viande et verre de vin" loading="lazy"></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1753797981887-822b6e86d02d?auto=format&fit=crop&w=700&q=70" alt="Planche de charcuterie et vin" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section id="infos" style="background:rgba(251,245,234,.6)">
+  <div class="wrap">
+    <h2>Infos pratiques</h2>
+    <p class="hand-note" style="margin-bottom:22px">au centre du bourg, on vous attend</p>
+    <div class="infos">
+      <div class="card">
+        <h3>Horaires</h3>
+        <p>Horaires à compléter avec vous.</p>
+        <p class="small">Réservation conseillée le midi.</p>
+      </div>
+      <div class="card">
+        <h3>Adresse</h3>
+        <address>32 rue du Sous-Lieutenant Germond<br>28330 Authon-du-Perche</address>
+        <a class="btn out" href="https://www.google.com/maps/search/?api=1&amp;query=Au+Bon+Coin+32+rue+du+Sous-Lieutenant+Germond+28330+Authon-du-Perche" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=32+rue+du+Sous-Lieutenant+Germond+28330+Authon-du-Perche&amp;output=embed" title="Carte : Au Bon Coin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Une table pour midi ?</h2>
+    <a class="tel" href="tel:+33237490219">02 37 49 02 19</a>
+    <div class="btns"><a class="btn" href="tel:+33237490219">Appeler</a><a class="btn out" href="https://www.facebook.com/AuBonCoinRestaurant" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Au Bon Coin · 32 rue du Sous-Lieutenant Germond, 28330 Authon-du-Perche</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Arielle Allouche, Chez Gilbert Saigon — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
