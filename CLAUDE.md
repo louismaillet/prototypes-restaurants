@@ -13,7 +13,7 @@ Démarcher des restaurants en leur montrant un prototype de site déjà fait à 
 
 ## Dépôt
 - GitHub : https://github.com/louismaillet/prototypes-restaurants (branche `main`, push OK depuis Claude).
-- Netlify : publish directory = `site`.
+- Netlify : publish directory = `site`. Domaine : https://prototype-web-site.netlify.app (prototypes : https://prototype-web-site.netlify.app/prototype/<slug>/).
 
 ## Règles des prototypes
 - Balise `<meta name="robots" content="noindex, nofollow">` sur chaque page.
