@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sushi'Lys — Sushis &amp; cuisine asiatique à Châteaudun</title>
+<meta name="description" content="Sushi'Lys, rue Gambetta à Châteaudun : sushis, makis, poké bowls, bo bun et nouilles sautées, sur place ou à emporter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--washi:#f7f3ec;--sumi:#1a1a1a;--grey:#6f6a63;--sakura:#e8a0b4;--sakura-d:#c96a86;--line:#e3dccf;--white:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Zen Kaku Gothic New",system-ui,sans-serif;background:var(--washi);color:var(--sumi);line-height:1.7}
+  .min{font-family:"Shippori Mincho",Georgia,serif;font-weight:700}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--line)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .demo{background:var(--sumi);color:#ccc;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--sakura);font-weight:700}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:66px}
+  .logo{text-decoration:none;font-size:1.3rem;letter-spacing:.06em}
+  .logo span{color:var(--sakura-d)}
+  header nav{display:flex;gap:26px;font-size:.88rem;letter-spacing:.08em}
+  header nav a{text-decoration:none;color:var(--grey)}
+  @media (max-width:720px){header nav{display:none}}
+  .call{border:1px solid var(--sumi);text-decoration:none;font-size:.88rem;padding:8px 16px}
+  .call:hover{background:var(--sumi);color:var(--washi)}
+  /* HERO : titre vertical + photo + cercle */
+  .hero .wrap{display:grid;gap:26px;padding-top:30px;padding-bottom:60px;align-items:center}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:auto 1fr 1fr}}
+  .vert{writing-mode:vertical-rl;font-family:"Shippori Mincho",serif;font-weight:700;font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.05;letter-spacing:.06em;justify-self:center}
+  .vert span{color:var(--sakura-d)}
+  @media (max-width:899px){.vert{writing-mode:horizontal-tb;justify-self:start}}
+  .hero .ph{aspect-ratio:3/4;position:relative}
+  .hero .ph::before{content:"";position:absolute;width:62%;aspect-ratio:1;border-radius:50%;background:var(--sakura);opacity:.55;top:-20px;right:-20px;z-index:-1}
+  .hero .txt p{color:var(--grey);font-size:1.05rem;margin-bottom:22px}
+  .hero .txt .k{font-size:.8rem;letter-spacing:.24em;color:var(--sakura-d);margin-bottom:10px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:500;padding:13px 24px;background:var(--sumi);color:var(--washi);border:1px solid var(--sumi)}
+  .btn.out{background:transparent;color:var(--sumi)}
+  .score{display:flex;gap:16px;align-items:center;margin-top:26px;border-top:1px solid var(--line);padding-top:18px}
+  .score b{font-family:"Shippori Mincho",serif;font-size:2.6rem;line-height:1}
+  .score span{font-size:.9rem;color:var(--grey)}
+  /* séparateur pinceau */
+  .brush{height:6px;background:linear-gradient(90deg,transparent,var(--sumi) 8%,var(--sumi) 70%,transparent);opacity:.85;border-radius:6px;margin:0 auto;max-width:420px}
+  section{padding:76px 0}
+  .ttl{margin-bottom:34px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .ttl .jp{font-family:"Shippori Mincho",serif;font-size:.95rem;color:var(--sakura-d);letter-spacing:.3em}
+  .ttl h2{font-family:"Shippori Mincho",serif;font-size:clamp(2rem,5vw,3rem)}
+  /* bento */
+  .bento{display:grid;gap:12px;grid-template-columns:1fr}
+  @media (min-width:760px){.bento{grid-template-columns:repeat(4,1fr);grid-auto-rows:190px}.b1{grid-column:span 2;grid-row:span 2}.b4{grid-column:span 2}}
+  .cell{position:relative;background:var(--white);border:1px solid var(--line);overflow:hidden;min-height:170px}
+  .cell img{position:absolute;inset:0}
+  .cell .lab{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,rgba(26,26,26,.85));color:#fff;padding:30px 16px 14px}
+  .cell .lab h3{font-family:"Shippori Mincho",serif;font-size:1.3rem}
+  .cell .lab p{font-size:.85rem;opacity:.9}
+  .cell.text{padding:20px;display:flex;flex-direction:column;justify-content:center}
+  .cell.text h3{font-family:"Shippori Mincho",serif;font-size:1.3rem}
+  .cell.text p{color:var(--grey);font-size:.92rem}
+  .cell.pink{background:var(--sakura);border-color:var(--sakura)}
+  .cell.pink p{color:var(--sumi)}
+  /* carte */
+  .menu{display:grid;gap:0;grid-template-columns:1fr;border-top:1px solid var(--sumi)}
+  @media (min-width:760px){.menu{grid-template-columns:1fr 1fr}}
+  .menu .it{display:flex;justify-content:space-between;gap:14px;padding:16px 4px;border-bottom:1px solid var(--line)}
+  @media (min-width:760px){.menu .it:nth-child(odd){border-right:1px solid var(--line);padding-right:20px}.menu .it:nth-child(even){padding-left:20px}}
+  .menu h4{font-weight:700}
+  .menu p{color:var(--grey);font-size:.9rem}
+  .menu .pr{font-family:"Shippori Mincho",serif;color:var(--sakura-d)}
+  .note{color:var(--grey);font-size:.85rem;margin-top:16px}
+  /* infos */
+  .infos{display:grid;gap:30px}
+  @media (min-width:860px){.infos{grid-template-columns:1fr 1.3fr}}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .hours span:last-child{color:var(--grey);text-align:right}
+  .off{color:var(--sakura-d)!important}
+  address{font-style:normal;font-family:"Shippori Mincho",serif;font-size:1.6rem;line-height:1.3;margin-bottom:16px}
+  .map{aspect-ratio:16/10;border:1px solid var(--line);background:var(--line);margin-top:16px}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.7)}
+  .small{color:var(--grey);font-size:.85rem;margin-top:10px}
+  .final{background:var(--sumi);color:var(--washi);text-align:center}
+  .final .tel{display:block;font-family:"Shippori Mincho",serif;font-size:clamp(2rem,7vw,3.4rem);text-decoration:none;margin:8px 0 22px;color:#fff}
+  .final .btns{justify-content:center}
+  .final .btn{background:var(--sakura);color:var(--sumi);border-color:var(--sakura)}
+  .final .btn.out{background:transparent;color:#fff;border-color:#fff}
+  footer{font-size:.8rem;color:var(--grey);padding:22px 0 30px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo min" href="#">Sushi<span>'</span>Lys</a>
+    <nav><a href="#bento">Nos plats</a><a href="#carte">Carte</a><a href="#infos">Infos</a></nav>
+    <a class="call" href="tel:+33218462193">Réserver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1 class="vert">Sushi<span>'</span>Lys</h1>
+    <div class="ph"><img src="https://images.unsplash.com/photo-1593614201641-6f16f8e41a4e?auto=format&fit=crop&w=900&q=70" alt="Assiette de sushis"></div>
+    <div class="txt">
+      <p class="k">SUSHIS · CUISINE ASIATIQUE · CHÂTEAUDUN</p>
+      <p>Des sushis préparés avec soin, des poké bowls frais, du bo bun et des nouilles sautées : à savourer sur place, sans se presser, ou à emporter.</p>
+      <div class="btns"><a class="btn" href="tel:+33218462193">Commander</a><a class="btn out" href="#carte">Voir la carte</a></div>
+      <div class="score"><b>4,8</b><span>sur Google<br>plus de 160 avis</span></div>
+    </div>
+  </div>
+</div>
+<div class="brush"></div>
+
+<section id="bento">
+  <div class="wrap">
+    <div class="ttl"><span class="jp">料理</span><h2>Nos plats</h2></div>
+    <div class="bento">
+      <div class="cell b1"><img src="https://images.unsplash.com/photo-1564489563601-c53cfc451e93?auto=format&fit=crop&w=1000&q=70" alt="Plateau de sushis" loading="lazy"><div class="lab"><h3>Sushis &amp; makis</h3><p>California saumon-avocat, makis, nigiris</p></div></div>
+      <div class="cell text pink"><h3>Fait avec soin</h3><p>Des produits frais, découpés et roulés à la commande.</p></div>
+      <div class="cell"><img src="https://images.unsplash.com/photo-1758779527927-56c21385ffce?auto=format&fit=crop&w=600&q=70" alt="Rouleaux de sushi et gingembre" loading="lazy"><div class="lab"><h3>Rolls</h3></div></div>
+      <div class="cell b4"><img src="https://images.unsplash.com/photo-1705088295609-3ce7befbe8ee?auto=format&fit=crop&w=900&q=70" alt="Nouilles sautées" loading="lazy"><div class="lab"><h3>Bo bun &amp; nouilles sautées</h3><p>Au bœuf ou au poulet</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="carte" style="background:#fff">
+  <div class="wrap">
+    <div class="ttl"><span class="jp">献立</span><h2>La carte</h2></div>
+    <div class="menu">
+      <div class="it"><div><h4>California saumon-avocat</h4><p>8 pièces</p></div><span class="pr">—</span></div>
+      <div class="it"><div><h4>Assortiment de sushis</h4><p>Saumon, thon, crevette</p></div><span class="pr">—</span></div>
+      <div class="it"><div><h4>Poké bowl saumon</h4><p>Riz, saumon, menthe, coriandre</p></div><span class="pr">—</span></div>
+      <div class="it"><div><h4>Bo bun bœuf</h4><p>Vermicelles, crudités, nems</p></div><span class="pr">—</span></div>
+      <div class="it"><div><h4>Nouilles sautées</h4><p>Bœuf ou poulet</p></div><span class="pr">—</span></div>
+      <div class="it"><div><h4>Gyozas</h4><p>Raviolis grillés</p></div><span class="pr">—</span></div>
+      <div class="it"><div><h4>Tiramisu maison</h4><p>La douceur de la maison</p></div><span class="pr">—</span></div>
+      <div class="it"><div><h4>Formules du midi</h4><p>Plat + boisson ou dessert</p></div><span class="pr">—</span></div>
+    </div>
+    <p class="note">Carte donnée à titre d'exemple (plats entre 10 et 20 € environ) — vos vrais plats et vos prix seront ajoutés avec vous.</p>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <div class="ttl"><span class="jp">案内</span><h2>Horaires &amp; accès</h2></div>
+    <div class="infos">
+      <div>
+        <ul class="hours">
+          <li><span>Mardi</span><span>12h – 14h · 18h30 – 22h</span></li>
+          <li><span>Mercredi – Samedi</span><span>11h30 – 14h · 18h30 – 22h</span></li>
+          <li><span>Dimanche – Lundi</span><span class="off">Fermé</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer. Sur place, à emporter, parking gratuit, accessible PMR.</p>
+      </div>
+      <div>
+        <address>7 rue Gambetta<br>28200 Châteaudun</address>
+        <a class="btn out" href="https://www.google.com/maps/search/?api=1&amp;query=Sushi'Lys+7+rue+Gambetta+28200+Ch%C3%A2teaudun" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=7+rue+Gambetta+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Sushi'Lys" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <p class="min" style="letter-spacing:.3em;color:var(--sakura)">ご予約</p>
+    <a class="tel" href="tel:+33218462193">02 18 46 21 93</a>
+    <div class="btns"><a class="btn" href="tel:+33218462193">Appeler</a><a class="btn out" href="https://www.instagram.com/sushi_lys" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sushi'Lys · 7 rue Gambetta, 28200 Châteaudun</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Ron Sinda, Niclas Illg, Yosuke Ota, Gourmet Lenz — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
