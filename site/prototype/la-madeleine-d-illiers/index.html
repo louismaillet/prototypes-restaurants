@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>La Madeleine d'Illiers — Restaurant à Illiers-Combray</title>
+<meta name="description" content="La Madeleine d'Illiers, restaurant familial place de l'Église à Illiers-Combray, la ville de Marcel Proust : cuisine maison, menus de la semaine, salle et petite terrasse face à l'église.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#fbf6ec;--paper-2:#f2e8d5;--ink:#2d3a63;--ink-d:#1f2847;--gold:#d9a55b;--gold-d:#b5823a;--text:#2b2a2a;--muted:#6f6a60;--line:#e4d9c3}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"EB Garamond",Georgia,serif;font-size:1.18rem;background:var(--paper);color:var(--text);line-height:1.65}
+  .sans{font-family:"Jost",system-ui,sans-serif}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--paper-2)}
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  .demo{background:var(--ink-d);color:#cdd3e6;font-family:"Jost",sans-serif;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--gold);font-weight:600}
+  /* marque-page vertical */
+  .ribbon{position:fixed;top:0;right:28px;z-index:20;width:34px;height:120px;background:var(--gold);clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%)}
+  @media (max-width:640px){.ribbon{right:12px;width:24px;height:80px}}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+  .logo{text-decoration:none;font-size:1.35rem;font-style:italic;color:var(--ink)}
+  header nav{display:flex;gap:22px;font-family:"Jost",sans-serif;font-size:.88rem;letter-spacing:.06em}
+  header nav a{text-decoration:none;color:var(--muted)}
+  header nav a:hover{color:var(--ink)}
+  @media (max-width:760px){header nav{display:none}}
+  .call{font-family:"Jost",sans-serif;font-weight:600;font-size:.9rem;background:var(--ink);color:#fff;text-decoration:none;padding:9px 16px;border-radius:4px;margin-right:46px}
+  @media (max-width:640px){.call{margin-right:30px}}
+  /* page de titre */
+  .title-page{text-align:center;padding:64px 0 40px}
+  .title-page .vol{font-family:"Jost",sans-serif;font-size:.78rem;letter-spacing:.3em;color:var(--gold-d)}
+  .title-page h1{font-weight:400;font-size:clamp(2.8rem,9vw,5.4rem);line-height:1;color:var(--ink);margin:18px 0 10px}
+  .title-page h1 i{color:var(--gold-d)}
+  .title-page .sub{font-style:italic;color:var(--muted);font-size:1.3rem}
+  .rule{width:80px;height:1px;background:var(--ink);margin:24px auto}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .btn{display:inline-block;font-family:"Jost",sans-serif;font-weight:600;font-size:.95rem;text-decoration:none;padding:13px 22px;border-radius:4px;background:var(--gold);color:var(--ink-d)}
+  .btn.ink{background:var(--ink);color:#fff}
+  .btn.out{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+  .frontispice{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1.4fr 1fr;gap:12px}
+  .frontispice div{border:1px solid var(--line);padding:8px;background:#fff}
+  .frontispice div div{border:0;padding:0;aspect-ratio:4/5}
+  .frontispice .cap{font-style:italic;font-size:.95rem;color:var(--muted);text-align:center;margin-top:6px}
+  /* chapitres façon livre */
+  section{padding:70px 0;border-top:1px solid var(--line)}
+  .page{max-width:680px;margin:0 auto;position:relative}
+  .page .pn{position:absolute;right:0;top:-38px;font-family:"Jost",sans-serif;font-size:.78rem;color:var(--gold-d);letter-spacing:.2em}
+  .page h2{font-weight:400;font-size:clamp(2rem,5vw,2.8rem);color:var(--ink);line-height:1.1;margin-bottom:18px}
+  .page h2 i{color:var(--gold-d)}
+  .page p{margin-bottom:14px;text-align:justify;hyphens:auto}
+  .dropcap::first-letter{float:left;font-size:4.2rem;line-height:.85;padding:6px 10px 0 0;color:var(--gold-d)}
+  .aside{border-left:3px solid var(--gold);padding:10px 16px;background:var(--paper-2);font-style:italic;color:var(--muted);margin:22px 0}
+  /* menu de la semaine */
+  .menucard{max-width:680px;margin:0 auto;background:#fff;border:1px solid var(--line);box-shadow:8px 8px 0 var(--paper-2);padding:36px 30px}
+  .menucard h3{text-align:center;font-weight:400;font-size:1.9rem;color:var(--ink)}
+  .menucard .when{text-align:center;font-style:italic;color:var(--muted);margin-bottom:18px}
+  .course{text-align:center;padding:14px 0;border-top:1px dotted var(--line)}
+  .course .lab{font-family:"Jost",sans-serif;font-size:.72rem;letter-spacing:.24em;color:var(--gold-d)}
+  .course p{font-size:1.2rem}
+  .course p i{color:var(--muted)}
+  .prices{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:18px}
+  .prices span{font-family:"Jost",sans-serif;font-weight:600;border:1px solid var(--ink);border-radius:999px;padding:6px 14px;font-size:.92rem}
+  .note{text-align:center;font-style:italic;color:var(--muted);font-size:1rem;margin-top:16px}
+  /* infos */
+  .infos{display:grid;gap:24px;max-width:860px;margin:0 auto}
+  @media (min-width:760px){.infos{grid-template-columns:1fr 1.2fr}}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dotted var(--line)}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .off{color:var(--gold-d)!important;font-style:italic}
+  address{font-style:italic;font-size:1.5rem;color:var(--ink);margin:6px 0 14px}
+  .map{aspect-ratio:16/10;border:1px solid var(--line);padding:6px;background:#fff}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:sepia(.3)}
+  .small{font-size:.98rem;color:var(--muted);font-style:italic;margin-top:10px}
+  .final{text-align:center;background:var(--ink);color:#fff;border:0}
+  .final h2{font-weight:400;font-size:clamp(2rem,5vw,2.8rem)}
+  .final h2 i{color:var(--gold)}
+  .final .tel{display:block;font-family:"Jost",sans-serif;font-weight:500;font-size:clamp(1.8rem,6vw,2.6rem);color:var(--gold);text-decoration:none;margin:8px 0 20px}
+  footer{font-family:"Jost",sans-serif;font-size:.8rem;color:var(--muted);padding:22px 0 30px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<div class="ribbon" aria-hidden="true"></div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">La Madeleine d'Illiers</a>
+    <nav><a href="#maison">La maison</a><a href="#menu">Le menu</a><a href="#infos">Infos</a></nav>
+    <a class="call" href="tel:+33953338306">Réserver</a>
+  </div>
+</header>
+
+<div class="title-page">
+  <div class="wrap">
+    <p class="vol">ILLIERS-COMBRAY · PLACE DE L'ÉGLISE</p>
+    <h1>La Madeleine <i>d'Illiers</i></h1>
+    <p class="sub">Longtemps, on s'est régalé de bonne heure…</p>
+    <div class="rule"></div>
+    <div class="btns"><a class="btn ink" href="tel:+33953338306">Réserver une table</a><a class="btn out" href="#menu">Le menu de la semaine</a></div>
+    <div class="frontispice">
+      <div><div><img src="https://images.unsplash.com/photo-1654921834734-c7002b177e35?auto=format&fit=crop&w=900&q=70" alt="Table dressée"></div><p class="cap">La salle, face à l'église</p></div>
+      <div><div><img src="https://images.unsplash.com/photo-1518090808004-0c6fbb2fa893?auto=format&fit=crop&w=700&q=70" alt="Madeleines"></div><p class="cap">La madeleine, bien sûr</p></div>
+    </div>
+  </div>
+</div>
+
+<section id="maison">
+  <div class="wrap">
+    <div class="page">
+      <span class="pn">— I —</span>
+      <h2>Une table familiale, <i>au pays de Proust</i></h2>
+      <p class="dropcap">Au cœur d'Illiers-Combray, la ville qui a inspiré le Combray de Marcel Proust, La Madeleine d'Illiers vous accueille face à l'église, dans une salle aux murs ornés d'œuvres inspirées de l'écrivain.</p>
+      <p>On y vient pour une cuisine simple et faite maison, qui change au fil de la semaine, et pour l'accueil chaleureux d'une maison familiale. Aux beaux jours, la petite terrasse offre une jolie vue sur l'église.</p>
+      <p class="aside">Groupes jusqu'à une vingtaine de personnes : pensez à réserver.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="menucard">
+      <h3>Le menu de la semaine</h3>
+      <p class="when">composé chaque semaine, selon le marché</p>
+      <div class="course"><p class="lab">ENTRÉE</p><p>Salade périgourdine <i>ou</i> tatin d'endives</p></div>
+      <div class="course"><p class="lab">PLAT</p><p>Joue de porc confite <i>ou</i> pavé de saumon, sauce safranée</p></div>
+      <div class="course"><p class="lab">DESSERT</p><p>Île flottante <i>ou</i> tarte aux pommes <i>ou</i> café gourmand</p></div>
+      <div class="prices"><span>Menus de 17 € à 28 € environ</span><span>Option végétarienne</span></div>
+      <p class="note">Plats et prix donnés à titre d'exemple, d'après les avis clients — à confirmer avec vous.</p>
+    </div>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <div class="page" style="max-width:860px"><span class="pn">— II —</span><h2>Nous rendre <i>visite</i></h2></div>
+    <div class="infos">
+      <div>
+        <ul class="hours">
+          <li><span>Lundi</span><span class="off">fermé</span></li>
+          <li><span>Mardi – Samedi</span><span>12h – 14h · 19h – 21h</span></li>
+          <li><span>Dimanche</span><span>12h – 14h</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer.</p>
+        <address>13 place de l'Église<br>28120 Illiers-Combray</address>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=La+Madeleine+d'Illiers+13+place+de+l'%C3%89glise+28120+Illiers-Combray" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+      <div class="map"><iframe src="https://www.google.com/maps?q=13+place+de+l'%C3%89glise+28120+Illiers-Combray&amp;output=embed" title="Carte : La Madeleine d'Illiers" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>À la recherche <i>d'une bonne table</i> ?</h2>
+    <a class="tel" href="tel:+33953338306">09 53 33 83 06</a>
+    <div class="btns"><a class="btn" href="tel:+33953338306">Réserver</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 La Madeleine d'Illiers · 13 place de l'Église, 28120 Illiers-Combray</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Cody Chan, Jordane Mathieu — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
