@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pamukkale — Restaurant turc à Châteaudun</title>
+<meta name="description" content="Pamukkale, restaurant turc boulevard Kellermann à Châteaudun : grillades, kebab, assiettes et sandwichs, halal, terrasse, sur place et à emporter, ouvert tard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--white:#fbfbf8;--trav:#eef1ee;--turq:#21a3b0;--turq-d:#137783;--red:#c0392b;--ink:#17262a;--muted:#5e6f73;--line:#d9e4e4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Nunito Sans",system-ui,sans-serif;background:var(--white);color:var(--ink);line-height:1.6}
+  .mc{font-family:"Marcellus",Georgia,serif;font-weight:400}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--trav)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--ink);color:#cfdcde;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#7fe0e8;font-weight:700}
+  /* motif carreaux d'Iznik en CSS */
+  .tiles{height:22px;background:radial-gradient(circle at 50% 50%,var(--red) 3px,transparent 4px) 0 0/22px 22px,linear-gradient(45deg,var(--turq) 25%,transparent 25%,transparent 75%,var(--turq) 75%) 0 0/22px 22px,linear-gradient(45deg,var(--turq) 25%,var(--white) 25%,var(--white) 75%,var(--turq) 75%) 11px 11px/22px 22px}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .logo{font-size:1.6rem;text-decoration:none;color:var(--turq-d)}
+  header nav{display:flex;gap:22px;font-weight:600;font-size:.92rem}
+  header nav a{text-decoration:none;color:var(--muted)}
+  header nav a:hover{color:var(--turq-d)}
+  @media (max-width:740px){header nav{display:none}}
+  .call{background:var(--red);color:#fff;text-decoration:none;font-weight:800;padding:9px 16px;border-radius:10px}
+  /* HERO en terrasses (vasques étagées) */
+  .hero{background:linear-gradient(180deg,var(--white),var(--trav));overflow:hidden}
+  .hero .wrap{display:grid;gap:30px;align-items:center;padding-top:30px;padding-bottom:0}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr}}
+  .hero h1{font-size:clamp(2.6rem,8vw,4.8rem);line-height:1.02;color:var(--ink)}
+  .hero h1 span{color:var(--turq-d)}
+  .hero p{color:var(--muted);font-size:1.12rem;margin:14px 0 24px;max-width:480px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;padding:13px 22px;border-radius:12px;background:var(--turq);color:#fff}
+  .btn:hover{background:var(--turq-d)}
+  .btn.red{background:var(--red)}
+  .btn.out{background:transparent;color:var(--turq-d);box-shadow:inset 0 0 0 2px var(--turq)}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .pills span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.85rem;font-weight:600}
+  .pools{display:grid;gap:12px;padding-bottom:40px}
+  .pool{border-radius:120px 120px 18px 18px;overflow:hidden;box-shadow:0 14px 30px rgba(33,163,176,.18);border:5px solid #fff}
+  .pool.a{aspect-ratio:16/10}
+  .pools .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .pools .row2 .pool{aspect-ratio:1/1;border-radius:90px 90px 16px 16px}
+  /* section étagée */
+  section{padding:74px 0}
+  .ttl{text-align:center;margin-bottom:36px}
+  .ttl small{color:var(--red);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+  .ttl h2{font-size:clamp(2.1rem,5.5vw,3.2rem);margin-top:6px}
+  .ttl p{color:var(--muted);max-width:540px;margin:6px auto 0}
+  .steps{display:grid;gap:16px}
+  .tier{display:grid;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px}
+  @media (min-width:760px){.tier{grid-template-columns:220px 1fr auto}.tier:nth-child(2){margin-left:50px}.tier:nth-child(3){margin-left:100px}.tier:nth-child(4){margin-left:150px}}
+  .tier .ph{aspect-ratio:4/3;border-radius:16px;overflow:hidden}
+  .tier h3{font-size:1.6rem;color:var(--turq-d)}
+  .tier p{color:var(--muted)}
+  .tier ul{list-style:none;font-size:.95rem;margin-top:6px}
+  .tier li::before{content:"◆ ";color:var(--red);font-size:.7rem}
+  .tier .pr{font-family:"Marcellus",serif;font-size:1.3rem;color:var(--red);white-space:nowrap}
+  .note{text-align:center;color:var(--muted);font-size:.88rem;margin-top:18px}
+  /* bandeau eau turquoise */
+  .water{background:linear-gradient(180deg,var(--turq),var(--turq-d));color:#fff}
+  .water .wrap{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}
+  .water .ic{font-size:2rem}
+  .water b{display:block;font-family:"Marcellus",serif;font-size:1.4rem;font-weight:400}
+  .water span{color:#d4f3f6;font-size:.92rem}
+  /* infos */
+  .infos{display:grid;gap:18px}
+  @media (min-width:860px){.infos{grid-template-columns:1fr 1.3fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px}
+  .card h3{font-size:1.6rem;color:var(--turq-d);margin-bottom:10px}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
+  .hours li:last-child{border:0}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .small{font-size:.85rem;color:var(--muted);margin-top:10px}
+  .card address{font-style:normal;font-size:1.15rem;margin-bottom:14px}
+  .map{aspect-ratio:16/10;border-radius:16px;overflow:hidden;margin-top:14px;background:var(--trav)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+  .final{text-align:center;background:var(--trav)}
+  .final h2{font-size:clamp(2.2rem,6vw,3.4rem)}
+  .final .tel{display:block;font-family:"Marcellus",serif;font-size:clamp(2rem,6vw,3rem);color:var(--red);text-decoration:none;margin:8px 0 20px}
+  .final .btns{justify-content:center}
+  footer{font-size:.8rem;color:var(--muted);padding:20px 0 28px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<div class="tiles"></div>
+<header>
+  <div class="wrap">
+    <a class="logo mc" href="#">Pamukkale</a>
+    <nav><a href="#carte">La carte</a><a href="#maison">La maison</a><a href="#infos">Horaires</a></nav>
+    <a class="call" href="tel:+33987771246">Commander</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="mc">Les saveurs de la <span>Turquie</span> à Châteaudun</h1>
+      <p>Grillades au feu, kebab maison, assiettes généreuses et sandwichs : une cuisine turque traditionnelle, à déguster sur place, en terrasse ou à emporter.</p>
+      <div class="btns"><a class="btn red" href="tel:+33987771246">Commander par téléphone</a><a class="btn out" href="#carte">Voir la carte</a></div>
+      <div class="pills"><span>★ 4,6 · 190 avis Google</span><span>Halal</span><span>Ouvert tard</span><span>Terrasse</span></div>
+    </div>
+    <div class="pools">
+      <div class="pool a"><img src="https://images.unsplash.com/photo-1771285119318-b342c3ecc51c?auto=format&fit=crop&w=1100&q=70" alt="Grand plateau de grillades et légumes"></div>
+      <div class="row2">
+        <div class="pool"><img src="https://images.unsplash.com/photo-1756362847925-71c792d6729c?auto=format&fit=crop&w=600&q=70" alt="Broche de viande kebab"></div>
+        <div class="pool"><img src="https://images.unsplash.com/photo-1705359573325-f2006d5e459f?auto=format&fit=crop&w=600&q=70" alt="Brochettes grillées"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="carte">
+  <div class="wrap">
+    <div class="ttl"><small>La carte</small><h2 class="mc">De la broche à l'assiette</h2><p>Préparé sur place, servi généreusement.</p></div>
+    <div class="steps">
+      <div class="tier"><div class="ph"><img src="https://images.unsplash.com/photo-1773620494884-940e0db95e46?auto=format&fit=crop&w=600&q=70" alt="Wraps et frites" loading="lazy"></div><div><h3 class="mc">Sandwichs &amp; dürüm</h3><p>Pain maison ou galette roulée.</p><ul><li>Kebab classique</li><li>Dürüm poulet</li><li>Galette mixte</li></ul></div><span class="pr">—</span></div>
+      <div class="tier"><div class="ph"><img src="https://images.unsplash.com/photo-1771285119318-b342c3ecc51c?auto=format&fit=crop&w=600&q=70" alt="Assiette de grillades" loading="lazy"></div><div><h3 class="mc">Assiettes</h3><p>Viande, riz ou frites, crudités et sauce.</p><ul><li>Assiette kebab</li><li>Assiette mixte</li><li>Assiette végétarienne</li></ul></div><span class="pr">—</span></div>
+      <div class="tier"><div class="ph"><img src="https://images.unsplash.com/photo-1705359573325-f2006d5e459f?auto=format&fit=crop&w=600&q=70" alt="Brochettes au grill" loading="lazy"></div><div><h3 class="mc">Grillades</h3><p>Cuites au grill, comme en Turquie.</p><ul><li>Brochettes d'agneau</li><li>Brochettes de poulet</li><li>Köfte</li></ul></div><span class="pr">—</span></div>
+      <div class="tier"><div class="ph"><img src="https://images.unsplash.com/photo-1775433205046-86e060feff06?auto=format&fit=crop&w=600&q=70" alt="Épices" loading="lazy"></div><div><h3 class="mc">Menu enfant &amp; douceurs</h3><p>Pour les petits et les gourmands.</p><ul><li>Menu enfant</li><li>Baklava</li><li>Thé turc</li></ul></div><span class="pr">—</span></div>
+    </div>
+    <p class="note">Carte donnée à titre d'exemple — vos vrais plats et vos prix seront ajoutés avec vous.</p>
+  </div>
+</section>
+
+<div class="water" id="maison">
+  <div class="wrap" style="padding-top:40px;padding-bottom:40px">
+    <div><p class="ic">🥙</p><b>Sur place</b><span>salle et terrasse</span></div>
+    <div><p class="ic">🛍️</p><b>À emporter</b><span>commande par téléphone</span></div>
+    <div><p class="ic">🌙</p><b>Ouvert tard</b><span>jusqu'à minuit</span></div>
+    <div><p class="ic">🎫</p><b>Titres-restaurant</b><span>acceptés</span></div>
+  </div>
+</div>
+
+<section id="infos">
+  <div class="wrap">
+    <div class="ttl"><small>Pratique</small><h2 class="mc">Horaires &amp; accès</h2><p>Parking gratuit et accès fauteuil roulant.</p></div>
+    <div class="infos">
+      <div class="card">
+        <h3 class="mc">Horaires</h3>
+        <ul class="hours">
+          <li><span>Lundi</span><span>11h – 15h · 18h – 23h</span></li>
+          <li><span>Mardi – Dimanche</span><span>11h – minuit</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer.</p>
+      </div>
+      <div class="card">
+        <h3 class="mc">Adresse</h3>
+        <address>45 boulevard Kellermann<br>28200 Châteaudun</address>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pamukkale+45+boulevard+Kellermann+28200+Ch%C3%A2teaudun" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=45+boulevard+Kellermann+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Pamukkale" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="mc">Une petite faim ?</h2>
+    <a class="tel" href="tel:+33987771246">09 87 77 12 46</a>
+    <div class="btns"><a class="btn red" href="tel:+33987771246">Appeler</a><a class="btn out" href="https://www.facebook.com/kebabmouss/" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+</section>
+<div class="tiles"></div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Pamukkale · 45 boulevard Kellermann, 28200 Châteaudun</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Gang Hao, engin akyurt, Mihir Sabnis, Omar Hakeem, Caitlin James — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
