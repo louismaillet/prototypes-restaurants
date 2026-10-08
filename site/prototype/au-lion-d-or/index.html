@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Au Lion d'Or — Restaurant à Unverre</title>
+<meta name="description" content="Au Lion d'Or, restaurant rue des Moulins à Unverre : cuisine familiale faite maison avec des produits frais et locaux, plat du jour, menu du dimanche, frites maison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--red:#8f1d21;--red-d:#6b1418;--gold:#c8a046;--gold-l:#ecd9a6;--paper:#fbf7ee;--ink:#2a1f1a;--muted:#6e6157;--line:#e8dcc4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Lato",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  .ab{font-family:"Abril Fatface",Georgia,serif;font-weight:400;line-height:1.05}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--line)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--red-d);color:#f1d9d0;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--gold-l);font-weight:700}
+  header{background:var(--red);color:#fff;border-bottom:4px solid var(--gold)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .logo{font-family:"Abril Fatface",serif;font-size:1.5rem;text-decoration:none;color:var(--gold-l)}
+  header nav{display:flex;gap:20px;font-weight:700;font-size:.92rem}
+  header nav a{text-decoration:none}
+  @media (max-width:720px){header nav{display:none}}
+  .call{background:var(--gold);color:var(--red-d);text-decoration:none;font-weight:900;padding:9px 16px;border-radius:4px}
+  /* HERO emblème */
+  .hero{text-align:center;padding:56px 0 64px;background:radial-gradient(circle at 50% 30%,#fff 0%,var(--paper) 60%)}
+  .emblem{width:220px;height:220px;margin:0 auto 22px;border-radius:50%;background:var(--red);border:6px solid var(--gold);outline:2px solid var(--red);outline-offset:4px;display:grid;place-items:center;color:var(--gold-l);text-align:center;box-shadow:0 16px 30px rgba(143,29,33,.25)}
+  .emblem .l{font-size:4.2rem;line-height:1}
+  .emblem small{display:block;font-weight:900;letter-spacing:.24em;font-size:.68rem;color:#fff;margin-top:4px}
+  .hero h1{font-size:clamp(2.8rem,9vw,5rem);color:var(--red)}
+  .hero p{color:var(--muted);max-width:540px;margin:14px auto 24px;font-size:1.1rem}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .btn{display:inline-block;text-decoration:none;font-weight:900;padding:13px 22px;border-radius:4px;background:var(--red);color:#fff;border:2px solid var(--red)}
+  .btn.gold{background:var(--gold);border-color:var(--gold);color:var(--red-d)}
+  .btn.out{background:transparent;color:var(--red)}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+  .badges span{border:1px solid var(--gold);background:#fff;border-radius:999px;padding:6px 14px;font-weight:700;font-size:.88rem}
+  section{padding:72px 0}
+  .ttl{text-align:center;margin-bottom:34px}
+  .ttl .orn{color:var(--gold);letter-spacing:.5em}
+  .ttl h2{font-size:clamp(2.1rem,5.5vw,3.2rem);color:var(--red)}
+  .ttl p{color:var(--muted);max-width:560px;margin:6px auto 0}
+  /* trois piliers avec photo */
+  .three{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .pil{background:#fff;border:1px solid var(--line);overflow:hidden}
+  .pil .ph{aspect-ratio:4/3}
+  .pil .b{padding:18px 20px 22px;border-top:4px solid var(--gold)}
+  .pil h3{font-family:"Abril Fatface",serif;font-weight:400;font-size:1.5rem;color:var(--red)}
+  .pil p{color:var(--muted)}
+  /* tableau de la semaine */
+  .week{background:var(--red);color:#fff}
+  .week .ttl h2{color:var(--gold-l)}
+  .week .ttl p{color:#f0d6d0}
+  .board{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+  .day{background:rgba(255,255,255,.08);border:1px solid rgba(200,160,70,.5);padding:16px;text-align:center}
+  .day b{display:block;font-family:"Abril Fatface",serif;font-weight:400;font-size:1.3rem;color:var(--gold-l)}
+  .day span{font-size:.92rem;color:#f4e3dd}
+  .sunday{margin-top:22px;background:var(--gold);color:var(--red-d);padding:24px;display:grid;gap:14px;align-items:center;text-align:center}
+  @media (min-width:760px){.sunday{grid-template-columns:auto 1fr;text-align:left}}
+  .sunday .p{font-family:"Abril Fatface",serif;font-size:3rem;line-height:1}
+  .sunday h3{font-family:"Abril Fatface",serif;font-weight:400;font-size:1.6rem}
+  .note{text-align:center;font-size:.85rem;color:#f0d6d0;margin-top:14px;font-style:italic}
+  /* douceurs */
+  .sweet{display:grid;gap:24px;align-items:center}
+  @media (min-width:860px){.sweet{grid-template-columns:1fr 1fr}}
+  .sweet .ph{aspect-ratio:4/3;border:6px solid #fff;box-shadow:0 12px 26px rgba(42,31,26,.15)}
+  .sweet ul{list-style:none;margin-top:12px}
+  .sweet li{padding:10px 0;border-bottom:1px dotted var(--line);font-weight:700}
+  .sweet li span{display:block;font-weight:400;color:var(--muted)}
+  /* infos */
+  .infos{display:grid;gap:18px}
+  @media (min-width:860px){.infos{grid-template-columns:1fr 1.3fr}}
+  .box{background:#fff;border:1px solid var(--line);padding:26px;border-top:4px solid var(--red)}
+  .box h3{font-family:"Abril Fatface",serif;font-weight:400;font-size:1.5rem;color:var(--red);margin-bottom:10px}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dotted var(--line)}
+  .hours li:last-child{border:0}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .box address{font-style:normal;font-size:1.15rem;margin-bottom:14px}
+  .map{aspect-ratio:16/10;margin-top:14px;background:var(--line)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+  .small{font-size:.85rem;color:var(--muted);margin-top:10px}
+  .final{text-align:center;background:var(--gold-l)}
+  .final .tel{display:block;font-family:"Abril Fatface",serif;font-size:clamp(2.2rem,6vw,3.2rem);color:var(--red);text-decoration:none;margin:8px 0 18px}
+  footer{background:var(--red-d);color:#e7c9c2;font-size:.8rem;padding:22px 0 28px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer a{color:var(--gold-l)}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">Au Lion d'Or</a>
+    <nav><a href="#maison">La maison</a><a href="#semaine">La semaine</a><a href="#infos">Infos</a></nav>
+    <a class="call" href="tel:+33237972008">Réserver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="emblem"><span><span class="l ab">🦁</span><small>UNVERRE · 28</small></span></div>
+    <h1 class="ab">Au Lion d'Or</h1>
+    <p>Le restaurant du village d'Unverre : une cuisine familiale faite maison, des produits frais et locaux, et un accueil qui donne envie de revenir.</p>
+    <div class="btns"><a class="btn" href="tel:+33237972008">Réserver une table</a><a class="btn out" href="#semaine">Le plat du jour</a></div>
+    <div class="badges"><span>★ 4,6 · 340 avis Google</span><span>Fait maison</span><span>Produits locaux</span></div>
+  </div>
+</div>
+
+<section id="maison">
+  <div class="wrap">
+    <div class="ttl"><p class="orn">✦ ✦ ✦</p><h2 class="ab">La maison</h2><p>Du café du matin au repas du dimanche.</p></div>
+    <div class="three">
+      <div class="pil"><div class="ph"><img src="https://images.unsplash.com/photo-1675125530909-15213f01a9e1?auto=format&fit=crop&w=800&q=70" alt="Café et croissants" loading="lazy"></div><div class="b"><h3>Dès le matin</h3><p>Ouvert dès 7h pour le café et les habitués.</p></div></div>
+      <div class="pil"><div class="ph"><img src="https://images.unsplash.com/photo-1519699788450-ad34386a3bfc?auto=format&fit=crop&w=800&q=70" alt="Plat mijoté" loading="lazy"></div><div class="b"><h3>Le plat du jour</h3><p>Une cuisine familiale, généreuse, qui change chaque jour.</p></div></div>
+      <div class="pil"><div class="ph"><img src="https://images.unsplash.com/photo-1777199298385-07e46ccc2004?auto=format&fit=crop&w=800&q=70" alt="Frites maison" loading="lazy"></div><div class="b"><h3>Frites maison</h3><p>Coupées et cuites sur place, comme il se doit.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="semaine" class="week">
+  <div class="wrap">
+    <div class="ttl"><p class="orn">✦ ✦ ✦</p><h2 class="ab">La semaine au Lion d'Or</h2><p>Un exemple de ce qui vous attend.</p></div>
+    <div class="board">
+      <div class="day"><b>Lundi</b><span>Bœuf bourguignon</span></div>
+      <div class="day"><b>Mardi</b><span>Poulet rôti &amp; frites maison</span></div>
+      <div class="day"><b>Mercredi</b><span>Blanquette de veau</span></div>
+      <div class="day"><b>Jeudi</b><span>Petit salé aux lentilles</span></div>
+      <div class="day"><b>Vendredi</b><span>Poisson du marché</span></div>
+      <div class="day"><b>Samedi soir</b><span>Dîner sur réservation</span></div>
+    </div>
+    <div class="sunday">
+      <span class="p">≈ 33 €</span>
+      <div><h3>Le menu du dimanche</h3><p>Entrée, plat et dessert, avec deux choix à chaque étape : le rendez-vous des repas de famille.</p></div>
+    </div>
+    <p class="note">Plats et prix donnés à titre d'exemple — à composer avec vous.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap sweet">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1712478023355-8a3037a37c43?auto=format&fit=crop&w=1000&q=70" alt="Dessert maison et café" loading="lazy"></div>
+    <div>
+      <div class="ttl" style="text-align:left;margin-bottom:6px"><h2 class="ab">Les douceurs maison</h2></div>
+      <ul>
+        <li>Crème caramel<span>la recette de toujours</span></li>
+        <li>Pain perdu<span>doré au beurre, servi tiède</span></li>
+        <li>Dessert du jour<span>selon la saison</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="infos" style="padding-top:0">
+  <div class="wrap">
+    <div class="ttl"><p class="orn">✦ ✦ ✦</p><h2 class="ab">Infos pratiques</h2></div>
+    <div class="infos">
+      <div class="box">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Lundi – Vendredi</span><span>7h – 16h</span></li>
+          <li><span>Samedi</span><span>7h – 16h · 18h45 – 22h</span></li>
+          <li><span>Dimanche</span><span>8h – 16h</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer. Réservation conseillée le dimanche. Accès PMR.</p>
+      </div>
+      <div class="box">
+        <h3>Adresse</h3>
+        <address>13 rue des Moulins<br>28160 Unverre</address>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Au+Lion+d'Or+13+rue+des+Moulins+28160+Unverre" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=13+rue+des+Moulins+28160+Unverre&amp;output=embed" title="Carte : Au Lion d'Or" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="ab" style="font-size:clamp(2rem,5vw,2.8rem);color:var(--red-d)">À table !</h2>
+    <a class="tel" href="tel:+33237972008">02 37 97 20 08</a>
+    <div class="btns"><a class="btn" href="tel:+33237972008">Appeler</a><a class="btn out" href="https://www.facebook.com/p/Au-Lion-dOR-100054226820477/" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Au Lion d'Or · 13 rue des Moulins, 28160 Unverre</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : S O C I A L . C U T, Eric Zhu, Arne Buss, hanaori — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
