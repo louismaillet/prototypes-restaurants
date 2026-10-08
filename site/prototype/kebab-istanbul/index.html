@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Kebab Istanbul — Kebab, tacos &amp; paninis à Brou</title>
+<meta name="description" content="Kebab Istanbul, rue des Changes à Brou : kebabs, tacos, paninis et assiettes, sur place ou à emporter. Plus de 500 avis à 4,5 sur Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--red:#e30a17;--red-d:#b0070f;--navy:#13213c;--white:#ffffff;--off:#fff6f0;--muted:#5f6577;--line:#f1dcd2}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Rubik",system-ui,sans-serif;background:var(--off);color:var(--navy);line-height:1.6}
+  .ll{font-family:"Lilita One",Impact,sans-serif;font-weight:400;line-height:1}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--line)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--navy);color:#cfd6e6;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#fff;font-weight:700}
+  header{background:var(--red);color:#fff}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .logo{font-size:1.7rem;text-decoration:none;display:flex;align-items:center;gap:8px}
+  .logo .moon{width:26px;height:26px;border-radius:50%;box-shadow:-6px 0 0 0 #fff;transform:translateX(6px)}
+  header nav{display:flex;gap:20px;font-weight:500}
+  header nav a{text-decoration:none}
+  @media (max-width:720px){header nav{display:none}}
+  .call{background:#fff;color:var(--red);text-decoration:none;font-weight:700;padding:9px 16px;border-radius:999px}
+  /* HERO à rayures diagonales */
+  .hero{background:repeating-linear-gradient(135deg,var(--red) 0 40px,var(--red-d) 40px 80px);color:#fff;overflow:hidden}
+  .hero .wrap{display:grid;gap:30px;align-items:center;padding-top:40px;padding-bottom:60px}
+  @media (min-width:880px){.hero .wrap{grid-template-columns:1.1fr 1fr}}
+  .hero h1{font-size:clamp(3.2rem,10vw,6.4rem)}
+  .hero h1 span{display:block;color:var(--navy);-webkit-text-stroke:0}
+  .hero p{font-size:1.15rem;max-width:480px;margin:16px 0 24px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:999px;background:var(--navy);color:#fff}
+  .btn.white{background:#fff;color:var(--red)}
+  .plate{position:relative;justify-self:center;width:100%;max-width:420px}
+  .plate .ph{aspect-ratio:1/1;border-radius:50%;overflow:hidden;border:10px solid #fff;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+  .sticker{position:absolute;background:#fff;color:var(--navy);font-family:"Lilita One",sans-serif;padding:10px 14px;border-radius:16px;line-height:1.05;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+  .s1{top:6%;left:-4%;transform:rotate(-8deg)}
+  .s1 b{display:block;font-size:1.8rem;color:var(--red)}
+  .s2{bottom:6%;right:-4%;transform:rotate(7deg);background:var(--navy);color:#fff}
+  @media (max-width:520px){.s1{left:2%}.s2{right:2%}}
+  section{padding:74px 0}
+  .ttl{text-align:center;margin-bottom:34px}
+  .ttl h2{font-size:clamp(2.4rem,7vw,3.8rem);color:var(--red)}
+  .ttl p{color:var(--muted)}
+  /* top commandes */
+  .top3{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 6px 20px rgba(19,33,60,.08);position:relative}
+  .card .rank{position:absolute;top:12px;left:12px;width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:"Lilita One",sans-serif;font-size:1.3rem;z-index:2}
+  .card .ph{aspect-ratio:4/3}
+  .card .b{padding:18px 20px 22px}
+  .card h3{font-family:"Lilita One",sans-serif;font-weight:400;font-size:1.7rem}
+  .card p{color:var(--muted)}
+  /* carte en grille de pastilles */
+  .menu{background:var(--navy);color:#fff}
+  .menu .ttl h2{color:#fff}
+  .menu .ttl p{color:#b9c2d8}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .it{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:18px}
+  .it .e{font-size:1.8rem}
+  .it h4{font-family:"Lilita One",sans-serif;font-weight:400;font-size:1.35rem;margin:4px 0}
+  .it p{color:#c9d0e0;font-size:.92rem}
+  .note{text-align:center;color:#b9c2d8;font-size:.85rem;margin-top:18px}
+  /* avis */
+  .avis .wrap{display:grid;gap:22px;align-items:center}
+  @media (min-width:860px){.avis .wrap{grid-template-columns:auto 1fr}}
+  .bigs{background:var(--red);color:#fff;border-radius:50%;width:200px;height:200px;display:grid;place-items:center;text-align:center;margin:0 auto}
+  .bigs b{font-family:"Lilita One",sans-serif;font-size:4rem;display:block;line-height:1}
+  .words{display:flex;flex-wrap:wrap;gap:10px}
+  .words span{background:#fff;border:2px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:700}
+  .words span:nth-child(odd){border-color:var(--red);color:var(--red)}
+  /* infos */
+  .infos{display:grid;gap:18px}
+  @media (min-width:860px){.infos{grid-template-columns:1fr 1.3fr}}
+  .box{background:#fff;border-radius:24px;padding:26px;box-shadow:0 6px 20px rgba(19,33,60,.06)}
+  .box h3{font-family:"Lilita One",sans-serif;font-weight:400;font-size:1.7rem;color:var(--red);margin-bottom:10px}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .hours li:last-child{border:0}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .off{color:var(--red)!important;font-weight:700}
+  .box address{font-style:normal;font-size:1.15rem;margin-bottom:14px}
+  .map{aspect-ratio:16/10;border-radius:16px;overflow:hidden;margin-top:14px;background:var(--line)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+  .small{font-size:.85rem;color:var(--muted);margin-top:10px}
+  .final{background:var(--red);color:#fff;text-align:center}
+  .final h2{font-size:clamp(2.6rem,8vw,4.6rem)}
+  .final .tel{display:block;font-family:"Lilita One",sans-serif;font-size:clamp(2.2rem,7vw,3.6rem);text-decoration:none;margin:8px 0 20px}
+  .final .btns{justify-content:center}
+  footer{background:var(--navy);color:#aeb6c8;font-size:.8rem;padding:22px 0 28px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo ll" href="#"><span class="moon"></span>&nbsp;Kebab Istanbul</a>
+    <nav><a href="#top">Les incontournables</a><a href="#carte">La carte</a><a href="#infos">Horaires</a></nav>
+    <a class="call" href="tel:+33237662576">Commander</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="ll">Le kebab de Brou <span>qu'on adore</span></h1>
+      <p>Kebabs généreux, tacos bien garnis, paninis croustillants : à manger sur place ou à emporter, en plein centre de Brou.</p>
+      <div class="btns"><a class="btn" href="tel:+33237662576">📞 Commander</a><a class="btn white" href="#carte">Voir la carte</a></div>
+    </div>
+    <div class="plate">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1699728088614-7d1d4277414b?auto=format&fit=crop&w=900&q=70" alt="Sandwich kebab garni"></div>
+      <div class="sticker s1"><b>4,5★</b>500 avis<br>Google</div>
+      <div class="sticker s2">Sur place<br>&amp; à emporter</div>
+    </div>
+  </div>
+</div>
+
+<section id="top">
+  <div class="wrap">
+    <div class="ttl"><h2 class="ll">Les plus commandés</h2><p>Le trio gagnant, d'après nos clients.</p></div>
+    <div class="top3">
+      <div class="card"><span class="rank">1</span><div class="ph"><img src="https://images.unsplash.com/photo-1778168199427-4e839943d20f?auto=format&fit=crop&w=700&q=70" alt="Wraps garnis" loading="lazy"></div><div class="b"><h3>Les tacos</h3><p>Bien garnis, sauce fromagère, viande au choix.</p></div></div>
+      <div class="card"><span class="rank">2</span><div class="ph"><img src="https://images.unsplash.com/photo-1773514294087-b93f864866a5?auto=format&fit=crop&w=700&q=70" alt="Viande de kebab à la broche" loading="lazy"></div><div class="b"><h3>Le kebab</h3><p>Viande à la broche, crudités, sauce maison, frites.</p></div></div>
+      <div class="card"><span class="rank">3</span><div class="ph"><img src="https://images.unsplash.com/photo-1737513916865-63c7fd3b67a7?auto=format&fit=crop&w=700&q=70" alt="Panini grillé" loading="lazy"></div><div class="b"><h3>Les paninis</h3><p>Croustillants et fondants, parfaits pour la pause.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="carte" class="menu">
+  <div class="wrap">
+    <div class="ttl"><h2 class="ll">La carte</h2><p>Tout est préparé à la commande.</p></div>
+    <div class="grid">
+      <div class="it"><p class="e">🥙</p><h4>Kebab</h4><p>En pain, galette ou assiette</p></div>
+      <div class="it"><p class="e">🌯</p><h4>Tacos</h4><p>Simple, double ou triple viande</p></div>
+      <div class="it"><p class="e">🥪</p><h4>Paninis</h4><p>Poulet, kebab, 3 fromages</p></div>
+      <div class="it"><p class="e">🍔</p><h4>Burgers</h4><p>Classique, cheese, poulet</p></div>
+      <div class="it"><p class="e">🍽️</p><h4>Assiettes</h4><p>Viande, frites, salade</p></div>
+      <div class="it"><p class="e">🧒</p><h4>Menu enfant</h4><p>Petit plat, boisson, surprise</p></div>
+    </div>
+    <p class="note">Carte donnée à titre d'exemple — vos vrais produits et vos prix seront ajoutés avec vous.</p>
+  </div>
+</section>
+
+<section class="avis">
+  <div class="wrap">
+    <div class="bigs"><span><b>4,5</b>sur 5<br><small>500 avis Google</small></span></div>
+    <div>
+      <h2 class="ll" style="font-size:clamp(2rem,6vw,3rem);color:var(--navy);margin-bottom:12px">Ce qui revient dans vos avis</h2>
+      <div class="words"><span>Des tacos au top</span><span>Équipe souriante</span><span>Paninis généreux</span><span>Propreté</span><span>Le meilleur du coin</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <div class="ttl"><h2 class="ll">Horaires &amp; accès</h2></div>
+    <div class="infos">
+      <div class="box">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Lundi</span><span class="off">Fermé</span></li>
+          <li><span>Mardi – Samedi</span><span>11h30 – 14h · 18h – 22h</span></li>
+          <li><span>Dimanche</span><span>12h – 14h · 18h – 21h30</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer. Accessible PMR.</p>
+      </div>
+      <div class="box">
+        <h3>Adresse</h3>
+        <address>6 rue des Changes<br>28160 Brou</address>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kebab+Istanbul+6+rue+des+Changes+28160+Brou" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=6+rue+des+Changes+28160+Brou&amp;output=embed" title="Carte : Kebab Istanbul" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="ll">Une faim de loup ?</h2>
+    <a class="tel" href="tel:+33237662576">02 37 66 25 76</a>
+    <div class="btns"><a class="btn" href="tel:+33237662576">Appeler pour commander</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kebab Istanbul · 6 rue des Changes, 28160 Brou</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Yoad Shejtman, Yosia Cahyana, Taeyoon Moon, Griffin Wooldridge — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
