@@ -35,7 +35,7 @@ prototypes-restaurants/
 ```
 
 ## Décisions (confirmées par l'utilisateur)
-- **Marque** : Louis Maillet, développeur web (Olivet, 45). Site : https://louismaillet.fr — bandeau : "Maquette proposée par Louis Maillet" + lien louismaillet.fr. LinkedIn : https://www.linkedin.com/in/louis-maillet-06064a32b/. Pas d'email/tél publics sur son site → lien vers le site.
+- **Marque** : Louis Maillet, développeur web (Olivet, 45). Site : https://louismaillet.fr — bandeau : "Maquette proposée par Louis Maillet" + lien louismaillet.fr. LinkedIn : https://www.linkedin.com/in/louis-maillet-06064a32b/. Pas d'email/tél publics sur son site → lien vers le site. Tél perso à mettre dans les mails de prospection : 07 82 52 45 37 (pas sur les maquettes).
 - Références à citer dans la vitrine : Gîtes La Grande Boeufferie, European CLIL Academy, refonte Oumami (restaurant asiatique).
 - **Hébergement** : Netlify (sites statiques, pas de back-end).
 - **index.html racine** : page vitrine très simple — qui il est, ce qu'il fait (sites pour restaurants), lien vers louismaillet.fr. **Changement (08/10)** : barre « Maquettes : » tout en haut avec un bouton par prototype (demande utilisateur) → ajouter un bouton à chaque nouveau prototype.
@@ -62,7 +62,7 @@ prototypes-restaurants/
 - Avis : Google 4,2/5 (325), TripAdvisor 4,0/5 (143). Portions généreuses, prix doux, accueil familial, bonbons d'enfance offerts en fin de repas (roudoudous, violettes). Pas de carte avec prix en ligne.
 
 ### Les Tontons Fines Gueules — slug `les-tontons-fines-gueules` — FAIT (2026-10-08)
-- URL : `/prototype/les-tontons-fines-gueules/`. Version COMPLÈTE, charte UNIQUE (demande utilisateur : chaque site doit avoir sa propre identité) : style affiche/néo-brutaliste jaune moutarde + noir + bordeaux, polices Google Anton / Courier Prime / Work Sans, hero affiche typographique + tampon 4,8★, bandeau défilant CSS, journée 01-02-03, carte imprimée à pointillés, ticket de caisse pour horaires, bande photos à glisser, section maison, avis (FB 4,8 / Google 4,7), galerie Unsplash, horaires « à confirmer », Google Maps, tél + Facebook. Bouton ajouté sur l'accueil.
+- URL : `/prototype/les-tontons-fines-gueules/`. Version COMPLÈTE, charte UNIQUE (demande utilisateur : chaque site doit avoir sa propre identité) : style affiche/néo-brutaliste jaune moutarde + noir + bordeaux, polices Google Anton / Courier Prime / Work Sans, hero affiche typographique + tampon 4,8★, bandeau défilant CSS, journée 01-02-03, carte imprimée à pointillés, ticket de caisse pour horaires, bande photos à glisser, section maison, avis (FB 4,8 / Google 4,7), galerie Unsplash, horaires « à confirmer », Google Maps, tél + Facebook. Bouton ajouté sur l'accueil. Mail de prospection rédigé (style imaginé mais entièrement modifiable + lien + tél) ; pas d'email connu → envoyer via Messenger Facebook ou passer sur place.
 - Société J.F.B. (SAS), créée le 24/03/2025, NAF 5630Z débit de boissons. Paiement : CB, titres-restaurant, espèces.
 - Horaires contradictoires : kazfeed mar–jeu 7h–16h30, ven–sam 7h–21h30 ; Mappy/PagesJaunes mar–jeu 9h30–19h, ven–sam 9h30–21h30 ; fermé dim + lun.
 - 51 rue Jean Moulin, 28290 Chapelle-Royale (Perche, Eure-et-Loir). Tél 02 18 00 63 44. Facebook : facebook.com/LesTontonsFinesGueules (seule présence en ligne, pas de site).
