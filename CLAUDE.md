@@ -51,7 +51,8 @@ prototypes-restaurants/
 - Prototype : palette vert/terre cuite, plats d'exemple sans prix, horaires « À compléter » (non trouvés en ligne).
 - Alternative non faite : Au Comptoir by L'Étape des Saveurs, 3 place des Halles, Brou (02 37 96 05 69).
 
-### Crêperie L'Argoat — slug `creperie-largoat` — recherche faite, en attente du "top"
+### Crêperie L'Argoat — slug `creperie-largoat` — FAIT (2026-10-08)
+- URL : `/prototype/creperie-largoat/`. Prototype : palette bleu marine/blé noir + bande marinière, note Google en hero, galettes/crêpes d'exemple sans prix, horaires mer–dim « à confirmer », pas d'email (suspect) → téléphone seul. Prospection : pas encore faite.
 - 9 place d'Armes, 28160 Brou. Tél 02 37 47 00 65. Email (fiche eatbu) michelverrier@range.fr (domaine suspect, à vérifier).
 - Site actuel : creperie-l-argoat.eatbu.com (mini-page DISH, pas de carte, mentions légales « A COMPLETER ») → argument de prospection.
 - Crêperie familiale : galettes de blé noir, crêpes, tartes, plats régionaux, sur place ou à emporter. Terrasse, salles climatisées, parking gratuit. CB/sans contact.

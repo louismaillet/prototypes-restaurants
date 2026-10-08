@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Crêperie L'Argoat — Galettes &amp; crêpes à Brou</title>
+<meta name="description" content="Crêperie L'Argoat, place d'Armes à Brou (28) : galettes de blé noir, crêpes et plats maison, dans une ambiance familiale.">
+<style>
+  :root{
+    --bg:#fbf8f2; --text:#1d2433; --muted:#5d6475; --navy:#1f3a5f; --navy-dark:#162a45;
+    --buck:#a8743a; --card:#ffffff; --line:#e6e0d4; --ph:#dfe5ee;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+  a{color:inherit}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+  .demo{background:var(--text);color:#e6e9f0;font-size:.8rem;text-align:center;padding:7px 12px}
+  .demo a{color:#fff;font-weight:600}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(251,248,242,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  .logo{font-family:Georgia,serif;font-weight:700;font-size:1.2rem;text-decoration:none;color:var(--navy)}
+  .logo small{display:block;font-family:system-ui,sans-serif;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--buck);font-weight:600;margin-top:-2px}
+  nav{display:flex;gap:18px;font-size:.92rem}
+  nav a{text-decoration:none;color:var(--muted)}
+  nav a:hover{color:var(--navy)}
+  nav .call{color:var(--buck);font-weight:600}
+  @media (max-width:560px){nav a:not(.call){display:none}}
+
+  /* bandes bretonnes */
+  .stripes{height:10px;background:repeating-linear-gradient(90deg,var(--navy) 0 28px,#fff 28px 56px)}
+
+  .hero{padding:48px 0 56px}
+  .hero .wrap{display:grid;gap:32px;align-items:center}
+  @media (min-width:800px){.hero .wrap{grid-template-columns:1.1fr 1fr}}
+  .kicker{color:var(--buck);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;margin-bottom:12px}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.4rem);color:var(--navy);margin-bottom:16px}
+  .hero p{color:var(--muted);font-size:1.08rem;max-width:520px;margin-bottom:22px}
+  .rating{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem;margin-bottom:24px}
+  .rating b{color:var(--buck)}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:600}
+  .btn:hover{background:var(--navy-dark)}
+  .btn.ghost{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}
+
+  .ph{background:var(--ph);border-radius:18px;display:grid;place-items:center;color:var(--navy);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+  .hero .ph{aspect-ratio:1/1;border-radius:50%;max-width:420px;width:100%;justify-self:center;border:10px solid #fff;box-shadow:0 0 0 1px var(--line)}
+
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:clamp(1.6rem,4vw,2.1rem);color:var(--navy);margin-bottom:10px}
+  .lead{color:var(--muted);max-width:620px;margin-bottom:30px}
+
+  .trio{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card .ico{font-size:1.6rem;margin-bottom:8px}
+  .card h3{font-size:1.12rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  .menu{display:grid;gap:28px}
+  @media (min-width:760px){.menu{grid-template-columns:1fr 1fr}}
+  .menu h3{font-size:1.25rem;color:var(--buck);margin-bottom:6px}
+  .dish{padding:12px 0;border-bottom:1px dashed var(--line)}
+  .dish h4{font-size:1rem}
+  .dish p{color:var(--muted);font-size:.9rem}
+  .note{font-size:.85rem;color:var(--muted);margin-top:22px;font-style:italic}
+
+  .info{display:grid;gap:20px}
+  @media (min-width:760px){.info{grid-template-columns:1fr 1fr}}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .box h3{font-size:1.15rem;margin-bottom:12px}
+  .hours{list-style:none}
+  .hours li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .hours li:last-child{border:0}
+  .hours span:last-child{color:var(--muted)}
+  .box .tag{font-size:.8rem;color:var(--muted);margin-top:12px}
+  .box address{font-style:normal;margin-bottom:14px}
+  .box .ph{aspect-ratio:16/9;border-radius:12px;margin-top:14px}
+
+  .contact{text-align:center;background:var(--navy);color:#eef1f7;border:0}
+  .contact h2{color:#fff}
+  .contact .lead{color:#c9d3e3;margin:0 auto 26px}
+  .contact .btns{justify-content:center}
+  .contact .btn{background:var(--buck)}
+  .contact .btn.ghost{background:transparent;color:#fff;border-color:#9fb1cc}
+
+  footer{padding:26px 0;text-align:center;font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">L'Argoat<small>Crêperie · Brou</small></a>
+    <nav>
+      <a href="#maison">La maison</a>
+      <a href="#carte">La carte</a>
+      <a href="#infos">Infos</a>
+      <a class="call" href="tel:+33237470065">02 37 47 00 65</a>
+    </nav>
+  </div>
+</header>
+<div class="stripes"></div>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Place d'Armes · Brou</p>
+      <h1>Galettes, crêpes &amp; bonne humeur.</h1>
+      <p>Une crêperie familiale au cœur de Brou : des galettes de blé noir généreuses, des crêpes faites minute et un accueil comme à la maison.</p>
+      <div class="rating"><b>★ 4,2/5</b> plus de 300 avis Google</div>
+      <div class="btns">
+        <a class="btn" href="tel:+33237470065">Réserver une table</a>
+        <a class="btn ghost" href="#carte">Voir la carte</a>
+      </div>
+    </div>
+    <div class="ph">Illustration</div>
+  </div>
+</div>
+
+<section id="maison">
+  <div class="wrap">
+    <h2>Chez nous</h2>
+    <p class="lead">Sur la place d'Armes, on régale les habitants et les gens de passage avec une cuisine simple, copieuse et faite maison.</p>
+    <div class="trio">
+      <div class="card"><div class="ico">🥞</div><h3>Des assiettes généreuses</h3><p>Galettes bien garnies, crêpes gourmandes et plats régionaux, à petits prix.</p></div>
+      <div class="card"><div class="ico">👨‍👩‍👧</div><h3>Une ambiance familiale</h3><p>On prend le temps de conseiller, y compris les plus petits. Et une douceur d'enfance vous attend en fin de repas.</p></div>
+      <div class="card"><div class="ico">☀️</div><h3>Terrasse &amp; à emporter</h3><p>Terrasse aux beaux jours, salles climatisées, parking gratuit et vente à emporter.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="carte">
+  <div class="wrap">
+    <h2>Un aperçu de la carte</h2>
+    <p class="lead">Quelques classiques de la maison.</p>
+    <div class="menu">
+      <div>
+        <h3>Les galettes</h3>
+        <div class="dish"><h4>La Complète</h4><p>Jambon, emmental, œuf miroir</p></div>
+        <div class="dish"><h4>La Paysanne</h4><p>Lardons, pommes de terre, oignons, crème</p></div>
+        <div class="dish"><h4>La Chèvre-Miel</h4><p>Chèvre, miel, noix, salade</p></div>
+      </div>
+      <div>
+        <h3>Les crêpes</h3>
+        <div class="dish"><h4>Beurre-sucre</h4><p>La simplicité qui fait plaisir</p></div>
+        <div class="dish"><h4>Caramel au beurre salé</h4><p>Caramel maison</p></div>
+        <div class="dish"><h4>La Normande</h4><p>Pommes caramélisées, flambée au calvados</p></div>
+      </div>
+    </div>
+    <p class="note">Plats donnés à titre d'exemple — la carte réelle et les prix seront ajoutés avec vous.</p>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <h2>Horaires &amp; accès</h2>
+    <p class="lead">Sur place ou à emporter. Espèces, cartes bancaires et sans contact acceptés.</p>
+    <div class="info">
+      <div class="box">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Mercredi – Dimanche</span><span>12h – 22h</span></li>
+          <li><span>Lundi – Mardi</span><span>Fermé</span></li>
+        </ul>
+        <p class="tag">Horaires à confirmer.</p>
+      </div>
+      <div class="box">
+        <h3>Nous trouver</h3>
+        <address>9 place d'Armes<br>28160 Brou</address>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Cr%C3%AAperie+L'Argoat+9+place+d'Armes+28160+Brou" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="ph">Illustration — carte</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Une envie de galettes ?</h2>
+    <p class="lead">Réservez votre table ou commandez à emporter par téléphone.</p>
+    <div class="btns">
+      <a class="btn" href="tel:+33237470065">02 37 47 00 65</a>
+      <a class="btn ghost" href="#infos">Nous trouver</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Crêperie L'Argoat · Brou (28) — Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></footer>
+
+</body>
+</html>
