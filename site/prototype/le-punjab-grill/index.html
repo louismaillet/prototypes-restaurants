@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Le Punjab Grill — Restaurant indien à Châteaudun</title>
+<meta name="description" content="Le Punjab Grill, restaurant indien à Châteaudun : tandoori, biryani, currys et naans faits maison. Ouvert 7j/7, sur place, à emporter et en livraison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#3a1033; --plum-2:#521a49; --saffron:#f39c12; --marigold:#ffbf3c; --rose:#e2456b;
+    --cream:#fff7ec; --sand:#f8e6cc; --ink:#2a1a26; --muted:#6e5a68;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Mukta",system-ui,sans-serif;font-size:1.05rem;background:var(--cream);color:var(--ink);line-height:1.6}
+  .disp{font-family:"Rozha One",Georgia,serif;font-weight:400;line-height:1.05}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--sand)}
+
+  .demo{position:relative;z-index:40;background:#1d0719;color:#d9c6d4;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--marigold);font-weight:700}
+
+  /* motif jali en CSS */
+  .jali{background-color:var(--plum);background-image:radial-gradient(circle at 50% 50%,transparent 9px,rgba(255,191,60,.16) 10px,rgba(255,191,60,.16) 11px,transparent 12px),radial-gradient(circle at 0 0,transparent 9px,rgba(255,191,60,.16) 10px,rgba(255,191,60,.16) 11px,transparent 12px);background-size:32px 32px}
+
+  /* MISE EN PAGE : barre latérale + contenu */
+  .layout{display:block}
+  @media (min-width:1000px){.layout{display:grid;grid-template-columns:280px 1fr}}
+  aside{color:#fff;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;z-index:30}
+  @media (min-width:1000px){aside{height:100vh;flex-direction:column;align-items:flex-start;justify-content:space-between;padding:40px 30px}}
+  .brand{text-decoration:none}
+  .brand b{display:block;font-family:"Rozha One",serif;font-weight:400;font-size:1.5rem;line-height:1;color:var(--marigold)}
+  .brand span{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:#e9d6e3}
+  aside nav{display:none}
+  @media (min-width:1000px){aside nav{display:flex;flex-direction:column;gap:4px;width:100%}
+    aside nav a{text-decoration:none;padding:9px 12px;border-radius:8px;color:#f1e3ed;font-weight:500}
+    aside nav a:hover{background:rgba(255,255,255,.08);color:var(--marigold)}}
+  .side-foot{display:none}
+  @media (min-width:1000px){.side-foot{display:block;font-size:.9rem;color:#e9d6e3}.side-foot b{display:block;font-size:1.3rem;color:#fff}}
+  .order{background:var(--saffron);color:var(--plum);font-weight:700;text-decoration:none;padding:10px 16px;border-radius:10px;white-space:nowrap}
+  @media (min-width:1000px){.order{display:block;text-align:center;width:100%;padding:13px 16px}}
+
+  main{min-width:0}
+  .pad{padding:0 24px}
+  @media (min-width:1000px){.pad{padding:0 56px}}
+  .inner{max-width:900px}
+
+  /* HERO */
+  .hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+  .hero img{position:absolute;inset:0;z-index:-2}
+  .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(15deg,rgba(58,16,51,.97) 15%,rgba(58,16,51,.55) 55%,rgba(58,16,51,.15))}
+  .hero .pad{padding-top:120px;padding-bottom:60px}
+  .badge{display:inline-block;background:var(--rose);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border-radius:6px;margin-bottom:16px}
+  .hero h1{font-size:clamp(2.8rem,8vw,5.4rem);max-width:760px}
+  .hero h1 span{color:var(--marigold)}
+  .hero p{font-size:1.2rem;max-width:560px;margin:18px 0 26px;color:#f3e6ef}
+  .cta{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:10px;background:var(--saffron);color:var(--plum)}
+  .btn:hover{background:var(--marigold)}
+  .btn.line{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)}
+  .btn.plum{background:var(--plum);color:#fff}
+  .strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .strip span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;font-size:.92rem}
+  .strip b{color:var(--marigold)}
+
+  section{padding:80px 0}
+  .ttl{margin-bottom:34px}
+  .ttl small{display:block;color:var(--rose);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+  .ttl h2{font-size:clamp(2.1rem,5vw,3.2rem);color:var(--plum);margin-top:6px}
+  .ttl p{color:var(--muted);max-width:580px;margin-top:8px}
+
+  /* SIGNATURES */
+  .sig{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .dish-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(58,16,51,.08);display:flex;flex-direction:column}
+  .dish-card .ph{aspect-ratio:4/3;position:relative}
+  .dish-card .fav{position:absolute;top:12px;left:12px;background:var(--marigold);color:var(--plum);font-weight:700;font-size:.75rem;padding:3px 10px;border-radius:999px}
+  .dish-card .b{padding:18px 20px 22px}
+  .dish-card h3{font-family:"Rozha One",serif;font-weight:400;font-size:1.45rem;color:var(--plum)}
+  .dish-card p{color:var(--muted);font-size:.97rem}
+  .heat{margin-top:8px;font-size:.85rem;color:var(--rose);font-weight:700}
+
+  /* CARTE : 2 colonnes sur fond sable, liseré motif */
+  .carte{background:var(--sand);position:relative}
+  .carte::before{content:"";position:absolute;left:0;right:0;top:0;height:14px}
+  .cols{display:grid;gap:30px}
+  @media (min-width:760px){.cols{grid-template-columns:1fr 1fr}}
+  .cat{background:var(--cream);border-radius:16px;padding:24px;border-top:5px solid var(--saffron)}
+  .cat:nth-child(even){border-top-color:var(--rose)}
+  .cat h3{font-family:"Rozha One",serif;font-weight:400;font-size:1.4rem;color:var(--plum);margin-bottom:8px}
+  .row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dotted #e3c9a8}
+  .row:last-child{border:0}
+  .row h4{font-weight:700;font-size:1rem}
+  .row p{color:var(--muted);font-size:.9rem;line-height:1.4}
+  .row .pr{font-weight:700;color:var(--plum);white-space:nowrap}
+  .lab{display:inline-block;font-size:.66rem;font-weight:700;padding:1px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
+  .lab.v{background:#2e8b57;color:#fff}
+  .lab.h{background:var(--plum);color:#fff}
+  .note{text-align:center;color:var(--muted);font-size:.92rem;margin-top:24px}
+
+  /* COMMANDER */
+  .ways{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .way{border-radius:18px;padding:28px 24px;color:#fff}
+  .way:nth-child(1){background:var(--plum)}
+  .way:nth-child(2){background:var(--rose)}
+  .way:nth-child(3){background:var(--saffron);color:var(--plum)}
+  .way .ic{font-size:2rem}
+  .way h3{font-family:"Rozha One",serif;font-weight:400;font-size:1.6rem;margin:6px 0}
+  .way p{opacity:.92}
+
+  /* AVIS */
+  .avis{color:#fff}
+  .avis .ttl h2{color:#fff}
+  .avis .ttl p{color:#e9d6e3}
+  .rate{display:flex;flex-wrap:wrap;gap:30px;align-items:center;margin-bottom:34px}
+  .rate .n{font-family:"Rozha One",serif;font-size:5.5rem;line-height:1;color:var(--marigold)}
+  .rate .s{color:var(--marigold);font-size:1.4rem;letter-spacing:3px}
+  .rate p{color:#e9d6e3}
+  .pts{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .pt{background:rgba(255,255,255,.08);border:1px solid rgba(255,191,60,.35);border-radius:14px;padding:20px}
+  .pt h3{font-family:"Rozha One",serif;font-weight:400;font-size:1.3rem;color:var(--marigold)}
+  .pt p{color:#f1e3ed;font-size:.97rem}
+
+  /* GALERIE : bandeau de 4 */
+  .band{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+  @media (min-width:760px){.band{grid-template-columns:repeat(4,1fr)}}
+  .band div{aspect-ratio:1/1}
+
+  /* INFOS */
+  .infos{display:grid;gap:22px}
+  @media (min-width:760px){.infos{grid-template-columns:1fr 1fr}}
+  .box{background:#fff;border-radius:18px;padding:28px;box-shadow:0 6px 22px rgba(58,16,51,.06)}
+  .box h3{font-family:"Rozha One",serif;font-weight:400;font-size:1.5rem;color:var(--plum);margin-bottom:12px}
+  .hrs{list-style:none}
+  .hrs li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--sand)}
+  .hrs li:last-child{border:0}
+  .hrs span:last-child{color:var(--muted);text-align:right}
+  .small{font-size:.88rem;color:var(--muted);margin-top:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chips span{background:var(--sand);color:var(--plum);font-size:.82rem;font-weight:500;padding:4px 12px;border-radius:999px}
+  .box address{font-style:normal;font-size:1.15rem;margin-bottom:14px}
+  .map{aspect-ratio:16/10;border-radius:14px;overflow:hidden;margin-top:16px;background:var(--sand)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+
+  .final{text-align:center;color:#fff}
+  .final h2{font-size:clamp(2.2rem,6vw,3.6rem)}
+  .final .tel{display:block;font-family:"Rozha One",serif;font-size:clamp(2rem,6vw,3rem);color:var(--marigold);text-decoration:none;margin:10px 0 24px}
+  .final .cta{justify-content:center}
+
+  footer{background:#1d0719;color:#bfa9b8;font-size:.82rem;padding:26px 0}
+  footer .pad{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between}
+  footer a{color:var(--marigold)}
+  footer .credits{width:100%;font-size:.72rem;color:#8d7787}
+</style>
+</head>
+<body>
+
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<div class="layout">
+  <aside class="jali">
+    <a class="brand" href="#"><b>Le Punjab Grill</b><span>Cuisine indienne · Châteaudun</span></a>
+    <nav>
+      <a href="#signatures">Nos signatures</a>
+      <a href="#carte">La carte</a>
+      <a href="#commander">Commander</a>
+      <a href="#avis">Les avis</a>
+      <a href="#infos">Horaires &amp; accès</a>
+    </nav>
+    <div class="side-foot"><span>Réservation &amp; commandes</span><b>02 37 66 04 69</b></div>
+    <a class="order" href="tel:+33237660469">📞 Commander</a>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <div class="hero">
+      <img src="https://images.unsplash.com/photo-1762922425226-8cfe6987e7b0?auto=format&fit=crop&w=1800&q=70" alt="Poulet tikka masala servi avec du naan">
+      <div class="pad inner">
+        <span class="badge">Ouvert 7 jours sur 7</span>
+        <h1 class="disp">Les saveurs du <span>Pendjab</span> au cœur de Châteaudun</h1>
+        <p>Tandoori, biryani, currys mijotés et naans tout chauds sortis du four : une cuisine indienne généreuse, à déguster sur place, à emporter ou livrée chez vous.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+33237660469">Réserver ou commander</a>
+          <a class="btn line" href="#carte">Voir la carte</a>
+        </div>
+        <div class="strip">
+          <span><b>★ 4,7</b> · près de 600 avis Google</span>
+          <span>Halal</span>
+          <span>Options végétariennes &amp; vegan</span>
+          <span>Livraison gratuite dès 25 €</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGNATURES -->
+    <section id="signatures">
+      <div class="pad">
+        <div class="ttl"><small>Les incontournables</small><h2 class="disp">Nos signatures</h2><p>Les plats que nos habitués commandent encore et encore.</p></div>
+        <div class="sig">
+          <div class="dish-card"><div class="ph"><img src="https://images.unsplash.com/photo-1641873933980-fcff60026f50?auto=format&fit=crop&w=800&q=70" alt="Poulet tandoori grillé" loading="lazy"><span class="fav">Le préféré</span></div><div class="b"><h3>Poulet tandoori</h3><p>Mariné au yaourt et aux épices, grillé au four tandoor.</p><p class="heat">🌶️🌶️ relevé</p></div></div>
+          <div class="dish-card"><div class="ph"><img src="https://images.unsplash.com/photo-1559528896-c5310744cce8?auto=format&fit=crop&w=800&q=70" alt="Biryani au poulet" loading="lazy"></div><div class="b"><h3>Poulet biryani</h3><p>Riz basmati parfumé, cuit avec le poulet et les épices.</p><p class="heat">🌶️ doux à moyen</p></div></div>
+          <div class="dish-card"><div class="ph"><img src="https://images.unsplash.com/photo-1772730065344-4cf131b39951?auto=format&fit=crop&w=800&q=70" alt="Curry de poulet crémeux et naan" loading="lazy"></div><div class="b"><h3>Curry &amp; cheese naan</h3><p>Un curry crémeux et son naan au fromage, le duo gagnant.</p><p class="heat">🌶️ à votre goût</p></div></div>
+          <div class="dish-card"><div class="ph"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=70" alt="Samoussas dorés" loading="lazy"></div><div class="b"><h3>Samoussas</h3><p>Croustillants, aux légumes ou à la viande, pour commencer.</p><p class="heat">🌶️ doux</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTE -->
+    <section id="carte" class="carte">
+      <div class="pad">
+        <div class="ttl"><small>La carte</small><h2 class="disp">Du tandoor à la table</h2><p>Une cuisine faite maison avec des produits frais. Demandez votre niveau d'épices, on s'adapte.</p></div>
+        <div class="cols">
+          <div class="cat"><h3>Entrées &amp; beignets</h3>
+            <div class="row"><div><h4>Samoussas</h4><p>Légumes ou viande</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Pakoras <span class="lab v">VEGAN</span></h4><p>Beignets de légumes épicés</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Soupe de lentilles</h4><p>Dal parfumé au cumin</p></div><span class="pr">—</span></div>
+          </div>
+          <div class="cat"><h3>Tandoori &amp; grillades</h3>
+            <div class="row"><div><h4>Poulet tandoori <span class="lab h">HALAL</span></h4><p>La spécialité de la maison</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Chicken tikka</h4><p>Morceaux de poulet marinés et grillés</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Seekh kebab</h4><p>Brochettes d'agneau haché aux épices</p></div><span class="pr">—</span></div>
+          </div>
+          <div class="cat"><h3>Currys</h3>
+            <div class="row"><div><h4>Butter chicken</h4><p>Sauce tomate, beurre et crème</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Agneau korma</h4><p>Sauce douce aux noix de cajou</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Crevettes masala</h4><p>Oignons, tomates, épices</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Légumes du jour <span class="lab v">VEGAN</span></h4><p>Curry de légumes de saison</p></div><span class="pr">—</span></div>
+          </div>
+          <div class="cat"><h3>Riz, naans &amp; desserts</h3>
+            <div class="row"><div><h4>Biryani poulet ou agneau</h4><p>Riz basmati, épices, raïta</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Naan nature, ail ou fromage</h4><p>Cuit au four tandoor</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Lassi mangue</h4><p>Yaourt et mangue, rafraîchissant</p></div><span class="pr">—</span></div>
+            <div class="row"><div><h4>Kulfi</h4><p>Glace indienne à la pistache</p></div><span class="pr">—</span></div>
+          </div>
+        </div>
+        <p class="note">Carte donnée à titre d'exemple — vos vrais plats et vos prix seront ajoutés avec vous.</p>
+      </div>
+    </section>
+
+    <!-- COMMANDER -->
+    <section id="commander">
+      <div class="pad">
+        <div class="ttl"><small>Comme vous voulez</small><h2 class="disp">Sur place, à emporter ou livré</h2></div>
+        <div class="ways">
+          <div class="way"><div class="ic">🍽️</div><h3>Sur place</h3><p>Une salle chaleureuse aux tons chauds et au mobilier en bois. Réservez par téléphone.</p></div>
+          <div class="way"><div class="ic">🥡</div><h3>À emporter</h3><p>Appelez, on prépare votre commande et vous passez la chercher.</p></div>
+          <div class="way"><div class="ic">🛵</div><h3>En livraison</h3><p>Livraison à Châteaudun, gratuite dès 25 € de commande.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANDEAU PHOTOS -->
+    <div class="band">
+      <div><img src="https://images.unsplash.com/photo-1775433205046-86e060feff06?auto=format&fit=crop&w=600&q=70" alt="Épices colorées" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1705359573325-f2006d5e459f?auto=format&fit=crop&w=600&q=70" alt="Brochettes grillées" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1762922425226-8cfe6987e7b0?auto=format&fit=crop&w=600&q=70" alt="Curry et naan" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1559528896-c5310744cce8?auto=format&fit=crop&w=600&q=70" alt="Biryani" loading="lazy"></div>
+    </div>
+
+    <!-- AVIS -->
+    <section id="avis" class="avis jali">
+      <div class="pad">
+        <div class="ttl"><small style="color:var(--marigold)">Ils en parlent</small><h2 class="disp">L'une des tables préférées de Châteaudun</h2></div>
+        <div class="rate">
+          <div class="n">4,7</div>
+          <div><div class="s">★★★★★</div><p>près de 600 avis sur Google</p></div>
+        </div>
+        <div class="pts">
+          <div class="pt"><h3>Des saveurs authentiques</h3><p>Une cuisine indienne parfumée, faite maison avec des produits frais.</p></div>
+          <div class="pt"><h3>Un accueil chaleureux</h3><p>Un service attentif et une salle conviviale aux tons chauds.</p></div>
+          <div class="pt"><h3>Pour tous les goûts</h3><p>Halal, options végétariennes et vegan, épices dosées à la demande.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFOS -->
+    <section id="infos">
+      <div class="pad">
+        <div class="ttl"><small>Pratique</small><h2 class="disp">Horaires &amp; accès</h2></div>
+        <div class="infos">
+          <div class="box">
+            <h3>Horaires</h3>
+            <ul class="hrs">
+              <li><span>Tous les jours, midi</span><span>11h30 – 14h30</span></li>
+              <li><span>Tous les jours, soir</span><span>18h30 – 22h30</span></li>
+            </ul>
+            <p class="small">Horaires à confirmer.</p>
+            <div class="chips"><span>Halal</span><span>Vegan</span><span>Sur place</span><span>À emporter</span><span>Livraison</span></div>
+          </div>
+          <div class="box">
+            <h3>Adresse</h3>
+            <address>75 bis rue de la République<br>28200 Châteaudun</address>
+            <a class="btn plum" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Punjab+Grill+75+bis+rue+de+la+R%C3%A9publique+28200+Ch%C3%A2teaudun" target="_blank" rel="noopener">Itinéraire</a>
+            <div class="map"><iframe src="https://www.google.com/maps?q=75+bis+rue+de+la+R%C3%A9publique+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Le Punjab Grill" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final jali">
+      <div class="pad">
+        <h2 class="disp">Une envie d'Inde ce soir ?</h2>
+        <a class="tel" href="tel:+33237660469">02 37 66 04 69</a>
+        <div class="cta"><a class="btn" href="tel:+33237660469">Appeler pour commander</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="pad">
+        <span>© 2026 Le Punjab Grill · 75 bis rue de la République, 28200 Châteaudun</span>
+        <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+        <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+        <p class="credits">Photos d'illustration : Jessie Maxwell, Mayur Sable, Steve Tsang, Mohammad Fahim, Kabir Cheema, Caitlin James, Mihir Sabnis — via Unsplash.</p>
+      </div>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>
