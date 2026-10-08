@@ -4,83 +4,126 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Le Pré de Frazé — Restaurant, épicerie &amp; chambres d'hôtes</title>
-<meta name="description" content="Le Pré de Frazé : restaurant à la plancha, épicerie de terroir et chambres d'hôtes au cœur du Perche, à Frazé (28).">
+<title>Le Pré de Frazé — Restaurant, épicerie &amp; chambres d'hôtes dans le Perche</title>
+<meta name="description" content="Le Pré de Frazé : restaurant à la plancha, salon de thé, épicerie de terroir et chambres d'hôtes au cœur du Perche, à Frazé (28). Étape idéale sur la Véloscénie.">
 <style>
   :root{
-    --bg:#f6f3ea; --text:#26301f; --muted:#646b5a; --green:#4f6b3a; --green-dark:#3b5229;
-    --clay:#b5652e; --card:#fffdf7; --line:#e3ddcc; --ph:#d9dfc9;
+    --bg:#f6f3ea; --text:#26301f; --muted:#646b5a; --green:#4f6b3a; --green-dark:#2f4320;
+    --clay:#b5652e; --clay-light:#f1e3d3; --card:#fffdf7; --line:#e3ddcc; --ph:#d9dfc9;
   }
   *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
   body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:700;line-height:1.2}
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
   a{color:inherit}
-  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--ph)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 
   .demo{background:var(--text);color:#e9eadf;font-size:.8rem;text-align:center;padding:7px 12px}
   .demo a{color:#fff;font-weight:600}
 
-  header{position:sticky;top:0;z-index:10;background:rgba(246,243,234,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-  header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
-  .logo{font-family:Georgia,serif;font-weight:700;font-size:1.2rem;text-decoration:none;color:var(--green-dark)}
-  nav{display:flex;gap:18px;font-size:.92rem}
+  header{position:sticky;top:0;z-index:10;background:rgba(246,243,234,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+  .logo{font-family:Georgia,serif;font-weight:700;font-size:1.25rem;text-decoration:none;color:var(--green-dark)}
+  .logo small{display:block;font-family:system-ui,sans-serif;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-top:-2px}
+  nav{display:flex;gap:20px;font-size:.92rem;align-items:center}
   nav a{text-decoration:none;color:var(--muted)}
   nav a:hover{color:var(--green)}
-  @media (max-width:560px){nav a:not(.call){display:none}}
-  nav .call{color:var(--clay);font-weight:600}
+  nav .call{background:var(--green);color:#fff;padding:8px 14px;border-radius:999px;font-weight:600}
+  nav .call:hover{color:#fff;background:var(--green-dark)}
+  @media (max-width:760px){nav a:not(.call){display:none}}
 
-  .hero{padding:48px 0 56px}
-  .hero .wrap{display:grid;gap:32px;align-items:center}
-  @media (min-width:800px){.hero .wrap{grid-template-columns:1.1fr 1fr}}
-  .kicker{color:var(--clay);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;margin-bottom:12px}
-  .hero h1{font-size:clamp(2.2rem,6vw,3.4rem);color:var(--green-dark);margin-bottom:16px}
-  .hero p{color:var(--muted);font-size:1.08rem;max-width:520px;margin-bottom:26px}
+  /* HERO */
+  .hero{position:relative;min-height:80vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+  .hero img{position:absolute;inset:0;z-index:-2}
+  .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(47,67,32,.1) 0%,rgba(47,67,32,.5) 45%,rgba(30,42,20,.92) 100%)}
+  .hero .wrap{padding-top:120px;padding-bottom:56px;width:100%}
+  .kicker{color:#f0d3b4;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;margin-bottom:12px}
+  .hero h1{font-size:clamp(2.4rem,7vw,4.2rem);margin-bottom:16px;max-width:700px}
+  .hero p{font-size:1.1rem;max-width:580px;margin-bottom:22px;color:#eef0e6}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+  .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 14px;font-size:.88rem}
   .btns{display:flex;flex-wrap:wrap;gap:10px}
-  .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:600}
-  .btn:hover{background:var(--green-dark)}
-  .btn.ghost{background:transparent;color:var(--green-dark);border:1.5px solid var(--green)}
+  .btn{display:inline-block;background:var(--clay);color:#fff;text-decoration:none;padding:13px 24px;border-radius:999px;font-weight:600;border:1.5px solid transparent}
+  .btn:hover{filter:brightness(.92)}
+  .btn.light{background:transparent;border-color:rgba(255,255,255,.7);color:#fff}
+  .btn.ghost{background:transparent;color:var(--green-dark);border-color:var(--green)}
 
-  .ph{background:var(--ph);border-radius:18px;display:grid;place-items:center;color:var(--green-dark);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
-  .hero .ph{aspect-ratio:4/3}
+  section{padding:72px 0}
+  section + section{border-top:1px solid var(--line)}
+  .eyebrow{color:var(--clay);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem;margin-bottom:8px}
+  h2{font-size:clamp(1.8rem,4.5vw,2.5rem);color:var(--green-dark);margin-bottom:12px}
+  .lead{color:var(--muted);max-width:640px;margin-bottom:34px;font-size:1.05rem}
 
-  section{padding:56px 0;border-top:1px solid var(--line)}
-  h2{font-size:clamp(1.6rem,4vw,2.1rem);color:var(--green-dark);margin-bottom:10px}
-  .lead{color:var(--muted);max-width:620px;margin-bottom:30px}
-
-  .trio{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
-  .card .ph{border-radius:0;aspect-ratio:16/10}
-  .card div.body{padding:18px 20px 22px}
-  .card h3{font-size:1.15rem;margin-bottom:6px}
+  /* TROIS UNIVERS */
+  .trio{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+  .card .photo{aspect-ratio:4/3}
+  .card .body{padding:20px 22px 24px;flex:1}
+  .card h3{font-size:1.25rem;margin-bottom:6px;color:var(--green-dark)}
   .card p{color:var(--muted);font-size:.95rem}
+  .card ul{list-style:none;margin-top:12px;font-size:.9rem}
+  .card li{padding:3px 0}
+  .card li::before{content:"✓ ";color:var(--green);font-weight:700}
 
-  .menu{display:grid;gap:12px;max-width:680px}
-  .dish{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
-  .dish h3{font-size:1.05rem}
-  .dish p{color:var(--muted);font-size:.9rem}
-  .dish .price{font-family:Georgia,serif;font-weight:700;color:var(--clay);white-space:nowrap}
-  .note{font-size:.85rem;color:var(--muted);margin-top:16px;font-style:italic}
+  /* CARTE */
+  .carte{background:var(--clay-light)}
+  .menu{display:grid;gap:22px}
+  @media (min-width:820px){.menu{grid-template-columns:1fr 1fr}}
+  .menu-block{background:var(--card);border-radius:18px;padding:26px;border:1px solid var(--line)}
+  .menu-block h3{font-size:1.35rem;color:var(--green-dark);margin-bottom:4px}
+  .menu-block .sub{font-size:.85rem;color:var(--clay);margin-bottom:12px}
+  .dish{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed var(--line)}
+  .dish:last-child{border:0}
+  .dish h4{font-size:1rem}
+  .dish p{color:var(--muted);font-size:.88rem}
+  .dish .price{font-family:Georgia,serif;color:var(--clay);font-weight:700;white-space:nowrap}
+  .tag{display:inline-block;font-size:.7rem;background:var(--green);color:#fff;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:middle;font-family:system-ui,sans-serif}
+  .note{font-size:.85rem;color:var(--muted);margin-top:22px;font-style:italic;text-align:center}
 
+  /* VELO */
+  .split{display:grid;gap:36px;align-items:center}
+  @media (min-width:820px){.split{grid-template-columns:1fr 1fr}}
+  .split .photo{aspect-ratio:4/3;border-radius:20px;overflow:hidden}
+  .split p{color:var(--muted);margin-bottom:14px}
+  .feats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .feat b{display:block;font-size:.95rem}
+  .feat span{font-size:.85rem;color:var(--muted)}
+
+  /* GALERIE */
+  .gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+  @media (min-width:820px){.gallery{grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px}.gallery .big{grid-row:span 2}}
+  .gallery figure{border-radius:16px;overflow:hidden;aspect-ratio:1/1}
+  @media (min-width:820px){.gallery figure{aspect-ratio:auto}}
+
+  /* INFOS */
   .info{display:grid;gap:20px}
-  @media (min-width:760px){.info{grid-template-columns:1fr 1fr}}
-  .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
-  .box h3{font-size:1.15rem;margin-bottom:12px}
+  @media (min-width:820px){.info{grid-template-columns:1fr 1.3fr}}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+  .box h3{font-size:1.2rem;margin-bottom:14px;color:var(--green-dark)}
   .hours{list-style:none}
-  .hours li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .hours li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:.95rem}
   .hours li:last-child{border:0}
   .hours span:last-child{color:var(--muted)}
-  .box address{font-style:normal;margin-bottom:14px}
-  .box .ph{aspect-ratio:16/9;border-radius:12px;margin-top:6px}
+  .small{font-size:.85rem;color:var(--muted);margin-top:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .chips span{font-size:.8rem;border:1px solid var(--line);border-radius:8px;padding:4px 10px;color:var(--muted);background:var(--bg)}
+  .map{border-radius:14px;overflow:hidden;aspect-ratio:16/10;margin-top:16px;background:var(--ph)}
+  .map iframe{width:100%;height:100%;border:0}
+  .box address{font-style:normal;margin-bottom:14px;font-size:1.05rem}
 
-  .contact{text-align:center;background:var(--green-dark);color:#f3f1e6;border:0}
+  /* CONTACT */
+  .contact{text-align:center;background:var(--green-dark);color:#f3f1e6}
   .contact h2{color:#fff}
-  .contact .lead{color:#d6dbc9;margin:0 auto 26px}
+  .contact .lead{color:#d6dbc9;margin:0 auto 28px}
   .contact .btns{justify-content:center}
-  .contact .btn{background:var(--clay)}
-  .contact .btn.ghost{background:transparent;color:#fff;border-color:#c8d0b6}
-  .contact .small{margin-top:20px;font-size:.9rem;color:#c8d0b6}
+  .contact .insta{display:inline-block;margin-top:20px;color:#d6dbc9;font-size:.95rem}
 
-  footer{padding:26px 0;text-align:center;font-size:.85rem;color:var(--muted)}
+  footer{background:#1f2c15;color:#aeb7a0;font-size:.85rem;padding:30px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+  footer a{color:#e2e7d8}
+  footer .credits{width:100%;font-size:.75rem;color:#8a957b}
 </style>
 </head>
 <body>
@@ -89,93 +132,198 @@
 
 <header>
   <div class="wrap">
-    <a class="logo" href="#">Le Pré de Frazé</a>
+    <a class="logo" href="#">Le Pré de Frazé<small>Restaurant · Épicerie · Chambres</small></a>
     <nav>
       <a href="#maison">La maison</a>
       <a href="#carte">La carte</a>
+      <a href="#velo">À vélo</a>
       <a href="#infos">Infos</a>
-      <a class="call" href="tel:+33237370192">02 37 37 01 92</a>
+      <a class="call" href="tel:+33237370192">Réserver</a>
     </nav>
   </div>
 </header>
 
+<!-- HERO -->
 <div class="hero">
+  <img src="https://images.unsplash.com/photo-1539600937385-bd902dd379cc?auto=format&fit=crop&w=1800&q=70" alt="Village de campagne française dans la lumière du soir">
   <div class="wrap">
-    <div>
-      <p class="kicker">Frazé · Perche · Eure-et-Loir</p>
-      <h1>Une halte gourmande au cœur du Perche.</h1>
-      <p>Cuisine à la plancha, épicerie de produits du terroir et chambres d'hôtes : passez pour un repas, une pause ou une nuit au calme.</p>
-      <div class="btns">
-        <a class="btn" href="tel:+33237370192">Réserver une table</a>
-        <a class="btn ghost" href="#carte">Voir la carte</a>
-      </div>
+    <p class="kicker">Frazé · Perche · Eure-et-Loir</p>
+    <h1>Une halte gourmande au cœur du Perche.</h1>
+    <p>Cuisine à la plancha, salon de thé, épicerie de terroir et chambres d'hôtes : passez pour un repas, une pause gourmande ou une nuit au calme.</p>
+    <div class="badges">
+      <span class="badge">🍽️ Restaurant</span>
+      <span class="badge">🧺 Épicerie de terroir</span>
+      <span class="badge">🛏️ Chambres d'hôtes</span>
+      <span class="badge">🚲 Étape Véloscénie</span>
     </div>
-    <div class="ph">Illustration</div>
+    <div class="btns">
+      <a class="btn" href="tel:+33237370192">Réserver une table</a>
+      <a class="btn light" href="#carte">Découvrir la carte</a>
+    </div>
   </div>
 </div>
 
+<!-- LA MAISON -->
 <section id="maison">
   <div class="wrap">
+    <p class="eyebrow">La maison</p>
     <h2>Trois raisons de s'arrêter</h2>
-    <p class="lead">Dans le village de Frazé, entre château et campagne percheronne, une adresse chaleureuse pour les gourmands, les promeneurs et les cyclistes de la Véloscénie.</p>
+    <p class="lead">Dans le village de Frazé, entre château et bocage percheron, une adresse chaleureuse pour les gourmands, les promeneurs et les cyclistes.</p>
     <div class="trio">
-      <div class="card"><div class="ph">Illustration</div><div class="body"><h3>Le restaurant</h3><p>Formules à la plancha et menus originaux, cuisinés avec des produits locaux. Terrasse aux beaux jours.</p></div></div>
-      <div class="card"><div class="ph">Illustration</div><div class="body"><h3>L'épicerie</h3><p>Une épicerie de terroir au charme brocante : miel, fromages, cidres et douceurs du Perche à emporter.</p></div></div>
-      <div class="card"><div class="ph">Illustration</div><div class="body"><h3>Les chambres</h3><p>Des chambres d'hôtes au calme, idéales pour les vélotouristes, avec recharge pour vélos électriques.</p></div></div>
+      <div class="card">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1617007672587-09340061e21d?auto=format&fit=crop&w=900&q=70" alt="Viande et légumes grillés" loading="lazy"></div>
+        <div class="body">
+          <h3>Le restaurant</h3>
+          <p>Formules à la plancha et menus originaux, cuisinés avec des produits de producteurs voisins.</p>
+          <ul><li>Terrasse aux beaux jours</li><li>Vente à emporter</li><li>Traiteur &amp; séminaires</li></ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1545588155-e35ed2608eac?auto=format&fit=crop&w=900&q=70" alt="Étagères de bocaux et produits" loading="lazy"></div>
+        <div class="body">
+          <h3>L'épicerie</h3>
+          <p>Une épicerie de terroir au charme brocante, pour repartir avec un morceau du Perche.</p>
+          <ul><li>Miel, confitures, terrines</li><li>Cidres et jus de pomme</li><li>Idées cadeaux locales</li></ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1505692795793-20f543407193?auto=format&fit=crop&w=900&q=70" alt="Chambre lumineuse et chaleureuse" loading="lazy"></div>
+        <div class="body">
+          <h3>Les chambres d'hôtes</h3>
+          <p>Des chambres au calme pour une nuit dans le Perche, avec petit-déjeuner et dîner sur demande.</p>
+          <ul><li>Accueil des cyclistes</li><li>Wifi &amp; climatisation</li><li>Animaux acceptés</li></ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="carte">
+<!-- CARTE -->
+<section id="carte" class="carte">
   <div class="wrap">
-    <h2>Un aperçu de la carte</h2>
-    <p class="lead">Une cuisine simple et généreuse, qui suit les saisons.</p>
+    <p class="eyebrow">La carte</p>
+    <h2>À table !</h2>
+    <p class="lead">Une cuisine simple et généreuse, qui suit les saisons et les producteurs du coin.</p>
     <div class="menu">
-      <div class="dish"><div><h3>Plancha du Perche</h3><p>Viandes de producteurs voisins, légumes grillés, sauce maison</p></div><span class="price">—</span></div>
-      <div class="dish"><div><h3>Plancha de la mer</h3><p>Poisson du jour, crevettes, riz parfumé</p></div><span class="price">—</span></div>
-      <div class="dish"><div><h3>Salade du Pré</h3><p>Chèvre chaud du Perche, miel local, noix et pommes</p></div><span class="price">—</span></div>
-      <div class="dish"><div><h3>Dessert du moment</h3><p>Tarte maison aux fruits de saison</p></div><span class="price">—</span></div>
+      <div class="menu-block">
+        <h3>Les formules plancha</h3>
+        <p class="sub">Notre spécialité</p>
+        <div class="dish"><div><h4>Plancha du Perche <span class="tag">Maison</span></h4><p>Viandes de producteurs voisins, légumes grillés, sauce maison</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Plancha de la mer</h4><p>Poisson du jour, crevettes, riz parfumé</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Plancha végétarienne</h4><p>Légumes de saison, halloumi, herbes fraîches</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Formule du midi</h4><p>Entrée, plat, petit dessert</p></div><span class="price">—</span></div>
+      </div>
+      <div class="menu-block">
+        <h3>Entrées &amp; salades</h3>
+        <p class="sub">Pour commencer ou en plat léger</p>
+        <div class="dish"><div><h4>Salade du Pré</h4><p>Chèvre chaud du Perche, miel local, noix, pommes</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Terrine maison</h4><p>Pain de campagne, cornichons, confit d'oignons</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Velouté du moment</h4><p>Selon les légumes du marché</p></div><span class="price">—</span></div>
+      </div>
+      <div class="menu-block">
+        <h3>Desserts</h3>
+        <p class="sub">Faits maison</p>
+        <div class="dish"><div><h4>Tarte aux pommes du Perche</h4><p>Crème fraîche ou boule de glace</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Dessert du moment</h4><p>Selon l'humeur de la cuisine</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Menu enfant</h4><p>Plat, dessert, boisson</p></div><span class="price">—</span></div>
+      </div>
+      <div class="menu-block">
+        <h3>Salon de thé &amp; bar</h3>
+        <p class="sub">L'après-midi, en terrasse</p>
+        <div class="dish"><div><h4>Thés &amp; infusions</h4><p>Avec une part de gâteau maison</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Cidre &amp; poiré du Perche</h4><p>Producteurs locaux</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Jus de pomme artisanal</h4><p>Pressé dans le Perche</p></div><span class="price">—</span></div>
+      </div>
     </div>
-    <p class="note">Plats donnés à titre d'exemple — la carte réelle sera ajoutée avec vous.</p>
+    <p class="note">Carte donnée à titre d'exemple : vos vrais plats et vos prix seront ajoutés avec vous.</p>
   </div>
 </section>
 
+<!-- VELO -->
+<section id="velo">
+  <div class="wrap split">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1660658344279-8d54f0be4c18?auto=format&fit=crop&w=1200&q=70" alt="Cycliste sur une route bordée d'arbres" loading="lazy"></div>
+    <div>
+      <p class="eyebrow">À vélo</p>
+      <h2>L'étape idéale sur la Véloscénie</h2>
+      <p>Entre Paris et le Mont-Saint-Michel, la Véloscénie traverse le Perche. Au Pré de Frazé, les cyclistes sont les bienvenus : on recharge les batteries, celles du vélo comme les vôtres.</p>
+      <p>Une pause déjeuner, un goûter en terrasse ou une nuit avant de reprendre la route : on vous accueille comme il se doit.</p>
+      <div class="feats">
+        <div class="feat"><b>🔌 Borne de recharge</b><span>pour vélos électriques</span></div>
+        <div class="feat"><b>🛏️ Chambres d'hôtes</b><span>pour faire étape</span></div>
+        <div class="feat"><b>🥪 Repas à emporter</b><span>pour la route</span></div>
+        <div class="feat"><b>🅿️ Parking</b><span>vélos et voitures</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">En images</p>
+    <h2>Un avant-goût du Perche</h2>
+    <p class="lead">Grillades, douceurs et campagne verdoyante.</p>
+    <div class="gallery">
+      <figure class="big"><img src="https://images.unsplash.com/photo-1771285119318-b342c3ecc51c?auto=format&fit=crop&w=1200&q=70" alt="Plateau de viandes et légumes grillés" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1712478023355-8a3037a37c43?auto=format&fit=crop&w=700&q=70" alt="Part de gâteau et tasse de thé" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1704212692086-59a7f7662f6c?auto=format&fit=crop&w=700&q=70" alt="Village entouré de champs verts" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1617007672587-09340061e21d?auto=format&fit=crop&w=700&q=70" alt="Grillades sur la plancha" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1545588155-e35ed2608eac?auto=format&fit=crop&w=700&q=70" alt="Étagères de l'épicerie" loading="lazy"></figure>
+    </div>
+    <p class="small">Photos d'illustration — à remplacer par les photos du Pré de Frazé.</p>
+  </div>
+</section>
+
+<!-- INFOS -->
 <section id="infos">
   <div class="wrap">
+    <p class="eyebrow">Pratique</p>
     <h2>Horaires &amp; accès</h2>
-    <p class="lead">Terrasse, parking, animaux acceptés. Vente à emporter et traiteur sur demande.</p>
+    <p class="lead">Au cœur du village de Frazé, à deux pas du château.</p>
     <div class="info">
       <div class="box">
         <h3>Horaires</h3>
         <ul class="hours">
-          <li><span>Lundi – Vendredi</span><span>À compléter</span></li>
-          <li><span>Samedi</span><span>À compléter</span></li>
-          <li><span>Dimanche</span><span>À compléter</span></li>
+          <li><span>Restaurant</span><span>À compléter</span></li>
+          <li><span>Salon de thé</span><span>À compléter</span></li>
+          <li><span>Épicerie</span><span>À compléter</span></li>
+          <li><span>Chambres d'hôtes</span><span>Sur réservation</span></li>
         </ul>
+        <p class="small">Réservation conseillée, appelez-nous.</p>
+        <div class="chips"><span>Terrasse</span><span>Parking</span><span>Wifi</span><span>Climatisation</span><span>Animaux acceptés</span><span>Équipement bébé</span><span>À emporter</span><span>Traiteur</span><span>Séminaires</span></div>
       </div>
       <div class="box">
         <h3>Nous trouver</h3>
         <address>6 rue du 8 Mai 1945<br>28160 Frazé</address>
         <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=6+rue+du+8+Mai+1945+28160+Fraz%C3%A9" target="_blank" rel="noopener">Itinéraire</a>
-        <div class="ph">Illustration — carte</div>
+        <div class="map"><iframe src="https://www.google.com/maps?q=6+rue+du+8+Mai+1945+28160+Fraz%C3%A9&amp;output=embed" title="Carte : Le Pré de Frazé" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="wrap">
     <h2>Une table, une chambre, une question ?</h2>
     <p class="lead">Appelez-nous ou écrivez-nous, on vous répond avec plaisir.</p>
     <div class="btns">
-      <a class="btn" href="tel:+33237370192">02 37 37 01 92</a>
-      <a class="btn ghost" href="mailto:lepredefraze@yahoo.com">lepredefraze@yahoo.com</a>
+      <a class="btn" href="tel:+33237370192">📞 02 37 37 01 92</a>
+      <a class="btn light" href="mailto:lepredefraze@yahoo.com">✉️ lepredefraze@yahoo.com</a>
     </div>
-    <p class="small"><a href="https://www.instagram.com/le.pre.de.fraze/" target="_blank" rel="noopener">Suivez-nous sur Instagram — @le.pre.de.fraze</a></p>
+    <a class="insta" href="https://www.instagram.com/le.pre.de.fraze/" target="_blank" rel="noopener">Suivez-nous sur Instagram — @le.pre.de.fraze</a>
   </div>
 </section>
 
-<footer>© 2026 Le Pré de Frazé · Frazé (28) — Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></footer>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Le Pré de Frazé · 6 rue du 8 Mai 1945, 28160 Frazé</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Boudewijn Boer, Matthew de Livera, Bundo Kim, Quilia, David Dvořáček, Gang Hao, hanaori, Meklay Yotkhamsay — via Unsplash.</p>
+  </div>
+</footer>
 
 </body>
 </html>

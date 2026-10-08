@@ -8,7 +8,7 @@ Démarcher des restaurants en leur montrant un prototype de site déjà fait à 
 2. Noter les infos clés dans la section "Restaurants" ci-dessous (court, pour économiser les tokens).
 3. **Attendre le "top" de l'utilisateur avant de coder.**
 4. Générer la page dans `site/prototype/<slug-du-restaurant>/index.html` → URL : `<domaine-netlify>/prototype/<slug>/`.
-5. Ne PAS l'ajouter à la vitrine (liens envoyés directement aux prospects).
+5. Ajouter un bouton vers le prototype dans la barre « Maquettes » en haut de `site/index.html`.
 6. Mettre à jour ce fichier, commit + push sur GitHub (Netlify redéploie automatiquement une fois relié).
 
 ## Dépôt
@@ -38,7 +38,7 @@ prototypes-restaurants/
 - **Marque** : Louis Maillet, développeur web (Olivet, 45). Site : https://louismaillet.fr — bandeau : "Maquette proposée par Louis Maillet" + lien louismaillet.fr. LinkedIn : https://www.linkedin.com/in/louis-maillet-06064a32b/. Pas d'email/tél publics sur son site → lien vers le site.
 - Références à citer dans la vitrine : Gîtes La Grande Boeufferie, European CLIL Academy, refonte Oumami (restaurant asiatique).
 - **Hébergement** : Netlify (sites statiques, pas de back-end).
-- **index.html racine** : page vitrine très simple — qui il est, ce qu'il fait (sites pour restaurants), lien vers louismaillet.fr. NE PAS lister les prototypes.
+- **index.html racine** : page vitrine très simple — qui il est, ce qu'il fait (sites pour restaurants), lien vers louismaillet.fr. **Changement (08/10)** : barre « Maquettes : » tout en haut avec un bouton par prototype (demande utilisateur) → ajouter un bouton à chaque nouveau prototype.
 - **Images** : par défaut, placeholder à plat (bloc coloré) avec le texte "Illustration". Version « complète » sur demande : photos libres Unsplash en hotlink (images.unsplash.com, crédits en pied de page, mention « photos d'illustration »). Jamais les photos du restaurant prises sur Google/TripAdvisor.
 - **Style des prototypes** : SIMPLES et LÉGERS, peu de contenu. Sections limitées : hero, courte présentation, quelques plats/carte, horaires + adresse, contact. Pas de galerie lourde, pas de JS inutile.
 
@@ -48,7 +48,7 @@ prototypes-restaurants/
 - URL : `/prototype/le-pre-de-fraze/`. Ex-« L'Étape des Saveurs » de Frazé (même adresse, repris/renommé ; le nom L'Étape des Saveurs survit à Brou → aucomptoirbrou.com, qui a déjà un site).
 - 6 rue du 8 Mai 1945, 28160 Frazé. Tél 02 37 37 01 92, lepredefraze@yahoo.com, Instagram @le.pre.de.fraze. Pas de site propre.
 - Cuisine française, formules plancha, menus originaux, salon de thé/bar ; épicerie de terroir (style brocante) ; chambres d'hôtes pour cyclistes Véloscénie (recharge VAE). Terrasse, parking, animaux OK, emporter, traiteur.
-- Prototype : palette vert/terre cuite, plats d'exemple sans prix, horaires « À compléter » (non trouvés en ligne).
+- Prototype version COMPLÈTE : hero photo plein écran, 3 univers avec photos (restaurant, épicerie, chambres), carte 4 blocs (plancha, entrées, desserts/enfant, salon de thé/bar) sans prix, section Véloscénie, galerie 5 photos Unsplash, horaires « À compléter » (non trouvés), services, Google Maps intégrée, contact tél/email/Instagram.
 - Alternative non faite : Au Comptoir by L'Étape des Saveurs, 3 place des Halles, Brou (02 37 96 05 69).
 
 ### Crêperie L'Argoat — slug `creperie-largoat` — FAIT (2026-10-08)
