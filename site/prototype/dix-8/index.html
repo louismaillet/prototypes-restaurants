@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>DIX 8 — Restaurant à Bonneval</title>
+<meta name="description" content="DIX 8, restaurant place du Marché aux Grains à Bonneval : cuisine maison de produits locaux, terrasse face à l'église.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f4f3ef;--ink:#111;--muted:#6b6b66;--accent:#c6f432;--line:#111}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Space Grotesk",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:#ddd;filter:grayscale(.15)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--ink);color:#bbb;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--accent);font-weight:700}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px;border-bottom:1px solid var(--line)}
+  .logo{font-weight:700;letter-spacing:.08em;text-decoration:none}
+  header nav{display:flex;gap:26px;font-size:.9rem}
+  header nav a{text-decoration:none}
+  header nav a:hover{background:var(--accent)}
+  @media (max-width:720px){header nav{display:none}}
+  .call{background:var(--ink);color:var(--bg);text-decoration:none;font-weight:500;padding:9px 16px;border-radius:999px}
+  /* HERO : chiffre géant + photo */
+  .hero .wrap{display:grid;gap:20px;padding-top:30px;padding-bottom:50px;border-bottom:1px solid var(--line)}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.25fr 1fr;align-items:end}}
+  .big{font-weight:700;font-size:clamp(9rem,34vw,22rem);line-height:.78;letter-spacing:-.06em}
+  .big span{display:inline-block;background:var(--accent);padding:0 .06em}
+  .hero .meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin-top:18px;text-transform:uppercase;letter-spacing:.1em}
+  .hero .side .ph{aspect-ratio:4/5;border-radius:4px;overflow:hidden}
+  .hero .side p{font-family:"Instrument Serif",serif;font-size:1.6rem;line-height:1.2;margin:16px 0 18px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:500;padding:13px 22px;border-radius:999px;background:var(--ink);color:var(--bg);border:1px solid var(--ink)}
+  .btn.out{background:transparent;color:var(--ink)}
+  .btn.acc{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+  /* sections numérotées */
+  .row{display:grid;gap:20px;padding:60px 0;border-bottom:1px solid var(--line)}
+  @media (min-width:900px){.row{grid-template-columns:200px 1fr}}
+  .num{font-size:.85rem;color:var(--muted);letter-spacing:.1em}
+  .num b{display:block;font-size:3rem;color:var(--ink);letter-spacing:-.04em;line-height:1}
+  h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.4rem,6vw,4.2rem);line-height:1;margin-bottom:16px}
+  h2 em{font-style:italic}
+  .lead{font-size:1.15rem;max-width:680px;color:#333}
+  .facts{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:28px;border-top:1px solid var(--line)}
+  .facts div{padding:18px 14px 18px 0;border-bottom:1px solid var(--line)}
+  .facts b{display:block;font-size:1.05rem}
+  .facts span{color:var(--muted);font-size:.92rem}
+  /* carte en liste typographique */
+  .menu{display:grid;gap:30px;margin-top:10px}
+  @media (min-width:760px){.menu{grid-template-columns:1fr 1fr 1fr}}
+  .menu h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:8px}
+  .menu p{font-family:"Instrument Serif",serif;font-size:1.45rem;line-height:1.25;padding:8px 0}
+  .menu p small{display:block;font-family:"Space Grotesk",sans-serif;font-size:.85rem;color:var(--muted)}
+  .formula{margin-top:30px;display:inline-flex;gap:14px;align-items:center;background:var(--accent);padding:14px 20px;border-radius:999px;font-weight:500}
+  .formula b{font-size:1.4rem}
+  .note{font-size:.85rem;color:var(--muted);margin-top:14px}
+  .gal{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+  @media (min-width:760px){.gal{grid-template-columns:2fr 1fr 1fr}}
+  .gal .ph{aspect-ratio:3/4;border-radius:4px;overflow:hidden}
+  @media (min-width:760px){.gal .ph:first-child{aspect-ratio:auto}}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .two{display:grid;gap:30px}
+  @media (min-width:860px){.two{grid-template-columns:1fr 1fr}}
+  address{font-style:normal;font-family:"Instrument Serif",serif;font-size:2rem;line-height:1.1;margin-bottom:16px}
+  .map{aspect-ratio:16/10;border-radius:4px;overflow:hidden;margin-top:16px;background:#ddd}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(1)}
+  .small{font-size:.85rem;color:var(--muted);margin-top:10px}
+  .final{padding:80px 0;text-align:center;border-bottom:1px solid var(--line)}
+  .final .tel{display:block;font-weight:700;font-size:clamp(2.4rem,9vw,6rem);letter-spacing:-.04em;text-decoration:none;margin:10px 0 20px}
+  .final .tel:hover{background:var(--accent)}
+  footer{font-size:.8rem;color:var(--muted);padding:22px 0 30px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">DIX 8 — BONNEVAL</a>
+    <nav><a href="#maison">01 Maison</a><a href="#carte">02 Carte</a><a href="#infos">03 Infos</a></nav>
+    <a class="call" href="tel:+33259161559">Réserver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="big">DIX<span>8</span></div>
+      <div class="meta"><span>Restaurant · Cuisine maison</span><span>Place du Marché aux Grains</span><span>★ 4,8 · 200 avis Google</span></div>
+    </div>
+    <div class="side">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1654921834734-c7002b177e35?auto=format&fit=crop&w=900&q=70" alt="Table dressée"></div>
+      <p>Une cuisine maison de produits locaux, une terrasse face à l'église, au cœur de Bonneval.</p>
+      <div class="btns"><a class="btn" href="tel:+33259161559">Réserver une table</a><a class="btn out" href="#carte">La carte</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="row" id="maison">
+    <div class="num">SECTION<b>01</b></div>
+    <div>
+      <h2>Simple, <em>maison</em>, local.</h2>
+      <p class="lead">Ouvert récemment à Bonneval, DIX 8 propose une cuisine faite maison à partir de produits locaux, dans une salle au décor soigné et original. Aux beaux jours, la terrasse s'installe face à l'église.</p>
+      <div class="facts">
+        <div><b>Produits locaux</b><span>des producteurs du coin</span></div>
+        <div><b>Tout est fait maison</b><span>de l'entrée au dessert</span></div>
+        <div><b>Terrasse</b><span>face à l'église</span></div>
+        <div><b>Service souriant</b><span>et rapide le midi</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="carte">
+    <div class="num">SECTION<b>02</b></div>
+    <div>
+      <h2>À la <em>carte</em></h2>
+      <div class="menu">
+        <div><h3>Entrées</h3><p>Brie croustillant<small>salade, miel</small></p><p>Œufs cocotte<small>crème, herbes</small></p><p>Œufs mayonnaise<small>le classique bien fait</small></p></div>
+        <div><h3>Plats</h3><p>Sauté de porc<small>vin rouge et échalotes</small></p><p>Pièce du boucher<small>sauce poivre-cognac, frites</small></p><p>Poisson du jour<small>selon l'arrivage</small></p></div>
+        <div><h3>Desserts</h3><p>Tiramisu maison<small>recette de la maison</small></p><p>Dessert du jour<small>selon la saison</small></p><p>Café gourmand<small>et ses mignardises</small></p></div>
+      </div>
+      <div class="formula"><span>Formule entrée · plat · dessert</span><b>≈ 24 €</b></div>
+      <p class="note">Plats et prix donnés à titre d'exemple — à confirmer avec vous.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="num">EN IMAGES</div>
+    <div class="gal">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?auto=format&fit=crop&w=900&q=70" alt="Pièce de bœuf tranchée" loading="lazy"></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1572107833705-3f47f5462d1e?auto=format&fit=crop&w=600&q=70" alt="Viande et légumes" loading="lazy"></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1729711079394-9177676ef713?auto=format&fit=crop&w=600&q=70" alt="Terrasse" loading="lazy"></div>
+    </div>
+  </div>
+
+  <div class="row" id="infos">
+    <div class="num">SECTION<b>03</b></div>
+    <div class="two">
+      <div>
+        <h2>Horaires</h2>
+        <ul class="hours">
+          <li><span>Mardi</span><span>12h – 14h</span></li>
+          <li><span>Mercredi – Jeudi</span><span>12h – 14h · 19h – 21h</span></li>
+          <li><span>Vendredi</span><span>12h – 14h · 19h – 21h30</span></li>
+          <li><span>Samedi – Lundi</span><span>Fermé</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer.</p>
+      </div>
+      <div>
+        <h2>Adresse</h2>
+        <address>3 place du Marché aux Grains, 28800 Bonneval</address>
+        <a class="btn acc" href="https://www.google.com/maps/search/?api=1&amp;query=DIX+8+3+place+du+March%C3%A9+aux+Grains+28800+Bonneval" target="_blank" rel="noopener">Itinéraire →</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=3+place+du+March%C3%A9+aux+Grains+28800+Bonneval&amp;output=embed" title="Carte : DIX 8, Bonneval" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="final">
+    <p class="num">RÉSERVATIONS</p>
+    <a class="tel" href="tel:+33259161559">02 59 16 15 59</a>
+    <a class="btn" href="tel:+33259161559">Appeler</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 DIX 8 · 3 place du Marché aux Grains, 28800 Bonneval</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Cody Chan, Jason Leung, Arielle Allouche, Alice Kotlyarenko — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
