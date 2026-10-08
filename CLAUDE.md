@@ -13,7 +13,7 @@ Démarcher des restaurants en leur montrant un prototype de site déjà fait à 
 
 ## Dépôt
 - GitHub : https://github.com/louismaillet/prototypes-restaurants (branche `main`, push OK depuis Claude).
-- Gmail connecté : préparer les mails puis demander l'accord avant chaque envoi.
+- Gmail connecté MAIS **NE JAMAIS ENVOYER DE MAIL** (demande utilisateur 08/10) : donner seulement le texte prêt à copier (destinataire, objet, corps). C'est l'utilisateur qui envoie.
 - Netlify : publish directory = `site`. Domaine : https://prototype-web-site.netlify.app (prototypes : https://prototype-web-site.netlify.app/prototype/<slug>/).
 
 ## Règles des prototypes
@@ -71,3 +71,10 @@ prototypes-restaurants/
 - Horaires (kazfeed) : mar–jeu 7h–16h30 ; ven–sam 7h–21h30 ; fermé dim + lun → à confirmer.
 - Avis : Google 4,7/5 (≈37 avis) ; Facebook 4,8 (selon utilisateur). Établissement récent (fiches 2025).
 - Pas de carte en ligne. Nom = clin d'œil aux « Tontons flingueurs » → ton humoristique possible, sans reprendre visuels/répliques du film.
+
+### Brocéliande — slug `broceliande` — FAIT (2026-10-08)
+- URL : https://prototype-web-site.netlify.app/prototype/broceliande/. Charte UNIQUE « légende arthurienne » : fond vert forêt sombre + or + parchemin, polices Cinzel / Cormorant Garamond, en-tête centré sans barre, hero plein écran centré (forêt moussue), chapitres I–IV, carte « Les chevaliers de la carte » en chiffres romains, triptyque photos, bouton « Réserver » flottant.
+- Crêperie, 28 rue de Sully, 28400 Nogent-le-Rotrou. Tél 02 37 81 83 76. Email (fiche Perche tourisme) : sas.broceliande@laposte.net. Facebook seulement, aucun site (Mapstr pointe à tort vers jardinsdebroceliande.fr, un jardin près de Rennes).
+- Avis : Google 4,8 (514 selon utilisateur) ; TripAdvisor 4,8 (371), n°1/30 à Nogent. Points forts : galettes aux noms arthuriens (Lancelot, Merlin, Guenièvre…), galette Saint-Jacques « Juniper » (carotte, poireau, Noilly Prat), dessert « Excalibur » (pêches rôties, glace, caramel), poutres + cheminée, clim, accueil souriant, patron (Thomas) plein d'humour, amuse-bouches offerts, crêpes « tournées à la main », produits frais/de saison, cidre local.
+- Horaires (TripAdvisor) : fermé lun–mer ; jeu–sam 12h–13h30 / 19h–20h30 ; dim 12h–13h30 / 19h–20h15 → à confirmer. Réservation conseillée. CB, NFC, titres-resto/Pluxee, à emporter, PMR, anglais parlé.
+- Mail de prospection : texte donné à l'utilisateur, pas envoyé.

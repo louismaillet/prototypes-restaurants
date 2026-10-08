@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Brocéliande — Crêperie à Nogent-le-Rotrou</title>
+<meta name="description" content="Brocéliande, crêperie à Nogent-le-Rotrou (28) : galettes et crêpes tournées à la main, produits frais et de saison, dans un cadre de poutres et de cheminée. Réservation conseillée.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#0f1f17; --forest-2:#16291f; --forest-3:#1f3729; --gold:#c9a45c; --gold-soft:#e3cf9f;
+    --parch:#efe6d2; --parch-dim:#cfc5ae; --muted:#9fae9f; --line:rgba(201,164,92,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.15rem;background:var(--forest);color:var(--parch);line-height:1.6}
+  .cz{font-family:"Cinzel",Georgia,serif;letter-spacing:.06em}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--forest-3)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  .demo{background:#000;color:#bbb;font-family:system-ui,sans-serif;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--gold-soft);font-weight:600}
+
+  /* EN-TÊTE centré */
+  header{position:absolute;left:0;right:0;z-index:5;text-align:center;padding:22px 20px 0}
+  header .mark{font-size:.8rem;color:var(--gold);letter-spacing:.4em}
+  header nav{display:flex;justify-content:center;gap:26px;margin-top:10px;font-family:"Cinzel",serif;font-size:.78rem;letter-spacing:.14em}
+  header nav a{text-decoration:none;color:var(--parch-dim)}
+  header nav a:hover{color:var(--gold)}
+  @media (max-width:640px){header nav{display:none}}
+
+  /* bouton flottant réserver */
+  .float{position:fixed;right:16px;bottom:16px;z-index:20;background:var(--gold);color:var(--forest);font-family:"Cinzel",serif;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-decoration:none;padding:13px 18px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+
+  /* HERO centré plein écran */
+  .hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;isolation:isolate}
+  .hero img{position:absolute;inset:0;z-index:-2}
+  .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,rgba(15,31,23,.35) 0%,rgba(15,31,23,.75) 55%,rgba(15,31,23,1) 100%)}
+  .hero .inner{padding:120px 20px 80px;max-width:760px}
+  .hero .pre{color:var(--gold);font-size:.85rem;letter-spacing:.35em}
+  .hero h1{font-family:"Cinzel",serif;font-weight:700;font-size:clamp(2.8rem,10vw,6.2rem);letter-spacing:.08em;line-height:1;margin:16px 0 8px;color:var(--parch)}
+  .orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:14px auto}
+  .orn::before,.orn::after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}
+  .orn::after{transform:scaleX(-1)}
+  .hero .tag{font-style:italic;font-size:clamp(1.25rem,3vw,1.6rem);color:var(--parch-dim);margin-bottom:28px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+  .btn{display:inline-block;font-family:"Cinzel",serif;font-size:.85rem;letter-spacing:.12em;text-decoration:none;padding:14px 26px;border:1px solid var(--gold);color:var(--forest);background:var(--gold);transition:background .2s,color .2s}
+  .btn:hover{background:transparent;color:var(--gold)}
+  .btn.out{background:transparent;color:var(--gold)}
+  .btn.out:hover{background:var(--gold);color:var(--forest)}
+  .rating{margin-top:30px;font-size:1rem;color:var(--parch-dim)}
+  .rating b{color:var(--gold);font-family:"Cinzel",serif}
+
+  /* CHAPITRES */
+  section{padding:90px 0}
+  .chap{text-align:center;margin-bottom:46px}
+  .chap .num{color:var(--gold);font-size:.8rem;letter-spacing:.4em}
+  .chap h2{font-family:"Cinzel",serif;font-weight:500;font-size:clamp(1.9rem,5vw,3rem);letter-spacing:.06em;margin-top:10px}
+  .chap p{color:var(--parch-dim);font-style:italic;max-width:600px;margin:10px auto 0}
+
+  /* I. LA TABLE : alternance */
+  .alt{display:grid;gap:34px;align-items:center;margin-bottom:56px}
+  .alt:last-child{margin-bottom:0}
+  @media (min-width:860px){.alt{grid-template-columns:1fr 1fr;gap:60px}.alt.rev .pic{order:2}}
+  .alt .pic{aspect-ratio:4/3;border:1px solid var(--line);padding:10px;background:var(--forest-2)}
+  .alt h3{font-family:"Cinzel",serif;font-weight:500;font-size:1.5rem;color:var(--gold-soft);margin-bottom:12px;letter-spacing:.04em}
+  .alt p{color:var(--parch-dim);margin-bottom:12px}
+
+  /* II. LA CARTE */
+  .carte{background:var(--forest-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .menu{display:grid;gap:22px}
+  @media (min-width:860px){.menu{grid-template-columns:1fr 1fr}}
+  .panel{border:1px solid var(--line);padding:30px 26px;background:var(--forest)}
+  .panel h3{font-family:"Cinzel",serif;font-weight:500;text-align:center;color:var(--gold);font-size:1.25rem;letter-spacing:.12em}
+  .panel .sub{text-align:center;font-style:italic;color:var(--muted);margin-bottom:18px}
+  .dish{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;padding:12px 0;border-top:1px solid rgba(201,164,92,.15)}
+  .dish .rn{grid-row:span 2;font-family:"Cinzel",serif;color:var(--gold);font-size:.85rem;padding-top:4px;min-width:26px}
+  .dish h4{font-family:"Cinzel",serif;font-weight:500;font-size:1.02rem;letter-spacing:.04em;color:var(--parch)}
+  .dish p{font-size:1rem;color:var(--parch-dim);font-style:italic}
+  .sig{font-family:system-ui,sans-serif;font-size:.62rem;font-style:normal;letter-spacing:.1em;border:1px solid var(--gold);color:var(--gold);padding:1px 6px;margin-left:8px;vertical-align:middle}
+  .note{text-align:center;font-style:italic;color:var(--muted);margin-top:26px;font-size:1rem}
+
+  /* III. AVIS */
+  .scores{display:flex;flex-wrap:wrap;justify-content:center;gap:50px;margin-bottom:46px;text-align:center}
+  .scores .n{font-family:"Cinzel",serif;font-size:4.2rem;color:var(--gold);line-height:1}
+  .scores span{display:block;color:var(--parch-dim);font-style:italic}
+  .virtues{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));text-align:center}
+  .virtues div{padding:0 10px}
+  .virtues .ico{color:var(--gold);font-size:1.6rem}
+  .virtues h3{font-family:"Cinzel",serif;font-weight:500;font-size:1.1rem;letter-spacing:.06em;margin:8px 0 6px;color:var(--gold-soft)}
+  .virtues p{color:var(--parch-dim)}
+
+  /* GALERIE : triptyque */
+  .tri{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+  @media (min-width:860px){.tri{grid-template-columns:1fr 1.4fr 1fr;align-items:center}}
+  .tri figure{border:1px solid var(--line);padding:8px;background:var(--forest-2)}
+  .tri figure div{aspect-ratio:3/4}
+  @media (min-width:860px){.tri .mid div{aspect-ratio:4/5}}
+  @media (max-width:859px){.tri .mid{grid-column:span 2}.tri .mid div{aspect-ratio:16/10}}
+  .credit-note{text-align:center;font-style:italic;color:var(--muted);font-size:.95rem;margin-top:14px}
+
+  /* IV. INFOS */
+  .info{display:grid;gap:26px}
+  @media (min-width:860px){.info{grid-template-columns:1fr 1fr}}
+  .card{border:1px solid var(--line);padding:30px 28px;background:var(--forest-2)}
+  .card h3{font-family:"Cinzel",serif;font-weight:500;color:var(--gold);letter-spacing:.1em;margin-bottom:16px;font-size:1.15rem}
+  .hours{list-style:none}
+  .hours li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dotted var(--line)}
+  .hours li:last-child{border:0}
+  .hours span:last-child{text-align:right;color:var(--parch-dim)}
+  .hours .off{color:var(--muted);font-style:italic}
+  .small{font-size:.98rem;color:var(--muted);font-style:italic;margin-top:12px}
+  .card address{font-style:normal;font-size:1.25rem;margin-bottom:16px}
+  .map{aspect-ratio:16/10;margin-top:18px;border:1px solid var(--line)}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.3)}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .pills span{font-family:system-ui,sans-serif;font-size:.75rem;border:1px solid var(--line);color:var(--parch-dim);padding:4px 10px;border-radius:999px}
+
+  /* CONTACT */
+  .contact{text-align:center;background:var(--forest-3)}
+  .contact .tel{display:block;font-family:"Cinzel",serif;font-size:clamp(1.8rem,6vw,3rem);color:var(--gold);text-decoration:none;margin:10px 0 24px;letter-spacing:.06em}
+
+  footer{background:#08120d;color:var(--muted);font-family:system-ui,sans-serif;font-size:.8rem;padding:30px 0 90px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between}
+  footer a{color:var(--gold-soft)}
+  footer .credits{width:100%;font-size:.72rem;color:#6f7d70}
+</style>
+</head>
+<body>
+
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<a class="float" href="tel:+33237818376">Réserver</a>
+
+<div style="position:relative">
+<header>
+  <p class="mark cz">✦ Brocéliande ✦</p>
+  <nav>
+    <a href="#table">La table</a>
+    <a href="#carte">La carte</a>
+    <a href="#avis">Les avis</a>
+    <a href="#infos">Infos</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1727372335060-44671353b2a8?auto=format&fit=crop&w=1800&q=70" alt="Forêt moussue et mystérieuse">
+  <div class="inner">
+    <p class="pre cz">Crêperie · Nogent-le-Rotrou</p>
+    <h1>Brocéliande</h1>
+    <div class="orn">✦</div>
+    <p class="tag">Des galettes et des crêpes tournées à la main,<br>pour une table digne des légendes.</p>
+    <div class="btns">
+      <a class="btn" href="tel:+33237818376">Réserver une table</a>
+      <a class="btn out" href="#carte">Découvrir la carte</a>
+    </div>
+    <p class="rating"><b>4,8 / 5</b> · plus de 500 avis Google · n°1 des restaurants de Nogent-le-Rotrou sur TripAdvisor</p>
+  </div>
+</div>
+</div>
+
+<!-- I. LA TABLE -->
+<section id="table">
+  <div class="wrap">
+    <div class="chap">
+      <p class="num cz">Chapitre I</p>
+      <h2>La table</h2>
+      <p>Une crêperie pas tout à fait comme les autres.</p>
+    </div>
+    <div class="alt">
+      <div class="pic"><img src="https://images.unsplash.com/photo-1756831567129-a7f9e6ecb436?auto=format&fit=crop&w=1100&q=70" alt="Salle aux poutres apparentes" loading="lazy"></div>
+      <div>
+        <h3>Poutres, cheminée &amp; lumière douce</h3>
+        <p>Rue de Sully, derrière une façade discrète, une salle chaleureuse aux grandes poutres apparentes et à la cheminée vous attend, comme une taverne d'autrefois revisitée avec élégance.</p>
+        <p>Salle climatisée l'été, coin du feu l'hiver : on y revient en toute saison.</p>
+      </div>
+    </div>
+    <div class="alt rev">
+      <div class="pic"><img src="https://images.unsplash.com/photo-1723691802547-b79f65c16b5f?auto=format&fit=crop&w=1100&q=70" alt="Crêpe tournée à la main" loading="lazy"></div>
+      <div>
+        <h3>Tournées à la main, de saison</h3>
+        <p>Chaque galette et chaque crêpe est tournée à la main, avec des produits frais choisis au fil des saisons. Une cuisine de crêperie créative, presque gastronomique.</p>
+        <p>Et pour bien commencer comme pour bien finir, une petite attention de la maison vous est servie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- II. LA CARTE -->
+<section id="carte" class="carte">
+  <div class="wrap">
+    <div class="chap">
+      <p class="num cz">Chapitre II</p>
+      <h2>Les chevaliers de la carte</h2>
+      <p>Des galettes qui portent les noms de la légende arthurienne.</p>
+    </div>
+    <div class="menu">
+      <div class="panel">
+        <h3>Les galettes</h3>
+        <p class="sub">au blé noir</p>
+        <div class="dish"><span class="rn">I</span><h4>Lancelot</h4><p>Jambon, emmental, œuf, crème</p></div>
+        <div class="dish"><span class="rn">II</span><h4>Merlin</h4><p>Andouille, pommes, oignons confits, cidre</p></div>
+        <div class="dish"><span class="rn">III</span><h4>Guenièvre</h4><p>Chèvre, miel, noix, jeunes pousses</p></div>
+        <div class="dish"><span class="rn">IV</span><h4>Juniper <span class="sig">SIGNATURE</span></h4><p>Saint-Jacques, carotte, poireau, sauce au Noilly Prat</p></div>
+        <div class="dish"><span class="rn">V</span><h4>Perceval</h4><p>Canard, champignons, crème</p></div>
+      </div>
+      <div class="panel">
+        <h3>Les crêpes</h3>
+        <p class="sub">au froment</p>
+        <div class="dish"><span class="rn">I</span><h4>Excalibur <span class="sig">SIGNATURE</span></h4><p>Pêches rôties, glace, caramel</p></div>
+        <div class="dish"><span class="rn">II</span><h4>La Dame du Lac</h4><p>Fraises, chantilly, caramel au beurre salé</p></div>
+        <div class="dish"><span class="rn">III</span><h4>Morgane</h4><p>Chocolat, brochette d'ananas</p></div>
+        <div class="dish"><span class="rn">IV</span><h4>La Simple</h4><p>Beurre-sucre, comme on l'aime</p></div>
+        <div class="dish"><span class="rn">V</span><h4>Le Graal</h4><p>Le dessert du moment, selon la saison</p></div>
+      </div>
+    </div>
+    <p class="note">Carte donnée à titre d'exemple — vos vraies recettes et vos prix seront ajoutés avec vous. Cidres, vins, cocktails et cafés.</p>
+  </div>
+</section>
+
+<!-- III. AVIS -->
+<section id="avis">
+  <div class="wrap">
+    <div class="chap">
+      <p class="num cz">Chapitre III</p>
+      <h2>Ce qu'en disent nos hôtes</h2>
+    </div>
+    <div class="scores">
+      <div><div class="n">4,8</div><span>plus de 500 avis Google</span></div>
+      <div><div class="n">4,8</div><span>TripAdvisor · n°1 à Nogent-le-Rotrou</span></div>
+    </div>
+    <div class="virtues">
+      <div><p class="ico">✦</p><h3>Un accueil chaleureux</h3><p>Une équipe souriante et pleine d'humour, qui reçoit chacun comme un habitué.</p></div>
+      <div><p class="ico">✦</p><h3>Une cuisine créative</h3><p>Des galettes originales, soignées dans l'assiette, avec des produits frais.</p></div>
+      <div><p class="ico">✦</p><h3>Un cadre unique</h3><p>Poutres, cheminée et ambiance feutrée pour un repas qui sort de l'ordinaire.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="tri">
+      <figure><div><img src="https://images.unsplash.com/photo-1601055892144-5a86fc4155e2?auto=format&fit=crop&w=700&q=70" alt="Bouteilles de cidre" loading="lazy"></div></figure>
+      <figure class="mid"><div><img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=1000&q=70" alt="Crêpes au miel et aux agrumes" loading="lazy"></div></figure>
+      <figure><div><img src="https://images.unsplash.com/photo-1586299576722-e14abcdcfcb3?auto=format&fit=crop&w=700&q=70" alt="Cheminée" loading="lazy"></div></figure>
+    </div>
+    <p class="credit-note">Photos d'illustration — à remplacer par celles de Brocéliande.</p>
+  </div>
+</section>
+
+<!-- IV. INFOS -->
+<section id="infos" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="chap">
+      <p class="num cz">Chapitre IV</p>
+      <h2>Nous rendre visite</h2>
+      <p>Réservation vivement conseillée, la salle se remplit vite.</p>
+    </div>
+    <div class="info">
+      <div class="card">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Lundi – Mercredi</span><span class="off">Fermé</span></li>
+          <li><span>Jeudi – Samedi</span><span>12h – 13h30 · 19h – 20h30</span></li>
+          <li><span>Dimanche</span><span>12h – 13h30 · 19h – 20h15</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer.</p>
+        <div class="pills"><span>Carte bancaire</span><span>Sans contact</span><span>Titres-restaurant</span><span>À emporter</span><span>Accessible PMR</span><span>English spoken</span></div>
+      </div>
+      <div class="card">
+        <h3>Adresse</h3>
+        <address>28 rue de Sully<br>28400 Nogent-le-Rotrou</address>
+        <a class="btn out" href="https://www.google.com/maps/search/?api=1&amp;query=Cr%C3%AAperie+Broc%C3%A9liande+28+rue+de+Sully+28400+Nogent-le-Rotrou" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=28+rue+de+Sully+28400+Nogent-le-Rotrou&amp;output=embed" title="Carte : Brocéliande, Nogent-le-Rotrou" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <div class="wrap">
+    <p class="cz" style="color:var(--gold);letter-spacing:.35em;font-size:.8rem">Réservations</p>
+    <a class="tel" href="tel:+33237818376">02 37 81 83 76</a>
+    <div class="btns">
+      <a class="btn" href="tel:+33237818376">Appeler</a>
+      <a class="btn out" href="mailto:sas.broceliande@laposte.net">Écrire un e-mail</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Brocéliande · 28 rue de Sully, 28400 Nogent-le-Rotrou</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Bernd Dittrich, Roshan Lanova, Hanxiao Xu, Sidral Mundet, Monika Grabkowska, Gabriele Rampazzo — via Unsplash.</p>
+  </div>
+</footer>
+
+</body>
+</html>
