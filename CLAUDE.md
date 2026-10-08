@@ -13,6 +13,7 @@ Démarcher des restaurants en leur montrant un prototype de site déjà fait à 
 
 ## Dépôt
 - GitHub : https://github.com/louismaillet/prototypes-restaurants (branche `main`, push OK depuis Claude).
+- Gmail connecté : préparer les mails puis demander l'accord avant chaque envoi.
 - Netlify : publish directory = `site`. Domaine : https://prototype-web-site.netlify.app (prototypes : https://prototype-web-site.netlify.app/prototype/<slug>/).
 
 ## Règles des prototypes
@@ -62,7 +63,7 @@ prototypes-restaurants/
 - Avis : Google 4,2/5 (325), TripAdvisor 4,0/5 (143). Portions généreuses, prix doux, accueil familial, bonbons d'enfance offerts en fin de repas (roudoudous, violettes). Pas de carte avec prix en ligne.
 
 ### Les Tontons Fines Gueules — slug `les-tontons-fines-gueules` — FAIT (2026-10-08)
-- URL : `/prototype/les-tontons-fines-gueules/`. Version COMPLÈTE, charte UNIQUE (demande utilisateur : chaque site doit avoir sa propre identité) : style affiche/néo-brutaliste jaune moutarde + noir + bordeaux, polices Google Anton / Courier Prime / Work Sans, hero affiche typographique + tampon 4,8★, bandeau défilant CSS, journée 01-02-03, carte imprimée à pointillés, ticket de caisse pour horaires, bande photos à glisser, section maison, avis (FB 4,8 / Google 4,7), galerie Unsplash, horaires « à confirmer », Google Maps, tél + Facebook. Bouton ajouté sur l'accueil. Mail de prospection rédigé (style imaginé mais entièrement modifiable + lien + tél) ; email (trouvé par l'utilisateur sur leur Facebook) : leperegourmand@sfr.fr. Mail final prêt avec lien https://prototype-web-site.netlify.app/prototype/les-tontons-fines-gueules/ ; envoi par l'utilisateur.
+- URL : `/prototype/les-tontons-fines-gueules/`. Version COMPLÈTE, charte UNIQUE (demande utilisateur : chaque site doit avoir sa propre identité) : style affiche/néo-brutaliste jaune moutarde + noir + bordeaux, polices Google Anton / Courier Prime / Work Sans, hero affiche typographique + tampon 4,8★, bandeau défilant CSS, journée 01-02-03, carte imprimée à pointillés, ticket de caisse pour horaires, bande photos à glisser, section maison, avis (FB 4,8 / Google 4,7), galerie Unsplash, horaires « à confirmer », Google Maps, tél + Facebook. Bouton ajouté sur l'accueil. Mail de prospection rédigé (style imaginé mais entièrement modifiable + lien + tél) ; email (trouvé par l'utilisateur sur leur Facebook) : leperegourmand@sfr.fr. Mail final prêt avec lien https://prototype-web-site.netlify.app/prototype/les-tontons-fines-gueules/ ; ENVOYÉ le 08/10/2026 depuis Gmail (connecté). En attente de réponse.
 - Société J.F.B. (SAS), créée le 24/03/2025, NAF 5630Z débit de boissons. Paiement : CB, titres-restaurant, espèces.
 - Horaires contradictoires : kazfeed mar–jeu 7h–16h30, ven–sam 7h–21h30 ; Mappy/PagesJaunes mar–jeu 9h30–19h, ven–sam 9h30–21h30 ; fermé dim + lun.
 - 51 rue Jean Moulin, 28290 Chapelle-Royale (Perche, Eure-et-Loir). Tél 02 18 00 63 44. Facebook : facebook.com/LesTontonsFinesGueules (seule présence en ligne, pas de site).
