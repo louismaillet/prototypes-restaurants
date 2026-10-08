@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Louis Maillet — Sites pour restaurants</title>
+<meta name="description" content="Louis Maillet crée des sites web simples, rapides et modernes pour les restaurants.">
+<style>
+  :root{
+    --bg:#faf7f2; --text:#1f1b16; --muted:#6b6259; --accent:#c2410c; --card:#ffffff; --line:#e7e0d6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  header{padding:20px 0;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:800;letter-spacing:.5px}
+  .logo span{color:var(--accent)}
+  header a{color:var(--muted);text-decoration:none;font-size:.95rem}
+  .hero{padding:70px 0 60px}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:18px}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p{font-size:1.15rem;color:var(--muted);max-width:600px;margin-bottom:30px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:13px 24px;border-radius:8px;font-weight:600}
+  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line);margin-left:8px}
+  section{padding:50px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.6rem;margin-bottom:24px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .steps{counter-reset:s;list-style:none;display:grid;gap:14px}
+  .steps li{counter-increment:s;padding-left:46px;position:relative}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700}
+  .ref{display:block;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s}
+  .ref:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .ref span{display:inline-block;margin-top:10px;color:var(--accent);font-weight:600;font-size:.9rem}
+  .contact{text-align:center}
+  .contact p{color:var(--muted);margin-bottom:24px}
+  footer{padding:30px 0;color:var(--muted);font-size:.85rem;text-align:center;border-top:1px solid var(--line)}
+  @media (max-width:480px){.btn.ghost{margin:10px 0 0}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Louis<span>.</span>Maillet</div>
+      <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a>
+    </header>
+
+    <div class="hero">
+      <h1>Un site <em>simple et beau</em> pour votre restaurant.</h1>
+      <p>Je suis Louis Maillet, développeur web près d'Orléans. Je crée des sites rapides et clairs pour que vos clients trouvent votre carte, vos horaires et votre adresse en quelques secondes.</p>
+      <a class="btn" href="#contact">Me contacter</a>
+      <a class="btn ghost" href="https://louismaillet.fr" target="_blank" rel="noopener">Voir mon portfolio</a>
+    </div>
+
+    <section>
+      <h2>Ce que je propose</h2>
+      <div class="grid">
+        <div class="card"><h3>Un site à votre image</h3><p>Couleurs, ambiance et ton adaptés à votre restaurant.</p></div>
+        <div class="card"><h3>Pensé pour le mobile</h3><p>La plupart de vos clients vous cherchent depuis leur téléphone.</p></div>
+        <div class="card"><h3>L'essentiel, bien présenté</h3><p>Carte, horaires, adresse, téléphone et réservation.</p></div>
+        <div class="card"><h3>Mise en ligne incluse</h3><p>Je m'occupe de l'hébergement et du nom de domaine.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Comment ça marche</h2>
+      <ol class="steps">
+        <li>Je vous montre une maquette de votre futur site.</li>
+        <li>On l'ajuste ensemble : textes, photos, carte.</li>
+        <li>Je le mets en ligne, et vous n'avez plus rien à gérer.</li>
+      </ol>
+    </section>
+
+    <section class="refs">
+      <h2>Déjà réalisés</h2>
+      <div class="grid">
+        <a class="card ref" href="https://giteslagrandeboeufferie.com" target="_blank" rel="noopener"><h3>Gîtes La Grande Boeufferie</h3><p>Site de location de gîtes.</p><span>Voir le site →</span></a>
+        <a class="card ref" href="https://europeanclilacademy.com" target="_blank" rel="noopener"><h3>European CLIL Academy</h3><p>Site vitrine de formations pour enseignants.</p><span>Voir le site →</span></a>
+        <a class="card ref" href="https://interaiddd.pythonanywhere.com/" target="_blank" rel="noopener"><h3>InterAID</h3><p>Plateforme de gestion de courses pour une association.</p><span>Voir le site →</span></a>
+        <a class="card ref" href="https://louismaillet.fr/#projets" target="_blank" rel="noopener"><h3>Oumami</h3><p>Refonte du site d'un restaurant asiatique.</p><span>Voir le projet →</span></a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>On en parle ?</h2>
+      <p>Écrivez-moi, je vous réponds rapidement.</p>
+      <a class="btn" href="https://louismaillet.fr/#contact" target="_blank" rel="noopener">Me contacter</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/louis-maillet-06064a32b/" target="_blank" rel="noopener">LinkedIn</a>
+    </section>
+  </div>
+  <footer>© 2026 Louis Maillet — Olivet (45)</footer>
+</body>
+</html>
