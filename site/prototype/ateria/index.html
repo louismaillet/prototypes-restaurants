@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ateria — Restaurant au cœur du Châteaudun historique</title>
+<meta name="description" content="Ateria, restaurant rue Saint-Lubin à Châteaudun : cuisine traditionnelle faite maison avec les produits des commerçants du coin, près du château et de l'église de la Madeleine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ivory:#f6f2e9;--sage:#5b6b4e;--sage-d:#3f4c35;--rust:#b4552d;--ink:#22231f;--muted:#6b6d63;--line:#ddd6c6}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Figtree",system-ui,sans-serif;background:var(--ivory);color:var(--ink);line-height:1.65}
+  .gl{font-family:"Gloock",Georgia,serif;font-weight:400}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--line)}
+  .demo{background:var(--ink);color:#d9d6cc;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#f0c9a8;font-weight:700}
+  /* écran partagé : photo fixe à gauche, contenu à droite */
+  .split{display:block}
+  @media (min-width:980px){.split{display:grid;grid-template-columns:44% 56%}}
+  .visual{position:relative;height:62vh;min-height:380px}
+  @media (min-width:980px){.visual{position:sticky;top:0;height:100vh}}
+  .visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,35,31,.05),rgba(34,35,31,.55))}
+  .visual .over{position:absolute;left:28px;right:28px;bottom:30px;z-index:2;color:#fff}
+  .visual .over .k{font-size:.78rem;letter-spacing:.24em;text-transform:uppercase}
+  .visual .over h1{font-size:clamp(3.4rem,9vw,6rem);line-height:.95;margin-top:6px}
+  .content{padding:0 26px 40px}
+  @media (min-width:980px){.content{padding:0 64px 60px}}
+  nav.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--ivory);z-index:5}
+  nav.top .links{display:flex;gap:20px;font-size:.92rem}
+  nav.top .links a{text-decoration:none;color:var(--muted)}
+  nav.top .links a:hover{color:var(--rust)}
+  @media (max-width:600px){nav.top .links{display:none}}
+  .call{background:var(--sage);color:#fff;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:999px;font-size:.92rem}
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  .k2{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rust);font-weight:700}
+  h2{font-size:clamp(2.1rem,4.5vw,3rem);line-height:1.05;margin:8px 0 14px}
+  .lead{font-size:1.12rem;color:#3f413a;max-width:560px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:999px;background:var(--rust);color:#fff;border:2px solid var(--rust)}
+  .btn.out{background:transparent;color:var(--sage-d);border-color:var(--sage)}
+  .chef{display:flex;gap:18px;align-items:center;margin-top:26px;padding:18px;background:#fff;border:1px solid var(--line);border-radius:16px}
+  .chef .ini{flex:0 0 58px;height:58px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-family:"Gloock",serif;font-size:1.4rem}
+  .chef p{color:var(--muted);font-size:.95rem}
+  .chef b{color:var(--ink)}
+  /* menus en colonnes */
+  .menus{display:grid;gap:16px;margin-top:24px}
+  @media (min-width:640px){.menus{grid-template-columns:1fr 1fr}}
+  .menu{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;position:relative}
+  .menu .price{position:absolute;top:18px;right:20px;font-family:"Gloock",serif;font-size:1.7rem;color:var(--rust)}
+  .menu h3{font-family:"Gloock",serif;font-weight:400;font-size:1.5rem;margin-bottom:10px}
+  .menu ol{list-style:none;counter-reset:c}
+  .menu li{counter-increment:c;padding:8px 0 8px 30px;border-top:1px dashed var(--line);position:relative}
+  .menu li::before{content:counter(c);position:absolute;left:0;top:8px;width:20px;height:20px;border-radius:50%;background:var(--ivory);font-size:.75rem;display:grid;place-items:center;color:var(--sage-d);font-weight:700}
+  .menu li small{display:block;color:var(--muted)}
+  .note{font-size:.85rem;color:var(--muted);margin-top:14px;font-style:italic}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+  .pair div{aspect-ratio:4/5;border-radius:16px;overflow:hidden}
+  .court{display:grid;gap:18px;align-items:center}
+  @media (min-width:640px){.court{grid-template-columns:1fr 1fr}}
+  .court .ph{aspect-ratio:1/1;border-radius:200px 200px 16px 16px;overflow:hidden}
+  .court p{color:#3f413a;margin-bottom:10px}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .off{color:var(--rust)!important}
+  address{font-style:normal;font-family:"Gloock",serif;font-size:1.5rem;line-height:1.25;margin:18px 0 12px}
+  .map{aspect-ratio:16/10;border-radius:16px;overflow:hidden;margin-top:16px;background:var(--line)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+  .small{font-size:.85rem;color:var(--muted);margin-top:10px}
+  .final{text-align:center;border:0}
+  .final .tel{display:block;font-family:"Gloock",serif;font-size:clamp(2.2rem,6vw,3.2rem);color:var(--sage-d);text-decoration:none;margin:8px 0 16px}
+  .final .btns{justify-content:center}
+  footer{font-size:.8rem;color:var(--muted);padding-top:24px}
+  footer .credits{font-size:.72rem;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<div class="split">
+  <div class="visual">
+    <img src="https://images.unsplash.com/photo-1654921834734-c7002b177e35?auto=format&fit=crop&w=1400&q=70" alt="Table dressée dans un restaurant">
+    <div class="over"><p class="k">Restaurant · Châteaudun</p><h1 class="gl">Ateria</h1></div>
+  </div>
+
+  <div class="content">
+    <nav class="top">
+      <span class="gl" style="font-size:1.2rem">Ateria</span>
+      <div class="links"><a href="#maison">La maison</a><a href="#menus">Les menus</a><a href="#cour">La cour</a><a href="#infos">Infos</a></div>
+      <a class="call" href="tel:+33237986029">Réserver</a>
+    </nav>
+
+    <section id="maison">
+      <p class="k2">Au cœur du centre historique</p>
+      <h2 class="gl">Une cuisine de tradition, faite maison</h2>
+      <p class="lead">À deux pas du château et de l'église de la Madeleine, Ateria vous reçoit pour une cuisine traditionnelle préparée sur place, avec les produits des commerçants de Châteaudun.</p>
+      <div class="btns"><a class="btn" href="tel:+33237986029">Réserver une table</a><a class="btn out" href="#menus">Voir les menus</a></div>
+      <div class="chef"><span class="ini">DS</span><p><b>En cuisine, Daniel Segouin.</b><br>Des recettes de saison, du fait-maison et des produits locaux.</p></div>
+    </section>
+
+    <section id="menus">
+      <p class="k2">Les menus</p>
+      <h2 class="gl">Entrée, plat, dessert</h2>
+      <div class="menus">
+        <div class="menu"><span class="price">≈ 25 €</span><h3>Menu du marché</h3><ol><li>Feuilleté aux gésiers<small>ou terrine de lapin maison</small></li><li>Joue de porc confite<small>ou filet de cabillaud, sauce au vin</small></li><li>Fondant au chocolat<small>ou dessert du jour</small></li></ol></div>
+        <div class="menu"><span class="price">≈ 33 €</span><h3>Menu Ateria</h3><ol><li>Escargots en sauce<small>ou feuilleté de saumon</small></li><li>Veau, sauce aux morilles<small>ou joue de bœuf confite, purée maison</small></li><li>Moelleux chocolat, coulis framboise<small>ou fromages</small></li></ol></div>
+      </div>
+      <p class="note">Plats et prix donnés à titre d'exemple, d'après les avis clients — à confirmer avec vous.</p>
+      <div class="pair">
+        <div><img src="https://images.unsplash.com/photo-1519699788450-ad34386a3bfc?auto=format&fit=crop&w=700&q=70" alt="Viande mijotée" loading="lazy"></div>
+        <div><img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?auto=format&fit=crop&w=700&q=70" alt="Pièce de bœuf" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="cour">
+      <div class="court">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1642946928960-82c8d5899f2c?auto=format&fit=crop&w=900&q=70" alt="Tables en terrasse" loading="lazy"></div>
+        <div>
+          <p class="k2">La terrasse</p>
+          <h2 class="gl">Une cour au calme</h2>
+          <p>Aux beaux jours, profitez de la terrasse installée dans une cour fermée, à l'abri de l'agitation de la ville.</p>
+          <p>Idéal pour un déjeuner tranquille après la visite du château.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="infos">
+      <p class="k2">Infos pratiques</p>
+      <h2 class="gl">Horaires &amp; accès</h2>
+      <ul class="hours">
+        <li><span>Mardi – Vendredi</span><span>12h – 13h30 · 19h – 21h</span></li>
+        <li><span>Samedi</span><span>12h – 13h30 · 19h – 21h30</span></li>
+        <li><span>Dimanche – Lundi</span><span class="off">Fermé</span></li>
+      </ul>
+      <p class="small">Horaires à confirmer. Réservation conseillée. Accessible PMR.</p>
+      <address>4 rue Saint-Lubin<br>28200 Châteaudun</address>
+      <a class="btn out" href="https://www.google.com/maps/search/?api=1&amp;query=Ateria+4+rue+Saint-Lubin+28200+Ch%C3%A2teaudun" target="_blank" rel="noopener">Itinéraire</a>
+      <div class="map"><iframe src="https://www.google.com/maps?q=4+rue+Saint-Lubin+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Ateria" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <section class="final">
+      <p class="k2">Réservations</p>
+      <a class="tel" href="tel:+33237986029">02 37 98 60 29</a>
+      <div class="btns"><a class="btn" href="tel:+33237986029">Appeler</a><a class="btn out" href="mailto:restaurant.ateria@gmail.com">Écrire</a></div>
+    </section>
+
+    <footer>
+      © 2026 Ateria · 4 rue Saint-Lubin, 28200 Châteaudun · <a href="#">Mentions légales</a> · Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a>
+      <p class="credits">Photos d'illustration : Cody Chan, Eric Zhu, Jason Leung, Fabien Maurin — via Unsplash.</p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
