@@ -59,3 +59,10 @@ prototypes-restaurants/
 - Crêperie familiale : galettes de blé noir, crêpes, tartes, plats régionaux, sur place ou à emporter. Terrasse, salles climatisées, parking gratuit. CB/sans contact.
 - Horaires CONFIRMÉS (utilisateur, 08/10) : mercredi–dimanche 12h–22h, fermé lundi et mardi (la page eatbu est fausse).
 - Avis : Google 4,2/5 (325), TripAdvisor 4,0/5 (143). Portions généreuses, prix doux, accueil familial, bonbons d'enfance offerts en fin de repas (roudoudous, violettes). Pas de carte avec prix en ligne.
+
+### Les Tontons Fines Gueules — slug `les-tontons-fines-gueules` — recherche faite, en attente du "top"
+- 51 rue Jean Moulin, 28290 Chapelle-Royale (Perche, Eure-et-Loir). Tél 02 18 00 63 44. Facebook : facebook.com/LesTontonsFinesGueules (seule présence en ligne, pas de site).
+- Restaurant traditionnel / bar, ambiance décontractée, petit-déj dès 7h, sur place, à emporter, livraison. Prix moyen ~25 €. Parking gratuit, accès PMR. Desserts.
+- Horaires (kazfeed) : mar–jeu 7h–16h30 ; ven–sam 7h–21h30 ; fermé dim + lun → à confirmer.
+- Avis : Google 4,7/5 (≈37 avis) ; Facebook 4,8 (selon utilisateur). Établissement récent (fiches 2025).
+- Pas de carte en ligne. Nom = clin d'œil aux « Tontons flingueurs » → ton humoristique possible, sans reprendre visuels/répliques du film.
