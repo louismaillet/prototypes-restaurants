@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Auberge du Bastard — Crêperie au pied du château de Châteaudun</title>
+<meta name="description" content="Auberge du Bastard, crêperie à Châteaudun : galettes et crêpes de produits locaux, dans une auberge d'inspiration XVe siècle, au bord du Loir et au pied du château.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--parch:#f4ead4;--parch-2:#ead9b5;--gules:#a3201f;--azure:#1d3f78;--or:#c99a2e;--ink:#2a2118;--muted:#6b5a45}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Source Sans 3",system-ui,sans-serif;background:var(--parch);color:var(--ink);line-height:1.65;background-image:radial-gradient(rgba(120,90,40,.07) 1px,transparent 1px);background-size:6px 6px}
+  .fell{font-family:"IM Fell English SC",Georgia,serif;font-weight:400}
+  .felli{font-family:"IM Fell English",Georgia,serif;font-style:italic}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--parch-2)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--ink);color:#e6dcc6;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#f2d48a;font-weight:700}
+  /* fanions */
+  .flags{display:flex;justify-content:center;gap:0;height:46px;overflow:hidden}
+  .flags span{width:46px;height:46px;clip-path:polygon(0 0,100% 0,50% 100%);flex:0 0 auto}
+  .flags span:nth-child(3n+1){background:var(--gules)}
+  .flags span:nth-child(3n+2){background:var(--or)}
+  .flags span:nth-child(3n){background:var(--azure)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:16px;padding-bottom:16px;border-bottom:2px solid var(--ink)}
+  .logo{text-decoration:none;font-size:1.5rem}
+  header nav{display:flex;gap:18px;font-weight:600;font-size:.95rem}
+  header nav a{text-decoration:none}
+  header nav a:hover{color:var(--gules)}
+  @media (max-width:720px){header nav{display:none}}
+  .call{background:var(--gules);color:#fff;text-decoration:none;font-weight:700;padding:9px 16px;border-radius:4px}
+  /* HERO : blason + photo */
+  .hero .wrap{display:grid;gap:36px;align-items:center;padding-top:46px;padding-bottom:56px}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr}}
+  .hero .pre{color:var(--azure);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+  .hero h1{font-size:clamp(2.6rem,8vw,4.6rem);line-height:1;margin:10px 0 14px;color:var(--gules)}
+  .hero p.intro{font-family:"IM Fell English",serif;font-style:italic;font-size:1.3rem;color:var(--muted);margin-bottom:24px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:4px;background:var(--azure);color:#fff;border:2px solid var(--azure)}
+  .btn.red{background:var(--gules);border-color:var(--gules)}
+  .btn.out{background:transparent;color:var(--azure)}
+  .arch{position:relative;max-width:440px;justify-self:center;width:100%}
+  .arch .frame{aspect-ratio:4/5;border-radius:220px 220px 6px 6px;overflow:hidden;border:6px solid var(--ink);outline:3px solid var(--or);outline-offset:6px}
+  .shield{position:absolute;left:-18px;bottom:20px;width:120px;height:140px;background:var(--azure);color:#fff;clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);display:grid;place-items:center;text-align:center;padding:10px 10px 34px;font-family:"IM Fell English SC",serif;line-height:1.1}
+  .shield b{display:block;font-size:2rem;color:var(--or)}
+  @media (max-width:520px){.shield{left:6px;width:100px;height:118px;font-size:.85rem}}
+  /* bandeau devise */
+  .devise{background:var(--gules);color:#fff;text-align:center;padding:14px 20px;font-family:"IM Fell English",serif;font-style:italic;font-size:1.25rem}
+  section{padding:70px 0}
+  .ttl{text-align:center;margin-bottom:34px}
+  .ttl h2{font-size:clamp(2rem,5vw,3rem);color:var(--azure)}
+  .ttl p{font-family:"IM Fell English",serif;font-style:italic;color:var(--muted);font-size:1.15rem}
+  .orn{color:var(--or);letter-spacing:.6em}
+  /* écus */
+  .ecus{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .ecu{text-align:center}
+  .ecu .sh{width:84px;height:98px;margin:0 auto 12px;clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);display:grid;place-items:center;font-size:2rem;padding-bottom:16px}
+  .ecu:nth-child(1) .sh{background:var(--gules)}
+  .ecu:nth-child(2) .sh{background:var(--azure)}
+  .ecu:nth-child(3) .sh{background:var(--or)}
+  .ecu h3{font-family:"IM Fell English SC",serif;font-weight:400;font-size:1.4rem}
+  .ecu p{color:var(--muted)}
+  /* carte sur parchemin déroulé */
+  .scroll{background:#fbf4e2;border:2px solid var(--ink);border-radius:6px;padding:34px 28px;position:relative;max-width:900px;margin:0 auto;box-shadow:8px 8px 0 var(--parch-2)}
+  .scroll::before,.scroll::after{content:"";position:absolute;left:-10px;right:-10px;height:16px;background:var(--parch-2);border:2px solid var(--ink);border-radius:10px}
+  .scroll::before{top:-12px}.scroll::after{bottom:-12px}
+  .cols{display:grid;gap:28px}
+  @media (min-width:760px){.cols{grid-template-columns:1fr 1fr}}
+  .cols h3{font-family:"IM Fell English SC",serif;font-weight:400;font-size:1.5rem;color:var(--gules);border-bottom:1px solid var(--ink);margin-bottom:8px}
+  .it{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dotted #b49b6c}
+  .it:last-child{border:0}
+  .it b{font-weight:700}
+  .it small{display:block;color:var(--muted);font-family:"IM Fell English",serif;font-style:italic;font-size:1rem}
+  .it span{color:var(--azure);font-weight:700}
+  .note{text-align:center;font-style:italic;color:var(--muted);margin-top:22px;font-size:.92rem}
+  /* bord du Loir */
+  .loir{display:grid;gap:30px;align-items:center}
+  @media (min-width:860px){.loir{grid-template-columns:1.1fr 1fr}}
+  .loir .ph{aspect-ratio:4/3;border:6px solid var(--ink)}
+  .loir h2{font-size:clamp(1.9rem,4.5vw,2.6rem);color:var(--azure);margin-bottom:10px}
+  .loir p{color:var(--muted);margin-bottom:12px}
+  /* saisons (horaires) */
+  .seasons{display:grid;gap:18px}
+  @media (min-width:760px){.seasons{grid-template-columns:1fr 1fr}}
+  .season{border:2px solid var(--ink);padding:24px;background:#fbf4e2}
+  .season h3{font-family:"IM Fell English SC",serif;font-weight:400;font-size:1.4rem;color:var(--gules)}
+  .season .when{font-style:italic;color:var(--muted);margin-bottom:10px}
+  .season li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dotted #b49b6c}
+  .season li:last-child{border:0}
+  .small{font-size:.88rem;color:var(--muted);font-style:italic;text-align:center;margin-top:14px}
+  .where{display:grid;gap:22px;margin-top:30px}
+  @media (min-width:760px){.where{grid-template-columns:1fr 1.4fr}}
+  .where address{font-style:normal;font-size:1.15rem;margin:8px 0 14px}
+  .map{aspect-ratio:16/10;border:2px solid var(--ink);background:var(--parch-2)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+  .final{background:var(--azure);color:#fff;text-align:center}
+  .final h2{font-size:clamp(2rem,6vw,3.2rem)}
+  .final .tel{display:block;font-family:"IM Fell English SC",serif;font-size:clamp(2rem,6vw,3rem);color:#f2d48a;text-decoration:none;margin:8px 0 20px}
+  .final .btns{justify-content:center}
+  .final .btn{background:var(--gules);border-color:var(--gules)}
+  .final .btn.out{background:transparent;color:#fff;border-color:#fff}
+  footer{font-size:.8rem;color:var(--muted);padding:22px 0 30px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<div class="flags" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo fell" href="#">Auberge du Bastard</a>
+    <nav><a href="#auberge">L'auberge</a><a href="#carte">La carte</a><a href="#loir">Au bord du Loir</a><a href="#infos">Horaires</a></nav>
+    <a class="call" href="tel:+33237458041">Réserver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="pre">Crêperie · Châteaudun</p>
+      <h1 class="fell">Galettes &amp; crêpes au pied du château</h1>
+      <p class="intro">Une auberge d'inspiration XVe siècle, au bord du Loir, face au château de Châteaudun.</p>
+      <div class="btns">
+        <a class="btn red" href="tel:+33237458041">Réserver une table</a>
+        <a class="btn out" href="#carte">Voir la carte</a>
+      </div>
+    </div>
+    <div class="arch">
+      <div class="frame"><img src="https://images.unsplash.com/photo-1630362137311-ca837e790e47?auto=format&fit=crop&w=1000&q=70" alt="Crêpes maison"></div>
+      <div class="shield"><span><b>4,7</b>Google<br><small>220+ avis</small></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="devise">Ici, on mange comme des seigneurs, sans payer comme des rois.</div>
+
+<section id="auberge">
+  <div class="wrap">
+    <div class="ttl"><p class="orn">✦ ✦ ✦</p><h2 class="fell">L'auberge</h2><p>Une halte d'un autre temps, pour petits et grands chevaliers.</p></div>
+    <div class="ecus">
+      <div class="ecu"><div class="sh">🏰</div><h3>Un cadre d'exception</h3><p>Une salle pensée comme une auberge du XVe siècle, en écho au château juste en face.</p></div>
+      <div class="ecu"><div class="sh">🌾</div><h3>Des produits d'ici</h3><p>Galettes et crêpes préparées avec des produits locaux, et un cidre bio pour les accompagner.</p></div>
+      <div class="ecu"><div class="sh">🛡️</div><h3>Pour toute la famille</h3><p>Une équipe souriante et des casques de chevalier pour que les enfants jouent aussi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="carte" style="background:rgba(234,217,181,.45)">
+  <div class="wrap">
+    <div class="ttl"><p class="orn">✦ ✦ ✦</p><h2 class="fell">La carte de l'auberge</h2><p>Généreuse, comme il se doit.</p></div>
+    <div class="scroll">
+      <div class="cols">
+        <div>
+          <h3>Galettes de blé noir</h3>
+          <div class="it"><div><b>La Complète</b><small>Jambon, emmental, œuf</small></div><span>—</span></div>
+          <div class="it"><div><b>La Truite du Loir</b><small>Truite française, fondue de poireaux</small></div><span>—</span></div>
+          <div class="it"><div><b>La Seigneuriale</b><small>Andouille, pommes, crème</small></div><span>—</span></div>
+          <div class="it"><div><b>La Fermière</b><small>Chèvre, miel, noix</small></div><span>—</span></div>
+        </div>
+        <div>
+          <h3>Crêpes &amp; douceurs</h3>
+          <div class="it"><div><b>Sucre &amp; amandes</b><small>Toute simple, toute bonne</small></div><span>—</span></div>
+          <div class="it"><div><b>Caramel au beurre salé</b><small>Maison</small></div><span>—</span></div>
+          <div class="it"><div><b>Coupes glacées</b><small>Pour les beaux jours</small></div><span>—</span></div>
+          <div class="it"><div><b>Cidre bio &amp; cocktails</b><small>À la bolée ou en carafe</small></div><span>—</span></div>
+        </div>
+      </div>
+      <p class="note">Carte donnée à titre d'exemple — vos vraies recettes et vos prix seront ajoutés avec vous.</p>
+    </div>
+  </div>
+</section>
+
+<section id="loir">
+  <div class="wrap loir">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1601055892144-5a86fc4155e2?auto=format&fit=crop&w=1100&q=70" alt="Bouteilles de cidre sur une table" loading="lazy"></div>
+    <div>
+      <h2 class="fell">Une terrasse au bord du Loir</h2>
+      <p>Aux beaux jours, installez-vous à l'ombre, au bord de l'eau, avec vue sur le château. Une galette, une bolée de cidre, et le temps s'arrête.</p>
+      <p>L'été, l'auberge vous accueille en continu, de 11h à 23h.</p>
+      <a class="btn" href="tel:+33237458041">Réserver en terrasse</a>
+    </div>
+  </div>
+</section>
+
+<section id="infos" style="background:rgba(234,217,181,.45)">
+  <div class="wrap">
+    <div class="ttl"><p class="orn">✦ ✦ ✦</p><h2 class="fell">Horaires de l'auberge</h2><p>Réservation conseillée, la salle se remplit vite.</p></div>
+    <div class="seasons">
+      <div class="season">
+        <h3>Belle saison</h3><p class="when">Du 1er mai au 30 septembre</p>
+        <ul><li><span>Tous les jours</span><span>11h – 23h</span></li></ul>
+      </div>
+      <div class="season">
+        <h3>Saison froide</h3><p class="when">D'octobre à avril</p>
+        <ul><li><span>Lun, mer → dim</span><span>12h–14h · 19h–21h</span></li><li><span>Mardi</span><span>Fermé</span></li></ul>
+      </div>
+    </div>
+    <p class="small">Horaires à confirmer.</p>
+    <div class="where">
+      <div><h3 class="fell" style="font-size:1.5rem;color:var(--gules)">Nous trouver</h3><address>2 rue des Fouleries<br>28200 Châteaudun</address><a class="btn out" href="https://www.google.com/maps/search/?api=1&amp;query=Auberge+du+Bastard+2+rue+des+Fouleries+28200+Ch%C3%A2teaudun" target="_blank" rel="noopener">Itinéraire</a></div>
+      <div class="map"><iframe src="https://www.google.com/maps?q=2+rue+des+Fouleries+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Auberge du Bastard" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="fell">Oyez, oyez !</h2>
+    <a class="tel" href="tel:+33237458041">02 37 45 80 41</a>
+    <div class="btns"><a class="btn" href="tel:+33237458041">Réserver</a><a class="btn out" href="#infos">Nous trouver</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Auberge du Bastard · 2 rue des Fouleries, 28200 Châteaudun</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Philippe Murray-Pietsch, Sidral Mundet — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>

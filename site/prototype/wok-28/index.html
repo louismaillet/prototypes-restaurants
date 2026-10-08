@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Wok 28 — Buffet asiatique à volonté à Nogent-le-Rotrou</title>
+<meta name="description" content="Wok 28, buffet asiatique à volonté à Nogent-le-Rotrou : sushis, wok, grillades, fruits de mer et desserts, avenue du Président Kennedy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--coal:#141416;--coal-2:#1d1d21;--coal-3:#26262c;--red:#e0262f;--gold:#f2b632;--text:#f3f1ee;--muted:#a9a5a0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Noto Sans",system-ui,sans-serif;background:var(--coal);color:var(--text);line-height:1.6}
+  .bb{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.03em;line-height:.95}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--coal-3)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  .demo{background:#000;color:#bbb;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--gold);font-weight:700}
+  header{position:sticky;top:0;z-index:10;background:rgba(20,20,22,.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--red)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+  .logo{font-size:2rem;text-decoration:none}
+  .logo span{color:var(--red)}
+  header nav{display:flex;gap:22px;font-weight:600;font-size:.92rem}
+  header nav a{text-decoration:none;color:var(--muted)}
+  header nav a:hover{color:var(--gold)}
+  @media (max-width:760px){header nav{display:none}}
+  .call{background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:9px 16px;border-radius:6px}
+  /* HERO : grand titre + mosaïque */
+  .hero .wrap{display:grid;gap:30px;padding-top:44px;padding-bottom:60px;align-items:center}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1.1fr}}
+  .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:16px}
+  .hero h1{font-size:clamp(4rem,14vw,8.5rem)}
+  .hero h1 span{color:var(--red);display:block}
+  .hero p{color:var(--muted);font-size:1.12rem;max-width:480px;margin:16px 0 26px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:6px;background:var(--red);color:#fff;border:2px solid var(--red)}
+  .btn.ghost{background:transparent;color:var(--text);border-color:#4a4a52}
+  .mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:180px 180px;gap:10px}
+  @media (min-width:900px){.mosaic{grid-template-rows:220px 220px}}
+  .mosaic div{border-radius:10px;overflow:hidden}
+  .mosaic div:first-child{grid-row:span 2}
+  /* bandeau chiffres */
+  .stats{background:var(--red)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+  .stats div{padding:22px 16px;text-align:center;border-right:1px solid rgba(255,255,255,.25)}
+  .stats div:last-child{border:0}
+  .stats b{display:block;font-family:"Bebas Neue",sans-serif;font-size:2.6rem;line-height:1}
+  .stats span{font-size:.9rem}
+  section{padding:76px 0}
+  .ttl{margin-bottom:34px}
+  .ttl small{color:var(--gold);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+  .ttl h2{font-size:clamp(2.6rem,7vw,4.4rem);margin-top:6px}
+  .ttl p{color:var(--muted);max-width:560px}
+  /* stations du buffet */
+  .stations{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .st{background:var(--coal-2);border:1px solid #2e2e35;border-radius:14px;padding:24px;position:relative;overflow:hidden}
+  .st::after{content:attr(data-n);position:absolute;right:14px;top:4px;font-family:"Bebas Neue",sans-serif;font-size:4.5rem;color:rgba(255,255,255,.05)}
+  .st .ic{font-size:2rem}
+  .st h3{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:2rem;color:var(--gold);margin:6px 0}
+  .st p{color:var(--muted);font-size:.95rem}
+  .note{color:var(--muted);font-size:.85rem;margin-top:16px;font-style:italic}
+  /* bannière à volonté */
+  .ban{background:linear-gradient(135deg,var(--coal-3),var(--coal-2));border-top:1px solid #2e2e35;border-bottom:1px solid #2e2e35}
+  .ban .wrap{display:grid;gap:26px;align-items:center}
+  @media (min-width:860px){.ban .wrap{grid-template-columns:1fr 1fr}}
+  .ban .ph{aspect-ratio:4/3;border-radius:14px;overflow:hidden}
+  .ban h2{font-size:clamp(2.6rem,7vw,4rem)}
+  .ban h2 span{color:var(--gold)}
+  .ban p{color:var(--muted);margin:12px 0 20px}
+  .ban ul{list-style:none;display:grid;gap:8px}
+  .ban li::before{content:"● ";color:var(--red)}
+  /* infos */
+  .infos{display:grid;gap:18px}
+  @media (min-width:860px){.infos{grid-template-columns:1fr 1.3fr}}
+  .box{background:var(--coal-2);border:1px solid #2e2e35;border-radius:14px;padding:26px}
+  .box h3{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:2rem;color:var(--gold);margin-bottom:10px}
+  .box address{font-style:normal;font-size:1.1rem;margin-bottom:14px}
+  .small{color:var(--muted);font-size:.88rem;margin-top:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chips span{border:1px solid #3a3a42;border-radius:999px;padding:4px 12px;font-size:.82rem;color:var(--muted)}
+  .map{aspect-ratio:16/10;border-radius:10px;overflow:hidden;margin-top:14px;background:var(--coal-3)}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:invert(.9) hue-rotate(180deg)}
+  .final{text-align:center;background:var(--red)}
+  .final h2{font-size:clamp(3rem,9vw,5.5rem)}
+  .final .tel{display:block;font-family:"Bebas Neue",sans-serif;font-size:clamp(2.4rem,8vw,4rem);text-decoration:none;margin:6px 0 20px}
+  .final .btn{background:var(--coal);border-color:var(--coal)}
+  footer{background:#0b0b0c;color:#88847f;font-size:.8rem;padding:22px 0 28px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer a{color:var(--gold)}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo bb" href="#">Wok<span>28</span></a>
+    <nav><a href="#buffet">Le buffet</a><a href="#volonte">À volonté</a><a href="#infos">Infos</a></nav>
+    <a class="call" href="tel:+33970981488">Réserver</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">Buffet asiatique · Nogent-le-Rotrou</span>
+      <h1 class="bb">Mangez <span>à volonté</span></h1>
+      <p>Sushis, wok, grillades, fruits de mer et desserts : un grand buffet asiatique pour se faire plaisir, en famille ou entre amis.</p>
+      <div class="btns"><a class="btn" href="tel:+33970981488">Réserver une table</a><a class="btn ghost" href="#buffet">Découvrir le buffet</a></div>
+    </div>
+    <div class="mosaic">
+      <div><img src="https://images.unsplash.com/photo-1564489563601-c53cfc451e93?auto=format&fit=crop&w=900&q=70" alt="Plateau de sushis"></div>
+      <div><img src="https://images.unsplash.com/photo-1751560048567-b38f5cf3448a?auto=format&fit=crop&w=700&q=70" alt="Légumes sautés au wok"></div>
+      <div><img src="https://images.unsplash.com/photo-1678026582164-24a5460c447a?auto=format&fit=crop&w=700&q=70" alt="Raviolis vapeur"></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div><b>4,0★</b><span>200+ avis Google</span></div>
+    <div><b>5 univers</b><span>sushis · wok · grill · mer · desserts</span></div>
+    <div><b>À volonté</b><span>prix fixe par personne</span></div>
+  </div>
+</div>
+
+<section id="buffet">
+  <div class="wrap">
+    <div class="ttl"><small>Le buffet</small><h2 class="bb">Faites le tour du monde asiatique</h2><p>Servez-vous autant que vous voulez, à chaque station.</p></div>
+    <div class="stations">
+      <div class="st" data-n="01"><p class="ic">🍣</p><h3>Sushis &amp; makis</h3><p>Sushis, makis et california préparés tout au long du service.</p></div>
+      <div class="st" data-n="02"><p class="ic">🥢</p><h3>Le wok</h3><p>Choisissez vos ingrédients, on les saisit au wok devant vous.</p></div>
+      <div class="st" data-n="03"><p class="ic">🔥</p><h3>Le grill</h3><p>Viandes et brochettes à griller, pour les amateurs de bonne viande.</p></div>
+      <div class="st" data-n="04"><p class="ic">🦐</p><h3>Fruits de mer</h3><p>Crevettes, fruits de mer et spécialités de la mer.</p></div>
+      <div class="st" data-n="05"><p class="ic">🥟</p><h3>Entrées chaudes</h3><p>Nems, raviolis, poulet à la citronnelle et plats mijotés.</p></div>
+      <div class="st" data-n="06"><p class="ic">🍰</p><h3>Desserts</h3><p>Pâtisseries, fruits frais et douceurs pour finir en beauté.</p></div>
+    </div>
+    <p class="note">Contenu du buffet donné à titre d'exemple — à ajuster avec vous.</p>
+  </div>
+</section>
+
+<section id="volonte" class="ban">
+  <div class="wrap">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1705088295609-3ce7befbe8ee?auto=format&fit=crop&w=1100&q=70" alt="Nouilles sautées à la viande et aux légumes" loading="lazy"></div>
+    <div>
+      <h2 class="bb">Un prix fixe, <span>tout à volonté</span></h2>
+      <p>Un tarif unique par personne, et vous vous servez autant que vous voulez.</p>
+      <ul><li>Idéal pour les familles et les groupes</li><li>Réservation conseillée</li><li>Tarifs à afficher avec vous</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap">
+    <div class="ttl"><small>Pratique</small><h2 class="bb">Horaires &amp; accès</h2></div>
+    <div class="infos">
+      <div class="box">
+        <h3>Horaires</h3>
+        <p>Jours et horaires à compléter avec vous.</p>
+        
+        <div class="chips"><span>Sur place</span><span>Groupes</span><span>Famille</span></div>
+      </div>
+      <div class="box">
+        <h3>Adresse</h3>
+        <address>22 avenue du Président Kennedy<br>28400 Nogent-le-Rotrou</address>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Wok+28+22+avenue+du+Pr%C3%A9sident+Kennedy+28400+Nogent-le-Rotrou" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=22+avenue+du+Pr%C3%A9sident+Kennedy+28400+Nogent-le-Rotrou&amp;output=embed" title="Carte : Wok 28" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="bb">On a faim ?</h2>
+    <a class="tel" href="tel:+33970981488">09 70 98 14 88</a>
+    <a class="btn" href="tel:+33970981488">Réserver maintenant</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Wok 28 · 22 avenue du Président Kennedy, 28400 Nogent-le-Rotrou</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Niclas Illg, Daily Food Shot, Yu, Gourmet Lenz — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>

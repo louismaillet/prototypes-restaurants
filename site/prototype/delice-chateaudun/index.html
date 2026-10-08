@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Délice Châteaudun — Plats chinois à emporter</title>
+<meta name="description" content="Délice Châteaudun, traiteur chinois place du 18 Octobre : nouilles sautées, samoussas, crevettes, porc caramel, menu étudiant. À emporter et en livraison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--jade:#0f8a6a;--jade-d:#0b6b52;--mint:#e3f4ee;--red:#e2372f;--white:#ffffff;--ink:#16302a;--muted:#5d726c;--line:#cfe6de}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Baloo 2",system-ui,sans-serif;font-size:1.05rem;background:var(--mint);color:var(--ink);line-height:1.55}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--line)}
+  .wrap{max-width:980px;margin:0 auto;padding:0 18px}
+  .demo{background:var(--ink);color:#cfe3dc;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:#fff;font-weight:700}
+  /* barre d'appel collée en bas sur mobile */
+  .callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;display:flex;gap:8px}
+  .callbar a{flex:1;text-align:center;text-decoration:none;font-weight:800;padding:14px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+  .callbar .c1{background:var(--red);color:#fff}
+  .callbar .c2{background:var(--white);color:var(--ink)}
+  @media (min-width:800px){.callbar{left:auto;right:20px;width:320px}}
+  header{text-align:center;padding:26px 0 0}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border-radius:999px;padding:6px 14px;font-weight:700;font-size:.85rem;color:var(--jade)}
+  header h1{font-size:clamp(2.8rem,10vw,5rem);font-weight:800;line-height:1;margin:14px 0 6px;color:var(--jade)}
+  header h1 span{color:var(--red)}
+  header p{color:var(--muted);max-width:520px;margin:0 auto}
+  /* boîte traiteur */
+  .box-hero{position:relative;max-width:560px;margin:30px auto 0}
+  .box-hero .ph{aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:6px solid var(--white);box-shadow:0 20px 40px rgba(15,138,106,.2)}
+  .bubble{position:absolute;background:var(--red);color:#fff;font-weight:800;border-radius:20px;padding:10px 14px;line-height:1.1;text-align:center}
+  .b1{top:-14px;left:-8px;transform:rotate(-6deg)}
+  .b2{bottom:-14px;right:-8px;transform:rotate(5deg);background:var(--jade)}
+  @media (max-width:520px){.b1{left:6px}.b2{right:6px}}
+  section{padding:64px 0}
+  h2{font-size:clamp(2rem,6vw,2.8rem);font-weight:800;text-align:center;line-height:1.05;margin-bottom:8px}
+  .lead{text-align:center;color:var(--muted);max-width:520px;margin:0 auto 30px}
+  /* étapes commande */
+  .steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+  .step{background:var(--white);border-radius:22px;padding:24px;text-align:center}
+  .step .n{width:48px;height:48px;border-radius:50%;background:var(--jade);color:#fff;display:grid;place-items:center;margin:0 auto 10px;font-weight:800;font-size:1.4rem}
+  .step h3{font-weight:800;font-size:1.3rem}
+  .step p{color:var(--muted)}
+  /* menu étudiant */
+  .student{background:var(--red);color:#fff;border-radius:28px;padding:30px;display:grid;gap:20px;align-items:center}
+  @media (min-width:760px){.student{grid-template-columns:auto 1fr}}
+  .student .price{width:150px;height:150px;border-radius:50%;background:#fff;color:var(--red);display:grid;place-items:center;text-align:center;font-weight:800;line-height:1;margin:0 auto}
+  .student .price b{font-size:2.6rem;display:block}
+  .student h3{font-size:1.8rem;font-weight:800}
+  .student p{opacity:.95}
+  /* carte en pastilles */
+  .cats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .cat{background:var(--white);border-radius:22px;padding:22px}
+  .cat h3{font-weight:800;font-size:1.3rem;color:var(--jade);margin-bottom:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips span{background:var(--mint);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.95rem}
+  .note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:16px}
+  .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+  .pics .ph{aspect-ratio:1/1;border-radius:22px;overflow:hidden}
+  /* infos */
+  .infos{display:grid;gap:14px}
+  @media (min-width:760px){.infos{grid-template-columns:1fr 1fr}}
+  .card{background:var(--white);border-radius:22px;padding:24px}
+  .card h3{font-weight:800;font-size:1.35rem;color:var(--jade);margin-bottom:8px}
+  .hours li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+  .hours li:last-child{border:0}
+  .closed{color:var(--red);font-weight:700}
+  .card address{font-style:normal;font-size:1.1rem;margin-bottom:12px}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;padding:11px 20px;border-radius:14px;background:var(--jade);color:#fff}
+  .map{aspect-ratio:16/10;border-radius:16px;overflow:hidden;margin-top:14px;background:var(--line)}
+  .map iframe{width:100%;height:100%;border:0;display:block}
+  .small{font-size:.85rem;color:var(--muted);margin-top:8px}
+  footer{font-size:.8rem;color:var(--muted);text-align:center;padding:20px 18px 110px}
+  footer .credits{font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<div class="callbar"><a class="c1" href="tel:+33236681182">📞 Commander</a><a class="c2" href="#carte">Voir la carte</a></div>
+
+<div class="wrap">
+  <header>
+    <span class="badge">🥡 À emporter · 🛵 Livraison</span>
+    <h1>Délice <span>Châteaudun</span></h1>
+    <p>Votre traiteur chinois de la place du 18 Octobre : des plats généreux, prêts en quelques minutes, à emporter ou livrés chez vous.</p>
+  </header>
+  <div class="box-hero">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1100&q=70" alt="Nouilles sautées aux légumes"></div>
+    <div class="bubble b1">★ 4,5<br><small>200+ avis</small></div>
+    <div class="bubble b2">Menu étudiant<br>6,50 €</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Commander, c'est simple</h2>
+    <p class="lead">Trois étapes, et vous voilà servi.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Appelez</h3><p>Passez votre commande par téléphone au 02 36 68 11 82.</p></div>
+      <div class="step"><div class="n">2</div><h3>On prépare</h3><p>Vos plats sont cuisinés minute, bien chauds.</p></div>
+      <div class="step"><div class="n">3</div><h3>Régalez-vous</h3><p>Passez les chercher ou faites-vous livrer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="student">
+      <div class="price"><span><b>6,50 €</b>menu<br>étudiant</span></div>
+      <div><h3>Le bon plan des étudiants</h3><p>Un repas complet et généreux à petit prix, idéal pour la pause du midi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="carte" style="background:#fff">
+  <div class="wrap">
+    <h2>La carte</h2>
+    <p class="lead">Des classiques de la cuisine chinoise, et des petites portions à partager.</p>
+    <div class="cats">
+      <div class="cat"><h3>Entrées &amp; à partager</h3><div class="chips"><span>Samoussas</span><span>Samoussas végétariens</span><span>Nems</span><span>Raviolis vapeur</span></div></div>
+      <div class="cat"><h3>Plats</h3><div class="chips"><span>Porc au caramel</span><span>Crevettes sautées</span><span>Poulet aux légumes</span><span>Bœuf aux oignons</span></div></div>
+      <div class="cat"><h3>Nouilles &amp; riz</h3><div class="chips"><span>Nouilles sautées</span><span>Riz cantonais</span><span>Riz nature</span></div></div>
+    </div>
+    <p class="note">Carte donnée à titre d'exemple — vos vrais plats et vos prix seront ajoutés avec vous.</p>
+    <div class="pics">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1657939728877-df03de19f9fe?auto=format&fit=crop&w=700&q=70" alt="Bol de raviolis" loading="lazy"></div>
+      <div class="ph"><img src="https://images.unsplash.com/photo-1705088295609-3ce7befbe8ee?auto=format&fit=crop&w=700&q=70" alt="Nouilles à la viande" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Horaires &amp; adresse</h2>
+    <p class="lead">En plein centre de Châteaudun.</p>
+    <div class="infos">
+      <div class="card">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Lundi – Samedi</span><span>10h – 14h · 15h – 21h</span></li>
+          <li><span>Dimanche</span><span class="closed">Fermé</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer.</p>
+      </div>
+      <div class="card">
+        <h3>Adresse</h3>
+        <address>32 place du 18 Octobre<br>28200 Châteaudun</address>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=D%C3%A9lice+Ch%C3%A2teaudun+32+place+du+18+Octobre" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=32+place+du+18+Octobre+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Délice Châteaudun" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Délice Châteaudun · 32 place du 18 Octobre, 28200 Châteaudun · <a href="#">Mentions légales</a> · Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a>
+  <p class="credits">Photos d'illustration : Orijit Chatterjee, DJ Chuang, Gourmet Lenz — via Unsplash.</p>
+</footer>
+</body>
+</html>
