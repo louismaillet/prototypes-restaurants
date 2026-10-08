@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Restaurant de la Halle — Beaumont-les-Autels</title>
+<meta name="description" content="Restaurant de la Halle, cuisine traditionnelle et bar sous la halle de Beaumont-les-Autels. Ouvert dès 6h30.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;900&family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ardoise:#2e3338; --ardoise2:#3b4148; --bois:#7a4e2d; --bois2:#a0683c;
+  --vert:#4f7a3a; --creme:#f3ede2; --papier:#fffaf0; --txt:#23272b; --mute:#6c6a65;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:'Barlow',system-ui,sans-serif;background:var(--creme);color:var(--txt);line-height:1.6;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Bitter',Georgia,serif;line-height:1.1}
+.cond{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.12em}
+
+.demo{background:var(--ardoise);color:#d9d4ca;font-size:.8rem;text-align:center;padding:.4rem 1rem}
+.demo a{color:#fff;font-weight:700}
+
+/* charpente : poutres CSS */
+.charpente{height:46px;background:
+  linear-gradient(180deg,transparent 0 8px,var(--bois) 8px 22px,transparent 22px),
+  repeating-linear-gradient(90deg,var(--bois2) 0 14px,transparent 14px 120px),
+  linear-gradient(180deg,var(--bois) 0 8px,transparent 8px);
+  background-color:var(--ardoise)}
+
+header{background:var(--ardoise);color:#fff}
+header .in{max-width:1150px;margin:auto;padding:.9rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{text-decoration:none;line-height:1}
+.logo b{display:block;font-family:'Bitter';font-weight:900;font-size:1.35rem}
+.logo small{font-family:'Barlow Condensed';letter-spacing:.2em;text-transform:uppercase;color:#b9c7ad;font-size:.75rem}
+header nav{display:none;gap:1.5rem;font-family:'Barlow Condensed';text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+header nav a{text-decoration:none;color:#d9d4ca}
+header nav a:hover{color:#fff}
+.btn{display:inline-block;background:var(--vert);color:#fff;text-decoration:none;font-family:'Barlow Condensed';text-transform:uppercase;letter-spacing:.1em;font-weight:700;padding:.75rem 1.3rem;border-radius:4px}
+.btn:hover{background:#3f6430}
+.btn.bois{background:var(--bois)}
+.btn.line{background:transparent;border:2px solid currentColor}
+
+/* hero : halle */
+.hero{background:var(--ardoise);color:#fff;position:relative}
+.hero .in{max-width:1150px;margin:auto;display:grid;gap:0}
+.hero .photo{aspect-ratio:16/10;overflow:hidden;position:relative}
+.hero .photo img{width:100%;height:100%;object-fit:cover}
+.hero .photo::after{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(90deg,transparent 0 22%,rgba(122,78,45,.85) 22% 24%)}
+.hero .txt{padding:2rem 1.25rem 2.5rem}
+.hero .cond{color:#b9c7ad;font-size:.9rem}
+.hero h1{font-size:clamp(2.4rem,9vw,4.4rem);font-weight:900;margin:.5rem 0 1rem}
+.hero p{color:#d9d4ca;font-size:1.08rem;max-width:30rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.open{display:inline-flex;align-items:center;gap:.5rem;background:var(--papier);color:var(--ardoise);border-radius:4px;padding:.35rem .8rem;margin-top:1.2rem;font-weight:700}
+.open::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--vert)}
+
+section{padding:4rem 1.25rem}
+.wrap{max-width:1150px;margin:auto}
+.tag{color:var(--vert);font-weight:700;font-size:.85rem}
+h2{font-size:clamp(1.9rem,5.5vw,2.8rem);font-weight:900;margin:.4rem 0 1rem;color:var(--ardoise)}
+
+/* étals : 3 colonnes */
+.etals{display:grid;gap:1rem;margin-top:1.5rem}
+.etal{background:var(--papier);border-top:8px solid var(--bois);padding:1.5rem;border-radius:0 0 6px 6px;box-shadow:0 2px 0 #e2d9c8}
+.etal:nth-child(2){border-color:var(--vert)}
+.etal:nth-child(3){border-color:var(--ardoise)}
+.etal .h{font-family:'Barlow Condensed';font-size:2.4rem;font-weight:700;color:var(--bois);line-height:1}
+.etal h3{font-size:1.3rem;margin:.4rem 0 .4rem}
+.etal p{color:var(--mute)}
+
+/* formule : ticket */
+.formule{background:var(--ardoise);color:#fff}
+.formule .grid{display:grid;gap:2rem;align-items:center}
+.formule h2{color:#fff}
+.formule .tag{color:#b9c7ad}
+.formule p{color:#d9d4ca}
+.ticket{background:var(--papier);color:var(--txt);padding:1.8rem 1.6rem;position:relative;max-width:400px;justify-self:center;width:100%;
+  -webkit-mask:radial-gradient(circle 10px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 10px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 10px at 0 50%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 10px at 100% 50%,transparent 98%,#000) right/51% 100% no-repeat}
+.ticket .top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px dashed #cfc5b2;padding-bottom:.8rem;margin-bottom:.8rem}
+.ticket .top b{font-family:'Bitter';font-size:1.4rem;font-weight:900}
+.ticket .prix{font-family:'Barlow Condensed';font-size:2.4rem;font-weight:700;color:var(--vert)}
+.ticket ul{list-style:none}
+.ticket li{display:flex;gap:.6rem;padding:.35rem 0}
+.ticket li::before{content:"✓";color:var(--vert);font-weight:700}
+.ticket small{display:block;color:var(--mute);margin-top:.8rem;font-style:italic}
+
+/* ardoise du jour */
+.ardoise{background:var(--ardoise2);color:#f0ece4;border:10px solid var(--bois);border-radius:6px;padding:1.6rem;font-family:'Bitter'}
+.ardoise h3{font-size:1.5rem;margin-bottom:.8rem;color:#fff}
+.ardoise li{list-style:none;padding:.45rem 0;border-bottom:1px dashed rgba(255,255,255,.2)}
+.ardoise li:last-child{border:0}
+.ardoise span{display:block;font-family:'Barlow';font-size:.85rem;color:#b9c7ad}
+.duo{display:grid;gap:1.5rem;margin-top:1.5rem}
+.duo .img{border-radius:6px;overflow:hidden;min-height:260px}
+.duo .img img{width:100%;height:100%;object-fit:cover}
+.ex{color:var(--mute);font-size:.85rem;font-style:italic;margin-top:1rem}
+
+/* buffets / bar */
+.services{display:grid;gap:1rem;margin-top:1.5rem}
+.svc{display:flex;gap:1rem;background:var(--papier);padding:1.3rem;border-radius:6px;border-left:6px solid var(--vert)}
+.svc .ico{font-size:1.8rem;line-height:1}
+.svc h3{font-size:1.15rem}
+.svc p{color:var(--mute)}
+
+/* avis */
+.avis{background:var(--vert);color:#fff;text-align:center}
+.avis .n{font-family:'Bitter';font-weight:900;font-size:clamp(3.5rem,14vw,6rem);line-height:1}
+.avis .mots{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-top:1.4rem}
+.avis .mots span{background:rgba(255,255,255,.15);border-radius:4px;padding:.4rem .9rem;font-weight:500}
+
+/* infos */
+.infos .grid{display:grid;gap:1.5rem;margin-top:1rem}
+.hor{background:var(--papier);border-radius:6px;padding:1.5rem}
+.hor table{width:100%;border-collapse:collapse}
+.hor td{padding:.55rem 0;border-bottom:1px solid #e6dccb}
+.hor td:last-child{text-align:right;font-weight:700}
+.hor .f{color:#a33}
+.hor small{display:block;color:var(--mute);margin-top:.7rem}
+.coord{display:flex;flex-direction:column;gap:.7rem;margin-top:1rem}
+.map{border-radius:6px;overflow:hidden;border:6px solid var(--bois);min-height:320px}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+
+footer{background:var(--ardoise);color:#b5b0a6;padding:2rem 1.25rem;text-align:center;font-size:.85rem}
+footer .links{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:.8rem}
+footer p{margin-top:.3rem}
+
+@media(min-width:760px){
+  header nav{display:flex}
+  .hero .in{grid-template-columns:1fr 1.1fr;align-items:center}
+  .hero .photo{aspect-ratio:auto;height:100%;min-height:440px;order:2}
+  .hero .txt{padding:3rem 2rem 3rem 1.25rem}
+  .etals{grid-template-columns:repeat(3,1fr)}
+  .formule .grid,.duo,.infos .grid{grid-template-columns:1fr 1fr}
+  .services{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<header>
+  <div class="in">
+    <a class="logo" href="#"><b>Restaurant de la Halle</b><small>Beaumont-les-Autels</small></a>
+    <nav><a href="#midi">Le midi</a><a href="#services">Buffets & bar</a><a href="#infos">Infos</a></nav>
+    <a class="btn" href="tel:+33237294392">Appeler</a>
+  </div>
+</header>
+<div class="charpente"></div>
+
+<main>
+<div class="hero">
+  <div class="in">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1654921834734-c7002b177e35?auto=format&fit=crop&w=1100&q=70" alt="Table de bistrot (photo d'illustration)"></div>
+    <div class="txt">
+      <div class="cond">Restaurant · Bar · Place de la Halle</div>
+      <h1>La bonne table du village.</h1>
+      <p>Cuisine traditionnelle faite maison, service rapide et sourire en prime. Le café dès l'aube, le plat du jour à midi, et des buffets pour vos grandes occasions.</p>
+      <div class="ctas">
+        <a class="btn" href="tel:+33237294392">02 37 29 43 92</a>
+        <a class="btn line" href="#midi">Le menu du midi</a>
+      </div>
+      <div class="open">Ouvert dès 6h30 en semaine</div>
+    </div>
+  </div>
+</div>
+</main>
+
+<section>
+  <div class="wrap">
+    <span class="tag cond">Une journée à la Halle</span>
+    <h2>Du premier café au dernier verre</h2>
+    <div class="etals">
+      <div class="etal"><div class="h">6h30</div><h3>Le café du matin</h3><p>Le bar ouvre tôt : café, croissant et les nouvelles du village avant d'attaquer la journée.</p></div>
+      <div class="etal"><div class="h">12h</div><h3>Le repas du midi</h3><p>Une cuisine traditionnelle et maison, servie rapidement pour ceux qui travaillent.</p></div>
+      <div class="etal"><div class="h">20h</div><h3>Le bar jusqu'au soir</h3><p>On se retrouve autour d'un verre après le travail, dans une ambiance conviviale.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="formule" id="midi">
+  <div class="wrap grid">
+    <div>
+      <span class="tag cond">Le midi</span>
+      <h2>La formule ouvrière</h2>
+      <p>Entrée, plat, fromage ou dessert, avec le quart de vin et le café : la formule complète des travailleurs et des gens du coin, à prix doux.</p>
+    </div>
+    <div class="ticket">
+      <div class="top"><b>Formule du jour</b><span class="prix">≈ 15 €</span></div>
+      <ul>
+        <li>Entrée du buffet</li>
+        <li>Plat du jour maison</li>
+        <li>Fromage ou dessert</li>
+        <li>Vin & café compris</li>
+      </ul>
+      <small>Prix donné à titre d'exemple — à confirmer.</small>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="tag cond">Cette semaine</span>
+    <h2>L'ardoise du jour</h2>
+    <div class="duo">
+      <div class="ardoise">
+        <h3>Plats du jour</h3>
+        <ul>
+          <li>Lundi — Bœuf bourguignon<span>Pommes vapeur</span></li>
+          <li>Mardi — Rôti de porc<span>Haricots verts</span></li>
+          <li>Mercredi — Blanquette de veau<span>Riz</span></li>
+          <li>Jeudi — Poulet rôti<span>Frites maison</span></li>
+          <li>Vendredi — Poisson du marché<span>Légumes de saison</span></li>
+        </ul>
+      </div>
+      <div class="img"><img src="https://images.unsplash.com/photo-1519699788450-ad34386a3bfc?auto=format&fit=crop&w=900&q=70" alt="Plat mijoté (photo d'illustration)" loading="lazy"></div>
+    </div>
+    <p class="ex">Ardoise donnée à titre d'exemple — elle sera mise à jour avec les vrais plats de la semaine.</p>
+  </div>
+</section>
+
+<section id="services" style="padding-top:0">
+  <div class="wrap">
+    <span class="tag cond">Pour vos événements</span>
+    <h2>Buffets, groupes & bar</h2>
+    <div class="services">
+      <div class="svc"><span class="ico">🍽️</span><div><h3>Buffets</h3><p>Repas de famille, associations, fêtes de village : on s'occupe du buffet.</p></div></div>
+      <div class="svc"><span class="ico">🍺</span><div><h3>Le bar</h3><p>Bar attenant au restaurant, ouvert toute la journée.</p></div></div>
+      <div class="svc"><span class="ico">♿</span><div><h3>Accessible</h3><p>Accès pour les personnes à mobilité réduite.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="avis">
+  <div class="wrap">
+    <div class="cond" style="color:#e2ecd9">Note Google</div>
+    <div class="n">4,4 / 5</div>
+    <div class="mots"><span>Service rapide</span><span>Accueil sympathique</span><span>Cuisine maison</span><span>Bon rapport qualité-prix</span></div>
+  </div>
+</section>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <span class="tag cond">Infos pratiques</span>
+    <h2>Sur la place de la Halle</h2>
+    <div class="grid">
+      <div>
+        <div class="hor">
+          <table>
+            <tr><td>Lundi – Vendredi</td><td>6h30 – 20h</td></tr>
+            <tr><td>Samedi</td><td>6h30 – 18h</td></tr>
+            <tr><td>Dimanche</td><td class="f">Fermé</td></tr>
+          </table>
+          <small>Horaires à confirmer.</small>
+        </div>
+        <div class="coord">
+          <p><b>5 place de la Halle</b><br>28480 Beaumont-les-Autels</p>
+          <a class="btn" href="tel:+33237294392">Appeler · 02 37 29 43 92</a>
+          <a class="btn bois" href="https://www.facebook.com/p/Restaurant-de-la-halle-61553817597421/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="map"><iframe src="https://www.google.com/maps?q=5+place+de+la+Halle,+28480+Beaumont-les-Autels&output=embed" loading="lazy" title="Plan d'accès Restaurant de la Halle"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="links"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="https://louismaillet.fr" target="_blank" rel="noopener">Maquette par Louis Maillet</a></div>
+  <p>© Restaurant de la Halle — Beaumont-les-Autels</p>
+  <p>Photos d'illustration : Cody Chan, Eric Zhu / Unsplash</p>
+</footer>
+</body>
+</html>
