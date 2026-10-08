@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>La Bigoudine — Crêperie à Nogent-le-Rotrou</title>
+<meta name="description" content="La Bigoudine, crêperie au cœur de Nogent-le-Rotrou : galettes de blé noir, crêpes sucrées, glaces artisanales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,700;0,800;1,700&family=Mulish:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --velours:#141210; --velours2:#1f1b17; --lin:#f6efe1;
+  --orange:#f08a24; --jaune:#f5c518; --vert:#3d9a5b; --rouge:#d8452f;
+  --txt:#f6efe1; --mute:#c9bea9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:'Mulish',system-ui,sans-serif;background:var(--velours);color:var(--txt);line-height:1.6;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Sansita',Georgia,serif;line-height:1.05}
+
+/* bandeau maquette */
+.demo{background:var(--jaune);color:var(--velours);font-size:.8rem;text-align:center;padding:.4rem 1rem;font-weight:600}
+.demo a{font-weight:800}
+
+/* frise brodée (CSS) */
+.frise{height:22px;background:
+  radial-gradient(circle at 11px 11px,var(--jaune) 0 4px,transparent 5px) 0 0/44px 22px,
+  radial-gradient(circle at 33px 11px,var(--vert) 0 4px,transparent 5px) 0 0/44px 22px,
+  repeating-linear-gradient(90deg,var(--orange) 0 22px,var(--rouge) 22px 44px);
+  -webkit-mask:radial-gradient(circle at 11px 0,transparent 9px,#000 10px) 0 0/22px 22px;
+          mask:radial-gradient(circle at 11px 0,transparent 9px,#000 10px) 0 0/22px 22px;}
+.frise.bas{transform:scaleY(-1)}
+
+/* en-tête */
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.25rem;max-width:1150px;margin:auto}
+.logo{font-family:'Sansita';font-size:1.6rem;font-weight:800;text-decoration:none;color:var(--jaune)}
+.logo span{color:var(--orange)}
+header nav{display:none;gap:1.4rem;font-weight:600;font-size:.95rem}
+header nav a{text-decoration:none;color:var(--mute)}
+header nav a:hover{color:var(--jaune)}
+.btn{display:inline-block;background:var(--orange);color:var(--velours);font-weight:800;text-decoration:none;padding:.75rem 1.3rem;border-radius:999px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--jaune);border:2px solid var(--jaune)}
+.btn.small{padding:.5rem 1rem;font-size:.9rem}
+
+/* hero : coiffe */
+.hero{display:grid;gap:2rem;padding:1.5rem 1.25rem 3rem;max-width:1150px;margin:auto;align-items:center}
+.hero .kicker{color:var(--vert);font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:.8rem}
+.hero h1{font-size:clamp(2.8rem,11vw,5.8rem);color:var(--lin);margin:.4rem 0 1rem}
+.hero h1 em{color:var(--orange);font-style:italic}
+.hero p{color:var(--mute);max-width:32rem;font-size:1.05rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.coiffe{position:relative;justify-self:center;width:min(78vw,340px)}
+.coiffe .img{aspect-ratio:3/5;border-radius:999px 999px 18px 18px;overflow:hidden;border:6px solid var(--jaune);box-shadow:0 0 0 6px var(--velours),0 0 0 10px var(--orange)}
+.coiffe img{width:100%;height:100%;object-fit:cover}
+.coiffe .note{position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);background:var(--vert);color:#fff;font-weight:800;padding:.45rem 1rem;border-radius:999px;white-space:nowrap;font-size:.9rem}
+
+/* sections */
+section{padding:4rem 1.25rem}
+.wrap{max-width:1150px;margin:auto}
+.tag{display:inline-block;color:var(--jaune);font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;margin-bottom:.6rem}
+h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:1rem}
+
+/* maison */
+.maison{background:var(--lin);color:var(--velours)}
+.maison .grid{display:grid;gap:2rem}
+.maison p{font-size:1.05rem;margin-bottom:1rem}
+.maison h2{color:var(--velours)}
+.maison .tag{color:var(--rouge)}
+.points{display:grid;gap:.8rem}
+.point{display:flex;gap:.9rem;align-items:flex-start;background:#fff;border-radius:16px;padding:1rem 1.1rem;border-left:6px solid var(--orange)}
+.point:nth-child(2){border-color:var(--vert)}
+.point:nth-child(3){border-color:var(--jaune)}
+.point:nth-child(4){border-color:var(--rouge)}
+.point b{display:block}
+.point small{color:#5a5047}
+.point .ico{font-size:1.5rem}
+
+/* carte */
+.carte .cols{display:grid;gap:1.4rem;margin-top:1.5rem}
+.bloc{background:var(--velours2);border-radius:22px;padding:1.6rem;position:relative;overflow:hidden}
+.bloc::before{content:"";position:absolute;inset:0 0 auto;height:8px;background:repeating-linear-gradient(90deg,var(--orange) 0 18px,var(--jaune) 18px 36px,var(--vert) 36px 54px)}
+.bloc h3{font-size:1.6rem;color:var(--jaune);margin:.4rem 0 1rem}
+.bloc ul{list-style:none}
+.bloc li{padding:.55rem 0;border-bottom:1px dashed #3a332b}
+.bloc li:last-child{border:0}
+.bloc li b{color:var(--lin)}
+.bloc li small{display:block;color:var(--mute)}
+.ex{color:var(--mute);font-size:.85rem;margin-top:1.2rem;font-style:italic}
+
+/* glaces */
+.glaces{background:linear-gradient(135deg,var(--orange),var(--rouge));color:var(--velours)}
+.glaces .grid{display:grid;gap:2rem;align-items:center}
+.glaces h2{color:var(--velours)}
+.glaces .tag{color:var(--lin)}
+.glaces p{font-size:1.05rem;font-weight:600}
+.glaces .img{border-radius:24px;overflow:hidden;aspect-ratio:4/3;border:5px solid var(--velours)}
+.glaces .img img{width:100%;height:100%;object-fit:cover}
+
+/* duo photos */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:2rem}
+.duo div{aspect-ratio:1;border-radius:18px;overflow:hidden}
+.duo img{width:100%;height:100%;object-fit:cover}
+
+/* avis */
+.avis{text-align:center}
+.score{font-family:'Sansita';font-size:clamp(4rem,16vw,7rem);color:var(--jaune);line-height:1}
+.mots{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-top:1.5rem}
+.mots span{border:2px solid var(--vert);color:var(--lin);border-radius:999px;padding:.4rem 1rem;font-weight:600}
+
+/* infos */
+.infos .grid{display:grid;gap:1.5rem}
+.horaires{background:var(--lin);color:var(--velours);border-radius:22px;padding:1.6rem}
+.horaires h3{font-size:1.6rem;margin-bottom:.8rem}
+.horaires table{width:100%;border-collapse:collapse}
+.horaires td{padding:.5rem 0;border-bottom:1px solid #e3d8c3;vertical-align:top}
+.horaires td:last-child{text-align:right;font-weight:700}
+.horaires .ferme{color:var(--rouge)}
+.horaires small{display:block;margin-top:.8rem;color:#6b6055}
+.map{border-radius:22px;overflow:hidden;min-height:300px;border:4px solid var(--orange)}
+.map iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+.contact{display:flex;flex-direction:column;gap:.8rem}
+.contact .adr{font-size:1.1rem}
+
+footer{padding:2rem 1.25rem 2.5rem;text-align:center;color:var(--mute);font-size:.85rem}
+footer .links{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:.8rem}
+footer p{margin-top:.4rem}
+
+@media(min-width:760px){
+  header nav{display:flex}
+  .hero{grid-template-columns:1.2fr 1fr;padding-top:3rem}
+  .maison .grid,.glaces .grid{grid-template-columns:1fr 1fr}
+  .carte .cols{grid-template-columns:repeat(3,1fr)}
+  .infos .grid{grid-template-columns:1fr 1.2fr}
+  .duo{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<div class="frise"></div>
+
+<header>
+  <a class="logo" href="#">La <span>Bigoudine</span></a>
+  <nav>
+    <a href="#maison">La maison</a>
+    <a href="#carte">La carte</a>
+    <a href="#glaces">Glaces</a>
+    <a href="#infos">Infos</a>
+  </nav>
+  <a class="btn small" href="tel:+33237528920">Réserver</a>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <div class="kicker">Crêperie · Nogent-le-Rotrou</div>
+    <h1>La Bretagne,<br><em>au cœur</em> du Perche.</h1>
+    <p>Galettes de blé noir, crêpes sucrées et glaces artisanales, servies dans une salle chaleureuse rue Saint-Hilaire.</p>
+    <div class="ctas">
+      <a class="btn" href="tel:+33237528920">02 37 52 89 20</a>
+      <a class="btn ghost" href="#carte">Voir la carte</a>
+    </div>
+  </div>
+  <div class="coiffe">
+    <div class="img"><img src="https://images.unsplash.com/photo-1723691802547-b79f65c16b5f?auto=format&fit=crop&w=700&q=70" alt="Galette garnie (photo d'illustration)"></div>
+    <div class="note">★ 4,7 sur Google</div>
+  </div>
+</div>
+</main>
+
+<div class="frise"></div>
+
+<section class="maison" id="maison">
+  <div class="wrap grid">
+    <div>
+      <span class="tag">La maison</span>
+      <h2>Une crêperie où l'on se sent bien</h2>
+      <p>À deux pas du centre de Nogent-le-Rotrou, La Bigoudine accueille ses clients dans une ambiance chaleureuse et cosy. Ici, on prend le temps : une bonne galette, une bolée, et une crêpe pour finir.</p>
+      <p>Les habitués parlent d'un accueil souriant, de galettes généreuses et de glaces qu'on ne trouve pas ailleurs.</p>
+    </div>
+    <div class="points">
+      <div class="point"><span class="ico">🥞</span><div><b>Galettes de blé noir</b><small>Classiques et recettes de la maison</small></div></div>
+      <div class="point"><span class="ico">🍨</span><div><b>Glaces artisanales</b><small>D'un glacier local</small></div></div>
+      <div class="point"><span class="ico">🎁</span><div><b>La crêpe surprise</b><small>Laissez-vous faire…</small></div></div>
+      <div class="point"><span class="ico">♿</span><div><b>Accessible</b><small>Accès personnes à mobilité réduite</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="carte" id="carte">
+  <div class="wrap">
+    <span class="tag">La carte</span>
+    <h2>Salé, sucré, glacé</h2>
+    <div class="cols">
+      <div class="bloc">
+        <h3>Galettes</h3>
+        <ul>
+          <li><b>La complète</b><small>Jambon, emmental, œuf</small></li>
+          <li><b>La Bigoudine</b><small>Recette de la maison</small></li>
+          <li><b>Chèvre & miel</b><small>Chèvre, miel, noix, salade</small></li>
+          <li><b>Andouille & pommes</b><small>Andouille, pommes fondantes, moutarde</small></li>
+        </ul>
+      </div>
+      <div class="bloc">
+        <h3>Crêpes</h3>
+        <ul>
+          <li><b>Beurre sucre</b><small>La simplicité qui ne déçoit jamais</small></li>
+          <li><b>Caramel au beurre salé</b><small>Maison</small></li>
+          <li><b>Chocolat & chantilly</b><small>Gourmande</small></li>
+          <li><b>La crêpe surprise</b><small>Le secret du chef</small></li>
+        </ul>
+      </div>
+      <div class="bloc">
+        <h3>Formules & boissons</h3>
+        <ul>
+          <li><b>Formule midi</b><small>Galette + crêpe + boisson</small></li>
+          <li><b>Coupes glacées</b><small>Glaces artisanales locales</small></li>
+          <li><b>Cidre & bolées</b><small>Brut ou doux</small></li>
+          <li><b>Menu enfant</b><small>Galette, crêpe, boisson</small></li>
+        </ul>
+      </div>
+    </div>
+    <p class="ex">Carte donnée à titre d'exemple — à remplacer par la vraie carte du restaurant.</p>
+    <div class="duo">
+      <div><img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=600&q=70" alt="Crêpes (photo d'illustration)" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1656057205408-4a0a62cf2dfb?auto=format&fit=crop&w=600&q=70" alt="Crêpe garnie (photo d'illustration)" loading="lazy"></div>
+      <div><img src="https://images.unsplash.com/photo-1601055892144-5a86fc4155e2?auto=format&fit=crop&w=600&q=70" alt="Cidre (photo d'illustration)" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="glaces" id="glaces">
+  <div class="wrap grid">
+    <div class="img"><img src="https://images.unsplash.com/photo-1515467837915-15c4777ba46a?auto=format&fit=crop&w=800&q=70" alt="Dessert glacé (photo d'illustration)" loading="lazy"></div>
+    <div>
+      <span class="tag">Pour finir</span>
+      <h2>Des glaces artisanales, d'un glacier du coin</h2>
+      <p>En coupe, sur une crêpe chaude ou nature : les glaces de La Bigoudine viennent d'un artisan local. Le petit plus qui fait revenir.</p>
+    </div>
+  </div>
+</section>
+
+<section class="avis">
+  <div class="wrap">
+    <span class="tag">Ils en parlent</span>
+    <div class="score">4,7</div>
+    <p style="color:var(--mute)">sur Google · parmi les crêperies les mieux notées de Nogent-le-Rotrou sur TripAdvisor</p>
+    <div class="mots">
+      <span>Ambiance cosy</span><span>Accueil chaleureux</span><span>Galettes généreuses</span><span>Glaces délicieuses</span>
+    </div>
+  </div>
+</section>
+
+<div class="frise bas"></div>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <span class="tag">Infos pratiques</span>
+    <h2>Venir chez nous</h2>
+    <div class="grid">
+      <div class="contact">
+        <div class="horaires">
+          <h3>Horaires</h3>
+          <table>
+            <tr><td>Lundi</td><td class="ferme">Fermé</td></tr>
+            <tr><td>Mardi – Jeudi</td><td>12h–13h20 · 19h–21h15</td></tr>
+            <tr><td>Vendredi</td><td>12h–13h20 · 19h–21h45</td></tr>
+            <tr><td>Samedi</td><td>19h–21h45</td></tr>
+            <tr><td>Dimanche</td><td class="ferme">Fermé</td></tr>
+          </table>
+          <small>Horaires à confirmer.</small>
+        </div>
+        <p class="adr"><b>18 rue Saint-Hilaire</b><br>28400 Nogent-le-Rotrou</p>
+        <a class="btn" href="tel:+33237528920">Appeler · 02 37 52 89 20</a>
+        <a class="btn ghost" href="https://www.facebook.com/p/La-Bigoudine-100039867377532/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <div class="map"><iframe src="https://www.google.com/maps?q=18+rue+Saint-Hilaire,+28400+Nogent-le-Rotrou&output=embed" loading="lazy" title="Plan d'accès La Bigoudine"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="links"><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="https://louismaillet.fr" target="_blank" rel="noopener">Maquette par Louis Maillet</a></div>
+  <p>© La Bigoudine — Nogent-le-Rotrou</p>
+  <p>Photos d'illustration : Hanxiao Xu, Monika Grabkowska, Svitlana, Sidral Mundet, Todd Cravens / Unsplash</p>
+</footer>
+</body>
+</html>
