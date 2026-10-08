@@ -51,11 +51,12 @@ prototypes-restaurants/
 - 6 rue du 8 Mai 1945, 28160 Frazé. Tél 02 37 37 01 92, lepredefraze@yahoo.com, Instagram @le.pre.de.fraze. Pas de site propre.
 - Cuisine française, formules plancha, menus originaux, salon de thé/bar ; épicerie de terroir (style brocante) ; chambres d'hôtes pour cyclistes Véloscénie (recharge VAE). Terrasse, parking, animaux OK, emporter, traiteur.
 - Prototype version COMPLÈTE : hero photo plein écran, 3 univers avec photos (restaurant, épicerie, chambres), carte 4 blocs (plancha, entrées, desserts/enfant, salon de thé/bar) sans prix, section Véloscénie, galerie 5 photos Unsplash, horaires « À compléter » (non trouvés), services, Google Maps intégrée, contact tél/email/Instagram.
+- Mail ENVOYÉ par l'utilisateur le 08/10 à lepredefraze@yahoo.com.
 - Alternative non faite : Au Comptoir by L'Étape des Saveurs, 3 place des Halles, Brou (02 37 96 05 69).
 
 ### Crêperie L'Argoat — slug `creperie-largoat` — FAIT (2026-10-08)
 - URL : `/prototype/creperie-largoat/`. Version COMPLÈTE (demande utilisateur) : hero photo plein écran, section maison + services, carte 4 blocs (galettes, crêpes, salades, boissons/enfant) sans prix, avis (notes Google/TA + 3 thèmes, pas de faux témoignages), galerie 5 photos Unsplash, horaires confirmés par l'utilisateur (mer–dim 12h–22h ; fermé lun + mar), carte Google Maps intégrée, paiements, footer mentions légales. Pas d'email (suspect) → téléphone seul.
-- Mail de prospection rédigé (constat détaillé de la page eatbu : pas de carte/photos/avis, mentions légales « FR1234 A COMPLETER », lien données vide, sous-domaine eatbu). Pas encore envoyé.
+- Mail ENVOYÉ par l'utilisateur le 08/10 à michelverrier@orange.fr (adresse corrigée).
 - 9 place d'Armes, 28160 Brou. Tél 02 37 47 00 65. Email (fiche eatbu) michelverrier@range.fr (domaine suspect, à vérifier).
 - Site actuel : creperie-l-argoat.eatbu.com (mini-page DISH, pas de carte, mentions légales « A COMPLETER ») → argument de prospection.
 - Crêperie familiale : galettes de blé noir, crêpes, tartes, plats régionaux, sur place ou à emporter. Terrasse, salles climatisées, parking gratuit. CB/sans contact.
@@ -97,3 +98,8 @@ prototypes-restaurants/
 - URL : https://prototype-web-site.netlify.app/prototype/le-commerce/. Charte UNIQUE « gazette » : page de journal (manchette gothique UnifrakturCook, Oswald, Libre Baskerville), papier crème + encre + vert bouteille + laiton, « À la une » en 2 colonnes avec lettrine, encarts latéraux (spécialité, en bref), rubriques (cuisine en 3 colonnes, reportage terrasse, en images, infos pratiques), contact en « petite annonce ». Note NON affichée (3,6).
 - Brasserie, 7 place du 18 Octobre, 28200 Châteaudun, 02 37 66 10 02 (TA : 07 69 25 34 88), email termeaus@wanadoo.fr (Châteaudun tourisme). Aucun site (Mapstr cite jaimelecommerce.com, introuvable). Cuisine traditionnelle simple et rapide, tous les jours 12h–14h (bar l'après-midi), terrasse l'été face à la place près du château, salle rétro. Spécialités : pommes de terre farcies au four, tartines maison ; avis : onglet sauces, tartine chèvre, salades, burger du jour. Google 3,6 (494) / TA 3,2.
 - Mail : texte donné, pas envoyé.
+
+## Suivi des mails (08/10)
+- ENVOYÉS : Le Pré de Frazé, Crêperie L'Argoat, Les Tontons Fines Gueules.
+- À ENVOYER (textes prêts) : Brocéliande (sas.broceliande@laposte.net), La Casa Line's (contact@lacasalines.fr, peut-être mort), Le Punjab Grill (pas d'email → tél / formulaire du site), Le Commerce (termeaus@wanadoo.fr).
+- Style de l'utilisateur dans ses mails : se présente comme « étudiant en développement d'application et à côté développeur web près d'Orléans », « sites pour les restaurants/entreprises ».
