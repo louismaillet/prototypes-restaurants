@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Les Tontons Fines Gueules — Bar &amp; restaurant à Chapelle-Royale</title>
+<meta name="description" content="Les Tontons Fines Gueules, bar-restaurant à Chapelle-Royale (28) : café du matin, menu du jour, planches à l'apéro et dîners le week-end. Sur place ou à emporter.">
+<style>
+  :root{
+    --bg:#f7f1e6; --text:#1e1a16; --muted:#6a6158; --ink:#1e1a16; --ink-2:#2b2520;
+    --red:#a8322d; --mustard:#d9a53a; --card:#fffaf1; --line:#e5dccb; --ph:#e6dccb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;line-height:1.15}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--ph)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+  .demo{background:#000;color:#ddd;font-size:.8rem;text-align:center;padding:7px 12px}
+  .demo a{color:#fff;font-weight:600}
+
+  header{position:sticky;top:0;z-index:10;background:var(--ink);color:#f7f1e6;border-bottom:3px solid var(--mustard)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+  .logo{font-family:Georgia,serif;font-weight:700;font-size:1.15rem;text-decoration:none;letter-spacing:.02em}
+  .logo em{font-style:normal;color:var(--mustard)}
+  .logo small{display:block;font-family:system-ui,sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#bfb4a5;font-weight:600}
+  nav{display:flex;gap:20px;font-size:.92rem;align-items:center}
+  nav a{text-decoration:none;color:#d8cfc2}
+  nav a:hover{color:var(--mustard)}
+  nav .call{background:var(--red);color:#fff;padding:8px 14px;border-radius:6px;font-weight:600}
+  nav .call:hover{color:#fff;filter:brightness(1.1)}
+  @media (max-width:760px){nav a:not(.call){display:none}}
+
+  /* HERO */
+  .hero{position:relative;min-height:80vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+  .hero img{position:absolute;inset:0;z-index:-2}
+  .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.55) 50%,rgba(20,16,12,.95) 100%)}
+  .hero .wrap{padding-top:120px;padding-bottom:56px;width:100%}
+  .kicker{display:inline-block;background:var(--mustard);color:var(--ink);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;padding:4px 10px;border-radius:4px;margin-bottom:16px}
+  .hero h1{font-size:clamp(2.5rem,7.5vw,4.4rem);margin-bottom:16px;max-width:760px}
+  .hero h1 span{color:var(--mustard)}
+  .hero p{font-size:1.1rem;max-width:580px;margin-bottom:22px;color:#ece6dc}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+  .badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:6px 12px;font-size:.88rem}
+  .badge b{color:var(--mustard)}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:13px 24px;border-radius:6px;font-weight:600;border:1.5px solid transparent}
+  .btn:hover{filter:brightness(1.08)}
+  .btn.light{background:transparent;border-color:rgba(255,255,255,.7);color:#fff}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+
+  section{padding:72px 0}
+  section + section{border-top:1px solid var(--line)}
+  .eyebrow{color:var(--red);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;margin-bottom:8px}
+  h2{font-size:clamp(1.9rem,4.5vw,2.6rem);margin-bottom:12px}
+  .lead{color:var(--muted);max-width:640px;margin-bottom:34px;font-size:1.05rem}
+
+  /* JOURNÉE */
+  .day{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .moment{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .moment .photo{aspect-ratio:3/2}
+  .moment .body{padding:18px 20px 22px}
+  .moment .time{font-family:Georgia,serif;font-weight:700;color:var(--red);font-size:.95rem}
+  .moment h3{font-size:1.25rem;margin:2px 0 6px}
+  .moment p{color:var(--muted);font-size:.95rem}
+
+  /* CARTE (ardoise) */
+  .slate{background:var(--ink-2);color:#efe8dc}
+  .slate h2{color:#fff}
+  .slate .lead{color:#bfb4a5}
+  .slate .eyebrow{color:var(--mustard)}
+  .menu{display:grid;gap:22px}
+  @media (min-width:820px){.menu{grid-template-columns:1fr 1fr}}
+  .menu-block{border:1px solid #4a4038;border-radius:14px;padding:24px;background:rgba(255,255,255,.03)}
+  .menu-block h3{font-size:1.35rem;color:var(--mustard);margin-bottom:4px}
+  .menu-block .sub{font-size:.85rem;color:#a99d8e;margin-bottom:10px}
+  .dish{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed #4a4038}
+  .dish:last-child{border:0}
+  .dish h4{font-size:1rem;color:#fff}
+  .dish p{color:#b8ad9f;font-size:.88rem}
+  .dish .price{font-family:Georgia,serif;color:var(--mustard);font-weight:700;white-space:nowrap}
+  .tag{display:inline-block;font-size:.68rem;background:var(--red);color:#fff;border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:middle;font-family:system-ui,sans-serif}
+  .note{font-size:.85rem;color:#a99d8e;margin-top:22px;font-style:italic;text-align:center}
+
+  /* LA MAISON */
+  .split{display:grid;gap:36px;align-items:center}
+  @media (min-width:820px){.split{grid-template-columns:1fr 1fr}}
+  .split .photo{aspect-ratio:4/3;border-radius:16px;overflow:hidden}
+  .split p{color:var(--muted);margin-bottom:14px}
+  .feats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .feat b{display:block;font-size:.95rem}
+  .feat span{font-size:.85rem;color:var(--muted)}
+
+  /* AVIS */
+  .scores{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:30px}
+  .score{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 24px;min-width:200px;border-left:5px solid var(--mustard)}
+  .score .n{font-family:Georgia,serif;font-size:2.4rem;font-weight:700;line-height:1}
+  .score .stars{color:var(--mustard);letter-spacing:2px;margin:4px 0}
+  .score span{font-size:.88rem;color:var(--muted)}
+  .reasons{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .reason{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .reason h3{font-size:1.1rem;margin-bottom:6px}
+  .reason p{color:var(--muted);font-size:.95rem}
+
+  /* GALERIE */
+  .gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+  @media (min-width:820px){.gallery{grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px}.gallery .big{grid-row:span 2}}
+  .gallery figure{border-radius:14px;overflow:hidden;aspect-ratio:1/1}
+  @media (min-width:820px){.gallery figure{aspect-ratio:auto}}
+  .small{font-size:.85rem;color:var(--muted);margin-top:14px}
+
+  /* INFOS */
+  .info{display:grid;gap:20px}
+  @media (min-width:820px){.info{grid-template-columns:1fr 1.3fr}}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+  .box h3{font-size:1.2rem;margin-bottom:14px}
+  .hours{list-style:none}
+  .hours li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .hours li:last-child{border:0}
+  .hours span:last-child{color:var(--muted);text-align:right}
+  .hours .closed{color:var(--red);font-weight:600}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .chips span{font-size:.8rem;border:1px solid var(--line);border-radius:6px;padding:4px 10px;color:var(--muted);background:var(--bg)}
+  .map{border-radius:12px;overflow:hidden;aspect-ratio:16/10;margin-top:16px;background:var(--ph)}
+  .map iframe{width:100%;height:100%;border:0}
+  .box address{font-style:normal;margin-bottom:14px;font-size:1.05rem}
+
+  /* CONTACT */
+  .contact{text-align:center;background:var(--red);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lead{color:#f4d9d6;margin:0 auto 28px}
+  .contact .btns{justify-content:center}
+  .contact .btn{background:var(--ink)}
+  .contact .btn.light{background:transparent}
+
+  footer{background:#000;color:#a39a8e;font-size:.85rem;padding:30px 0}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+  footer a{color:#e8e1d6}
+  footer .credits{width:100%;font-size:.75rem;color:#7d756b}
+</style>
+</head>
+<body>
+
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">Les Tontons <em>Fines Gueules</em><small>Bar · Restaurant · Chapelle-Royale</small></a>
+    <nav>
+      <a href="#journee">Au quotidien</a>
+      <a href="#carte">L'ardoise</a>
+      <a href="#avis">Avis</a>
+      <a href="#infos">Infos</a>
+      <a class="call" href="tel:+33218006344">Réserver</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1729711079394-9177676ef713?auto=format&fit=crop&w=1800&q=70" alt="Table et chaises en terrasse d'un bistrot">
+  <div class="wrap">
+    <span class="kicker">Bar · Restaurant · Depuis 2025</span>
+    <h1>Ici, on cause, on mange <span>&amp; on trinque.</span></h1>
+    <p>Le rendez-vous de Chapelle-Royale : le café du matin, le menu du jour le midi, les planches à l'apéro et des dîners conviviaux le week-end.</p>
+    <div class="badges">
+      <span class="badge"><b>★ 4,8/5</b> sur Facebook</span>
+      <span class="badge"><b>★ 4,7/5</b> sur Google</span>
+      <span class="badge">Sur place · À emporter</span>
+    </div>
+    <div class="btns">
+      <a class="btn" href="tel:+33218006344">Réserver une table</a>
+      <a class="btn light" href="#carte">Voir l'ardoise</a>
+    </div>
+  </div>
+</div>
+
+<!-- JOURNÉE -->
+<section id="journee">
+  <div class="wrap">
+    <p class="eyebrow">Au quotidien</p>
+    <h2>Du premier café au dernier verre</h2>
+    <p class="lead">Une seule adresse pour toute la journée, à la bonne franquette.</p>
+    <div class="day">
+      <div class="moment">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1675125530909-15213f01a9e1?auto=format&fit=crop&w=900&q=70" alt="Café et croissants au petit-déjeuner" loading="lazy"></div>
+        <div class="body"><p class="time">Le matin</p><h3>Le café des habitués</h3><p>Petit noir au comptoir, croissant et les nouvelles du village pour bien démarrer.</p></div>
+      </div>
+      <div class="moment">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1519699788450-ad34386a3bfc?auto=format&fit=crop&w=900&q=70" alt="Plat mijoté maison" loading="lazy"></div>
+        <div class="body"><p class="time">Le midi</p><h3>Le menu du jour</h3><p>Une cuisine traditionnelle et généreuse, faite maison, qui change selon le marché.</p></div>
+      </div>
+      <div class="moment">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1753797981887-822b6e86d02d?auto=format&fit=crop&w=900&q=70" alt="Planche de charcuterie et verres de vin" loading="lazy"></div>
+        <div class="body"><p class="time">Le soir</p><h3>Apéro &amp; dîner</h3><p>Planches à partager et dîner les vendredis et samedis soir, entre amis ou en famille.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTE -->
+<section id="carte" class="slate">
+  <div class="wrap">
+    <p class="eyebrow">L'ardoise</p>
+    <h2>Ce qu'on vous sert</h2>
+    <p class="lead">Des recettes de bistrot, simples et copieuses, comme on les aime.</p>
+    <div class="menu">
+      <div class="menu-block">
+        <h3>Le menu du jour</h3>
+        <p class="sub">Du mardi au samedi midi</p>
+        <div class="dish"><div><h4>Entrée + plat + dessert</h4><p>Selon l'ardoise du jour</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Plat du jour seul</h4><p>Pour les pressés</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Menu des petits</h4><p>Plat, dessert, boisson</p></div><span class="price">—</span></div>
+      </div>
+      <div class="menu-block">
+        <h3>Les plats du bistrot</h3>
+        <p class="sub">La cuisine des tontons</p>
+        <div class="dish"><div><h4>Bœuf bourguignon <span class="tag">Maison</span></h4><p>Mijoté longtemps, purée maison</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Entrecôte frites</h4><p>Sauce au poivre ou beurre maître d'hôtel</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Andouillette grillée</h4><p>Moutarde à l'ancienne, frites</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Burger des Tontons</h4><p>Steak haché, cheddar, oignons confits, frites</p></div><span class="price">—</span></div>
+      </div>
+      <div class="menu-block">
+        <h3>À l'apéro</h3>
+        <p class="sub">À partager (ou pas)</p>
+        <div class="dish"><div><h4>Planche mixte</h4><p>Charcuteries et fromages du coin</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Rillettes &amp; pain de campagne</h4><p>Le classique qui ne déçoit jamais</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Assiette de frites</h4><p>Maison, bien dorées</p></div><span class="price">—</span></div>
+      </div>
+      <div class="menu-block">
+        <h3>Desserts &amp; comptoir</h3>
+        <p class="sub">Pour finir en douceur</p>
+        <div class="dish"><div><h4>Tarte du jour</h4><p>Maison, selon la saison</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Café gourmand</h4><p>Café et trois petites douceurs</p></div><span class="price">—</span></div>
+        <div class="dish"><div><h4>Bières, vins &amp; softs</h4><p>Pression, vins au verre, jus et sodas</p></div><span class="price">—</span></div>
+      </div>
+    </div>
+    <p class="note">Ardoise donnée à titre d'exemple : vos vrais plats et vos prix seront ajoutés avec vous.</p>
+  </div>
+</section>
+
+<!-- LA MAISON -->
+<section id="maison">
+  <div class="wrap split">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1546622891-02c72c1537b6?auto=format&fit=crop&w=1200&q=70" alt="Bière servie à la pression" loading="lazy"></div>
+    <div>
+      <p class="eyebrow">La maison</p>
+      <h2>Le bistrot du village, tout simplement</h2>
+      <p>Ouvert en 2025 rue Jean Moulin, Les Tontons Fines Gueules est vite devenu le point de rendez-vous de Chapelle-Royale. Ici, tout le monde se connaît vite.</p>
+      <p>On vient seul pour un café, entre collègues pour le midi, ou en bande pour l'apéro du vendredi. L'ambiance est décontractée et l'accueil, toujours chaleureux.</p>
+      <div class="feats">
+        <div class="feat"><b>🥡 À emporter</b><span>et livraison</span></div>
+        <div class="feat"><b>🅿️ Parking gratuit</b><span>juste devant</span></div>
+        <div class="feat"><b>♿ Accessible</b><span>fauteuil roulant</span></div>
+        <div class="feat"><b>🎉 Groupes</b><span>bienvenus</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section id="avis">
+  <div class="wrap">
+    <p class="eyebrow">Ils en parlent</p>
+    <h2>Des clients conquis</h2>
+    <p class="lead">En quelques mois, les Tontons se sont fait une sacrée réputation. Ce qui vous attend :</p>
+    <div class="scores">
+      <div class="score"><div class="n">4,8</div><div class="stars">★★★★★</div><span>sur Facebook</span></div>
+      <div class="score"><div class="n">4,7</div><div class="stars">★★★★★</div><span>sur Google</span></div>
+    </div>
+    <div class="reasons">
+      <div class="reason"><h3>Une cuisine maison</h3><p>Des plats traditionnels et copieux, préparés sur place.</p></div>
+      <div class="reason"><h3>Un accueil au top</h3><p>Une équipe souriante qui met tout de suite à l'aise.</p></div>
+      <div class="reason"><h3>Un vrai lieu de vie</h3><p>Le bistrot où l'on se retrouve, du matin jusqu'au soir.</p></div>
+    </div>
+    <p class="small"><a href="https://www.facebook.com/LesTontonsFinesGueules/" target="_blank" rel="noopener">Lire les avis sur Facebook →</a></p>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">En images</p>
+    <h2>L'ambiance en un coup d'œil</h2>
+    <p class="lead">Une table, un verre, une bonne assiette : le programme est simple.</p>
+    <div class="gallery">
+      <figure class="big"><img src="https://images.unsplash.com/photo-1654921834734-c7002b177e35?auto=format&fit=crop&w=1200&q=70" alt="Table dressée avec verres et assiettes" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1572107833705-3f47f5462d1e?auto=format&fit=crop&w=700&q=70" alt="Pièce de viande et légumes avec un verre de vin" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1741202624122-0aa510ff554c?auto=format&fit=crop&w=700&q=70" alt="Ardoise de boissons" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1753797981887-822b6e86d02d?auto=format&fit=crop&w=700&q=70" alt="Planche apéritive" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1546622891-02c72c1537b6?auto=format&fit=crop&w=700&q=70" alt="Bière à la pression" loading="lazy"></figure>
+    </div>
+    <p class="small">Photos d'illustration — à remplacer par les photos des Tontons.</p>
+  </div>
+</section>
+
+<!-- INFOS -->
+<section id="infos">
+  <div class="wrap">
+    <p class="eyebrow">Pratique</p>
+    <h2>Horaires &amp; accès</h2>
+    <p class="lead">En plein cœur du village, rue Jean Moulin.</p>
+    <div class="info">
+      <div class="box">
+        <h3>Horaires</h3>
+        <ul class="hours">
+          <li><span>Lundi</span><span class="closed">Fermé</span></li>
+          <li><span>Mardi – Jeudi</span><span>Matin &amp; midi</span></li>
+          <li><span>Vendredi – Samedi</span><span>Matin, midi &amp; soir (jusqu'à 21h30)</span></li>
+          <li><span>Dimanche</span><span class="closed">Fermé</span></li>
+        </ul>
+        <p class="small">Horaires à confirmer.</p>
+        <div class="chips"><span>Carte bancaire</span><span>Titres-restaurant</span><span>Espèces</span><span>À emporter</span><span>Livraison</span><span>Petit-déjeuner</span></div>
+      </div>
+      <div class="box">
+        <h3>Nous trouver</h3>
+        <address>51 rue Jean Moulin<br>28290 Chapelle-Royale</address>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=51+rue+Jean+Moulin+28290+Chapelle-Royale" target="_blank" rel="noopener">Itinéraire</a>
+        <div class="map"><iframe src="https://www.google.com/maps?q=51+rue+Jean+Moulin+28290+Chapelle-Royale&amp;output=embed" title="Carte : Les Tontons Fines Gueules" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>On vous garde une place ?</h2>
+    <p class="lead">Un coup de fil pour réserver ou commander à emporter.</p>
+    <div class="btns">
+      <a class="btn" href="tel:+33218006344">📞 02 18 00 63 44</a>
+      <a class="btn light" href="https://www.facebook.com/LesTontonsFinesGueules/" target="_blank" rel="noopener">Suivez-nous sur Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Les Tontons Fines Gueules · 51 rue Jean Moulin, 28290 Chapelle-Royale</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Alice Kotlyarenko, S O C I A L . C U T, Eric Zhu, Chez Gilbert Saigon, Amie Johnson, Cody Chan, Arielle Allouche, Salvatore Favata — via Unsplash.</p>
+  </div>
+</footer>
+
+</body>
+</html>

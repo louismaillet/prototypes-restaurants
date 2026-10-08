@@ -60,7 +60,10 @@ prototypes-restaurants/
 - Horaires CONFIRMÉS (utilisateur, 08/10) : mercredi–dimanche 12h–22h, fermé lundi et mardi (la page eatbu est fausse).
 - Avis : Google 4,2/5 (325), TripAdvisor 4,0/5 (143). Portions généreuses, prix doux, accueil familial, bonbons d'enfance offerts en fin de repas (roudoudous, violettes). Pas de carte avec prix en ligne.
 
-### Les Tontons Fines Gueules — slug `les-tontons-fines-gueules` — recherche faite, en attente du "top"
+### Les Tontons Fines Gueules — slug `les-tontons-fines-gueules` — FAIT (2026-10-08)
+- URL : `/prototype/les-tontons-fines-gueules/`. Version COMPLÈTE : style bistrot rétro (noir/crème/moutarde/rouge), hero « Ici, on cause, on mange & on trinque », journée matin/midi/soir, ardoise 4 blocs (menu du jour, plats bistrot, apéro, desserts/comptoir) sans prix, section maison, avis (FB 4,8 / Google 4,7), galerie Unsplash, horaires « à confirmer », Google Maps, tél + Facebook. Bouton ajouté sur l'accueil.
+- Société J.F.B. (SAS), créée le 24/03/2025, NAF 5630Z débit de boissons. Paiement : CB, titres-restaurant, espèces.
+- Horaires contradictoires : kazfeed mar–jeu 7h–16h30, ven–sam 7h–21h30 ; Mappy/PagesJaunes mar–jeu 9h30–19h, ven–sam 9h30–21h30 ; fermé dim + lun.
 - 51 rue Jean Moulin, 28290 Chapelle-Royale (Perche, Eure-et-Loir). Tél 02 18 00 63 44. Facebook : facebook.com/LesTontonsFinesGueules (seule présence en ligne, pas de site).
 - Restaurant traditionnel / bar, ambiance décontractée, petit-déj dès 7h, sur place, à emporter, livraison. Prix moyen ~25 €. Parking gratuit, accès PMR. Desserts.
 - Horaires (kazfeed) : mar–jeu 7h–16h30 ; ven–sam 7h–21h30 ; fermé dim + lun → à confirmer.
