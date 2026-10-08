@@ -39,7 +39,7 @@ prototypes-restaurants/
 - Références à citer dans la vitrine : Gîtes La Grande Boeufferie, European CLIL Academy, refonte Oumami (restaurant asiatique).
 - **Hébergement** : Netlify (sites statiques, pas de back-end).
 - **index.html racine** : page vitrine très simple — qui il est, ce qu'il fait (sites pour restaurants), lien vers louismaillet.fr. NE PAS lister les prototypes.
-- **Images** : pas de vraies photos. Placeholder à plat (bloc coloré) avec le texte "Illustration".
+- **Images** : par défaut, placeholder à plat (bloc coloré) avec le texte "Illustration". Version « complète » sur demande : photos libres Unsplash en hotlink (images.unsplash.com, crédits en pied de page, mention « photos d'illustration »). Jamais les photos du restaurant prises sur Google/TripAdvisor.
 - **Style des prototypes** : SIMPLES et LÉGERS, peu de contenu. Sections limitées : hero, courte présentation, quelques plats/carte, horaires + adresse, contact. Pas de galerie lourde, pas de JS inutile.
 
 ## Restaurants
@@ -52,9 +52,10 @@ prototypes-restaurants/
 - Alternative non faite : Au Comptoir by L'Étape des Saveurs, 3 place des Halles, Brou (02 37 96 05 69).
 
 ### Crêperie L'Argoat — slug `creperie-largoat` — FAIT (2026-10-08)
-- URL : `/prototype/creperie-largoat/`. Prototype : palette bleu marine/blé noir + bande marinière, note Google en hero, galettes/crêpes d'exemple sans prix, horaires mer–dim « à confirmer », pas d'email (suspect) → téléphone seul. Prospection : pas encore faite.
+- URL : `/prototype/creperie-largoat/`. Version COMPLÈTE (demande utilisateur) : hero photo plein écran, section maison + services, carte 4 blocs (galettes, crêpes, salades, boissons/enfant) sans prix, avis (notes Google/TA + 3 thèmes, pas de faux témoignages), galerie 5 photos Unsplash, horaires officiels eatbu (mar, mer, ven, sam, dim 12h–22h ; fermé lun + jeu), carte Google Maps intégrée, paiements, footer mentions légales. Pas d'email (suspect) → téléphone seul.
+- Mail de prospection rédigé (constat détaillé de la page eatbu : pas de carte/photos/avis, mentions légales « FR1234 A COMPLETER », lien données vide, sous-domaine eatbu). Pas encore envoyé.
 - 9 place d'Armes, 28160 Brou. Tél 02 37 47 00 65. Email (fiche eatbu) michelverrier@range.fr (domaine suspect, à vérifier).
 - Site actuel : creperie-l-argoat.eatbu.com (mini-page DISH, pas de carte, mentions légales « A COMPLETER ») → argument de prospection.
 - Crêperie familiale : galettes de blé noir, crêpes, tartes, plats régionaux, sur place ou à emporter. Terrasse, salles climatisées, parking gratuit. CB/sans contact.
-- Horaires contradictoires : eatbu « 12h–22h, fermé lundi et jeudi » ; Wanderlog « mer–dim 12h–22h, fermé lun–mar » → à confirmer.
+- Horaires : eatbu (source officielle) « 12h–22h, fermé lundi et jeudi » ; Wanderlog dit fermé lun–mar (moins fiable).
 - Avis : Google 4,2/5 (325), TripAdvisor 4,0/5 (143). Portions généreuses, prix doux, accueil familial, bonbons d'enfance offerts en fin de repas (roudoudous, violettes). Pas de carte avec prix en ligne.
