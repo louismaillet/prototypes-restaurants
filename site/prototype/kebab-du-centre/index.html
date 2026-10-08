@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Kebab du Centre — Châteaudun, place du 18 Octobre</title>
+<meta name="description" content="Kebab du Centre, place du 18 Octobre à Châteaudun : kebabs, tacos, burgers et assiettes, ouvert tous les jours, sur place et à emporter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--night:#0c0c14;--night-2:#151522;--night-3:#1e1e30;--neon:#39ff9a;--pink:#ff3d8b;--text:#eef0f6;--muted:#9da3b8}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Manrope",system-ui,sans-serif;background:var(--night);color:var(--text);line-height:1.6}
+  .cp{font-family:"Chakra Petch",monospace;font-weight:700;letter-spacing:.02em}
+  a{color:inherit}
+  img{display:block;width:100%;height:100%;object-fit:cover;background:var(--night-3)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  .demo{background:#000;color:#aaa;font-size:.78rem;text-align:center;padding:6px 12px}
+  .demo a{color:var(--neon);font-weight:700}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px;border-bottom:1px solid #26263a}
+  .logo{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:1.3rem;text-decoration:none}
+  .logo span{color:var(--neon)}
+  header nav{display:flex;gap:20px;font-size:.92rem}
+  header nav a{text-decoration:none;color:var(--muted)}
+  header nav a:hover{color:var(--neon)}
+  @media (max-width:720px){header nav{display:none}}
+  .call{border:2px solid var(--neon);color:var(--neon);text-decoration:none;font-weight:800;padding:8px 14px;border-radius:10px}
+  /* enseigne néon */
+  .hero{text-align:center;padding:70px 0 60px;background:radial-gradient(ellipse at 50% 0%,rgba(57,255,154,.12),transparent 60%)}
+  .open{display:inline-flex;align-items:center;gap:8px;font-family:"Chakra Petch",sans-serif;font-size:.9rem;color:var(--neon);border:1px solid rgba(57,255,154,.4);padding:6px 14px;border-radius:999px}
+  .open i{width:9px;height:9px;border-radius:50%;background:var(--neon);box-shadow:0 0 10px var(--neon)}
+  .neon{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:clamp(3rem,12vw,7.5rem);line-height:.95;margin:22px 0 10px;color:#fff;text-shadow:0 0 6px #fff,0 0 18px var(--pink),0 0 40px var(--pink)}
+  .neon span{display:block;color:var(--neon);text-shadow:0 0 6px var(--neon),0 0 22px var(--neon),0 0 44px rgba(57,255,154,.6)}
+  .hero p{color:var(--muted);max-width:520px;margin:0 auto 26px;font-size:1.08rem}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;padding:14px 24px;border-radius:12px;background:var(--neon);color:#06140c}
+  .btn.pink{background:var(--pink);color:#fff}
+  .btn.ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px #34344d}
+  .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:900px;margin:40px auto 0}
+  .strip div{aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #26263a}
+  section{padding:74px 0}
+  .ttl{margin-bottom:30px}
+  .ttl small{font-family:"Chakra Petch",sans-serif;color:var(--pink);letter-spacing:.2em}
+  .ttl h2{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,3.4rem);margin-top:4px}
+  /* combos */
+  .combos{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .combo{background:var(--night-2);border:1px solid #26263a;border-radius:20px;padding:22px;position:relative;overflow:hidden}
+  .combo::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--neon),var(--pink))}
+  .combo .n{font-family:"Chakra Petch",sans-serif;color:var(--neon);font-size:.85rem}
+  .combo h3{font-family:"Chakra Petch",sans-serif;font-size:1.6rem;margin:4px 0 6px}
+  .combo ul{list-style:none;color:var(--muted);font-size:.95rem}
+  .combo li::before{content:"+ ";color:var(--pink);font-weight:800}
+  .note{color:var(--muted);font-size:.85rem;margin-top:16px}
+  /* horloge 7j/7 */
+  .clock{background:var(--night-2);border-top:1px solid #26263a;border-bottom:1px solid #26263a}
+  .days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:10px}
+  .days div{background:var(--night-3);border-radius:12px;padding:14px 4px;text-align:center;font-family:"Chakra Petch",sans-serif}
+  .days b{display:block;color:var(--neon);font-size:1.05rem}
+  .days span{font-size:.72rem;color:var(--muted)}
+  @media (max-width:520px){.days{grid-template-columns:repeat(4,1fr)}}
+  .hours-txt{font-family:"Chakra Petch",sans-serif;font-size:clamp(1.4rem,4vw,2rem);margin-top:22px}
+  .hours-txt span{color:var(--neon)}
+  .small{color:var(--muted);font-size:.85rem;margin-top:8px}
+  /* infos */
+  .infos{display:grid;gap:18px;align-items:center}
+  @media (min-width:860px){.infos{grid-template-columns:1fr 1.3fr}}
+  .infos address{font-style:normal;font-family:"Chakra Petch",sans-serif;font-size:1.6rem;line-height:1.2;margin-bottom:16px}
+  .map{aspect-ratio:16/10;border-radius:18px;overflow:hidden;border:1px solid #26263a;background:var(--night-3)}
+  .map iframe{width:100%;height:100%;border:0;display:block;filter:invert(.92) hue-rotate(180deg)}
+  .final{text-align:center}
+  .final .tel{display:block;font-family:"Chakra Petch",sans-serif;font-size:clamp(2.2rem,7vw,3.6rem);color:var(--neon);text-decoration:none;text-shadow:0 0 18px rgba(57,255,154,.5);margin:8px 0 20px}
+  footer{border-top:1px solid #26263a;color:#7c8199;font-size:.8rem;padding:22px 0 28px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer a{color:var(--neon)}
+  footer .credits{width:100%;font-size:.72rem}
+</style>
+</head>
+<body>
+<div class="demo">Maquette proposée par Louis Maillet — <a href="https://louismaillet.fr" target="_blank" rel="noopener">louismaillet.fr</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">KEBAB<span>/</span>CENTRE</a>
+    <nav><a href="#combos">Les formules</a><a href="#horaires">Horaires</a><a href="#infos">Accès</a></nav>
+    <a class="call" href="tel:+33953931411">Commander</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="open"><i></i> Ouvert 7 jours sur 7</span>
+    <h1 class="neon">KEBAB <span>DU CENTRE</span></h1>
+    <p>En plein cœur de Châteaudun, place du 18 Octobre : kebabs, tacos, burgers et assiettes, à toute heure du service.</p>
+    <div class="btns"><a class="btn" href="tel:+33953931411">📞 Commander</a><a class="btn ghost" href="#combos">Voir les formules</a></div>
+    <div class="strip">
+      <div><img src="https://images.unsplash.com/photo-1773514294087-b93f864866a5?auto=format&fit=crop&w=500&q=70" alt="Viande kebab"></div>
+      <div><img src="https://images.unsplash.com/photo-1699728088614-7d1d4277414b?auto=format&fit=crop&w=500&q=70" alt="Sandwich garni"></div>
+      <div><img src="https://images.unsplash.com/photo-1777199298385-07e46ccc2004?auto=format&fit=crop&w=500&q=70" alt="Frites et viande"></div>
+    </div>
+  </div>
+</div>
+
+<section id="combos">
+  <div class="wrap">
+    <div class="ttl"><small>// LES FORMULES</small><h2>Choisissez votre combo</h2></div>
+    <div class="combos">
+      <div class="combo"><span class="n">01</span><h3>Le Classique</h3><ul><li>Kebab pain ou galette</li><li>Frites</li><li>Boisson</li></ul></div>
+      <div class="combo"><span class="n">02</span><h3>Le Tacos</h3><ul><li>Tacos 1, 2 ou 3 viandes</li><li>Sauce fromagère</li><li>Boisson</li></ul></div>
+      <div class="combo"><span class="n">03</span><h3>L'Assiette</h3><ul><li>Viande au choix</li><li>Frites &amp; salade</li><li>Sauce maison</li></ul></div>
+      <div class="combo"><span class="n">04</span><h3>Le Burger</h3><ul><li>Burger maison</li><li>Frites</li><li>Boisson</li></ul></div>
+    </div>
+    <p class="note">Formules données à titre d'exemple — vos vrais produits et vos prix seront ajoutés avec vous.</p>
+  </div>
+</section>
+
+<section id="horaires" class="clock">
+  <div class="wrap">
+    <div class="ttl"><small>// HORAIRES</small><h2>Tous les jours</h2></div>
+    <div class="days">
+      <div><b>LUN</b><span>ouvert</span></div><div><b>MAR</b><span>ouvert</span></div><div><b>MER</b><span>ouvert</span></div><div><b>JEU</b><span>ouvert</span></div><div><b>VEN</b><span>ouvert</span></div><div><b>SAM</b><span>ouvert</span></div><div><b>DIM</b><span>ouvert</span></div>
+    </div>
+    <p class="hours-txt">Midi <span>11h – 15h</span> · Soir <span>18h – 22h</span></p>
+    <p class="small">Horaires à confirmer. Accès et places assises PMR.</p>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="wrap infos">
+    <div>
+      <div class="ttl" style="margin-bottom:14px"><small>// ACCÈS</small><h2>En plein centre</h2></div>
+      <address>38 bis place du 18 Octobre<br>28200 Châteaudun</address>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kebab+du+Centre+38+bis+place+du+18+Octobre+28200+Ch%C3%A2teaudun" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+    <div class="map"><iframe src="https://www.google.com/maps?q=38+bis+place+du+18+Octobre+28200+Ch%C3%A2teaudun&amp;output=embed" title="Carte : Kebab du Centre" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <p class="cp" style="color:var(--pink);letter-spacing:.2em">// COMMANDES</p>
+    <a class="tel" href="tel:+33953931411">09 53 93 14 11</a>
+    <div class="btns"><a class="btn pink" href="tel:+33953931411">Appeler</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kebab du Centre · 38 bis place du 18 Octobre, 28200 Châteaudun</span>
+    <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    <span>Maquette par <a href="https://louismaillet.fr" target="_blank" rel="noopener">Louis Maillet</a></span>
+    <p class="credits">Photos d'illustration : Taeyoon Moon, Yoad Shejtman, Arne Buss — via Unsplash.</p>
+  </div>
+</footer>
+</body>
+</html>
